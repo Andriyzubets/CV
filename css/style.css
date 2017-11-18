@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	transition: all .4s;
 }
 :root {
   font-size: calc(1vw + 1vh + .5vmin); 
@@ -9,7 +10,7 @@ body {
 	font-weight: 400;
 	font-size: 1em/1.6;
 	font-family: 'Montserrat', sans-serif;
-	transition-duration: .2s;
+	
 }
 .wrapper {
 	max-width: 90vw;
@@ -33,6 +34,9 @@ body {
     border-bottom-right-radius: 25px;
     border-top-left-radius: 25px;
     box-shadow: 4px 4px 4px lightgrey;
+}
+.photo:hover {
+	filter: brightness(0.7);
 }
 .name {
 	font-size: 1.3em;
@@ -95,6 +99,7 @@ h2 {
 }
 .progress {
   width: 100%;
+  vertical-align: middle;
 }
 progress {
   background-color: #f3f3f3;
@@ -134,7 +139,7 @@ progress::-moz-progress-bar {
 .portfolios-list, .projects-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
     align-content: space-between;
 
 }
@@ -145,6 +150,9 @@ progress::-moz-progress-bar {
     box-shadow: 2px 2px 2px #ccc;
 	margin: 0 0 2% 0;
 }
+.portfolio-item:hover, .projects-item:hover {
+	box-shadow: 4px 4px 4px #7b7777;
+}
 .ico {
 	
 	background-size: cover;
@@ -152,6 +160,9 @@ progress::-moz-progress-bar {
     height: 5em;
     margin: 0 0 5%;
     box-shadow: 4px 4px 4px #ccc;
+}
+.ico:hover, h3:hover {
+	opacity: 0.8;
 }
 .port1 {
 	background-image: url(../img/ico-1.png);
@@ -167,6 +178,24 @@ progress::-moz-progress-bar {
 }
 .port5 {
 	background-image: url(../img/ico-5.png);
+}
+.proj1 {
+	background-image: url(../img/pro-1.png);
+}
+.proj2 {
+	background-image: url(../img/pro-2.png);
+}
+.proj3 {
+	background-image: url(../img/pro-3.png);
+}
+.proj4 {
+	background-image: url(../img/pro-4.png);
+}
+.proj5 {
+	background-image: url(../img/pro-5.png);
+}
+.proj6 {
+	background-image: url(../img/pro-6.png);
 }
 .portfolio-item h3, .projects-item h3 {
 	font-size: .8em;
@@ -203,6 +232,9 @@ progress::-moz-progress-bar {
     text-decoration: none;
     color: inherit;
     text-shadow: grey 2px 2px 4px;
+}
+.rightexp:hover, .rightexp2:hover, a:hover {
+	text-shadow: 4px 4px 4px #7b7777;
 }
 .rightexp {
 	font-weight: 600;
