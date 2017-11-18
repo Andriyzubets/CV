@@ -1,0 +1,161 @@
+.header__menu {
+		text-transform: uppercase;
+		font: 28px 'Pathway Gothic One', Myriad Pro;
+		margin-left: auto;
+		margin-right: auto;
+
+			&-small {
+				display: none;
+				font-size: 24px;
+				
+				@media screen and (max-width: 1024px) {
+					display: block;
+				}
+
+				@media screen and (max-width: 768px){
+					font-size: 20px;
+				}
+
+			}
+
+			&-large {
+				@media screen and (max-width: 1024px) {
+					display: none;
+				}
+			}
+
+			// @media (min-width: 768px) and (max-width: 1024px)  {
+			// 	font-size: 24px;
+			// }
+
+			// @media screen and (max-width: 768px){
+			// 	font-size: 20px;
+			// }
+}
+.menu {
+	display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 29%;
+    padding-right: 29%;
+}
+.menu__menu-left {
+			float: left;
+			width: 40%;
+			padding-left: 9.5%;
+
+			@media screen and (max-width: 1024px) {
+				float: none;
+    			width: 36%;
+    			padding: 0 33.5% 14px 33.5%;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			@media screen and (max-width: 768px) {
+				width: 44%;
+    			padding: 0 29.5% 12px 29.5%;
+			}
+		}
+
+.menu__menu-right {
+			float: right;
+			width: 38%;
+
+			@media screen and (max-width: 1024px) { 
+				float: none;
+    			width: 37%;
+    			padding: 0 33.5% 14px 33.5%;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			@media screen and (max-width: 768px) {
+				width: 46%;
+    			padding: 0 29.5% 12px 29.5%;
+			}
+		}
+
+.menu__menu-item {
+		position: relative;
+		display: inline-block;
+	    margin-right: 13.4%;
+		&:last-child{
+			margin-right: 0;
+		}
+		&:hover>.submenu {
+			display: block;
+		}
+}
+.menu__menu-link {
+		padding-bottom: 10px;
+		
+		&:link {
+			text-decoration: none;
+			color: #ffffff;	
+		}
+		&:visited {
+			color: #ffffff;
+		}
+		&:hover {
+			color: #263555;
+		}
+}
+
+
+.submenu {
+			display: none;
+			position: absolute;
+		    width: 65px;
+		    height: 77px;
+		    background: #ffffff;
+		    border: 1px solid #ffffff;
+		    border-radius: 5px;
+		    font-size: 20px;
+		    text-align: center;
+		    padding-top: 5px;
+		    top: 37px;
+		    z-index: 10;
+		
+				@media (min-width: 768px) and (max-width: 1024px) {
+					width: 57px;
+				    height: 69px;
+				    top: 38px;
+				    left: -7px;
+				    font-size: 17px;
+					background: #f2f2f3;
+				}
+				
+				@media screen and (max-width: 768px) {
+				    width: 44px;
+				    height: 56px;
+				    left: -5px;
+				    top: 29px;
+				    font-size: 14px;
+				    background: #f2f2f3;
+				}
+
+			&::before {
+				position: absolute;
+				left: 50%;
+				margin-top: -8px;
+				border: solid;
+				content: " ";
+				height: 0;
+				width: 0;
+				border-width: 0 2px 3px 2px;
+				border-color: transparent transparent #ffffff transparent;	
+			}
+			&__submenu-item {
+				margin-bottom: 3px;	
+				
+				&>.menu__menu-link {
+					text-decoration: none;
+					color: #6b7488;
+					
+					&:hover {
+						color: #a2bce4;
+					}
+				}
+			}
+}

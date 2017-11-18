@@ -1,0 +1,108 @@
+mixin menu-item(name, href)
+	li(class!=attributes.class) 
+		a.menu__menu-link(href=href)= name
+
+mixin gallery-item(href)
+	a.gallery__gallery-item(href="../assets/img_gallery_retina/"+href+"_retina-min.png")
+		img.gallery__gallery-image(src="../assets/img_gallery/"+href+"-min.png" srcset="../assets/img_gallery_retina/"+href+"_retina-min.png 2x" alt="gallery-item")
+		//- include ../assets/zoom-in.svg
+
+
+- var gallery = ["waterfall", "thailand", "palm", "rome", "island", "arctic", "kremlin", "paris", "mountain"];
+
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+		title Module 10
+
+		link(rel="stylesheet" href="./css/reset.css")
+		link(rel="stylesheet" href="./css/styles.css")
+
+		link(href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet")
+
+	body
+
+		header.header
+
+			div.header__logo.header__logo-small Journey
+			nav.header__menu.header__menu-small
+				
+				ul.menu__menu-left
+					
+					+menu-item("Home","#")(class="menu__menu-item")
+					
+					li.menu__menu-item
+						a.menu__menu-link(href="#") About
+						ul.submenu
+							+menu-item("Agency","#")(class="submenu__submenu-item")
+							+menu-item("News","#")(class="submenu__submenu-item")
+							+menu-item("Team","#")(class="submenu__submenu-item")
+					
+					+menu-item("Gallery","#")(class="menu__menu-item")
+				
+				ul.menu__menu-right
+					+menu-item("Tours","#")(class="menu__menu-item")
+					+menu-item("Blog","#")(class="menu__menu-item")
+					+menu-item("Contacts","#")(class="menu__menu-item")
+
+			nav.header__menu.header__menu-large 
+				ul.menu
+					+menu-item("Home","#")(class="menu__menu-item")
+					li.menu__menu-item
+						a.menu__menu-link(href="#") About
+						ul.submenu
+							+menu-item("Agency","#")(class="submenu__submenu-item")
+							+menu-item("News","#")(class="submenu__submenu-item")
+							+menu-item("Team","#")(class="submenu__submenu-item")
+					
+					+menu-item("Gallery","#")(class="menu__menu-item")
+					li.menu__menu-item
+						div.header__logo.header__logo-large Journey
+					+menu-item("Tours","#")(class="menu__menu-item")
+					+menu-item("Blog","#")(class="menu__menu-item")
+					+menu-item("Contacts","#")(class="menu__menu-item")
+
+		
+		main.main
+
+			h3.main__heading Our Gallery
+			section.gallery
+				for href in gallery
+					+gallery-item(href)
+
+		a.top-button
+
+		footer
+			
+			div.footer
+				ul.footer__footer-menu
+					+menu-item("FAQs page","#")(class="footer-menu__menu-item")
+					+menu-item("Useful links","#")(class="footer-menu__menu-item")
+					+menu-item("Insurance","#")(class="footer-menu__menu-item")
+					+menu-item("People say","#")(class="footer-menu__menu-item")
+					+menu-item("Partners","#")(class="footer-menu__menu-item")
+					+menu-item("Family travel","#")(class="footer-menu__menu-item")
+				div.footer__contacts
+					div.footer-menu__menu-item Contact us
+					a.contacts__item(href="tel:1-800-234-5678") TEL:
+					a.contacts__item(href="tel:1-800-234-5678") 1-800-234-5678
+					a.contacts__item(href="mailto:info@demolink.org") info@demolink.org
+			
+			div.socials
+				a.socials__link(href="https://twitter.com" target="blank")
+					include ../assets/twitter.svg
+				a.socials__link(href="https://facebook.com" target="blank")
+					include ../assets/facebook.svg
+				a.socials__link(href="https://google.com" target="blank")
+					include ../assets/google.svg
+				a.socials__link(href="https://linkedin.com" target="blank")
+					include ../assets/linkedin.svg
+
+			
+			div.copyright
+					small Journey © 2013 | Privacy Policy | Website designed by TemplateMonster.com

@@ -1,0 +1,144 @@
+
+.footer {
+	height: 133px;
+    width: $main-width;
+    background-color: #30455b;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 45px 12% 33px 12%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+		padding: 40px 6.5% 0 5.5%;
+    }
+
+    @media screen and (max-width: 768px) {
+    	display: block;
+    	width: 100%;
+		font-size: 14px;
+		padding: 25px 21.9% 0;
+    }
+
+    &__footer-menu {
+    	display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: row;
+	    justify-content: space-between;
+	    flex: 18;
+
+	    @media screen and (max-width: 768px) {
+		    margin-left: auto;
+			margin-right: auto;
+	    }
+    }
+
+    &__contacts {
+		padding-left: 18px;
+		flex: 5;
+
+		@media screen and (max-width: 768px) {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			padding-top: 5px;
+			padding-left: 0;
+		}
+		
+		&>.footer-menu__menu-item {
+			width: 100%;
+			padding-bottom: 11px;
+			padding-left: 0px;	
+		
+			@media screen and (max-width: 768px) {
+				width: 23%;
+			}
+		}
+	}  	
+}
+
+
+.footer-menu__menu-item {
+	font: 16px/10px 'Open Sans Condensed', Myriad Pro;
+	color: #ffffff;
+	text-transform: uppercase;
+	list-style: none;
+	padding-bottom: 2px;
+    width: 33%;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+    	line-height: 9px;
+    }
+
+    @media screen and (max-width: 768px) {
+    	width: 26%;
+		font-size: 14px;
+		padding-bottom: 14px;
+    }
+
+	&>.menu__menu-link {
+		color: #ffffff;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+}
+
+
+.contacts__item {
+	font: 12px/19px Arial;
+	text-decoration: none;
+	color: #ffffff;	
+
+	&:last-child {
+		display: block;
+		
+		@media screen and (max-width: 768px) {
+				font-size: 10px;
+			}
+	}
+
+	&:last-of-type {
+			@media screen and (max-width: 768px) {
+				margin-right: -12%;				
+			}	
+		}
+
+	&:first-of-type {
+			@media screen and (max-width: 768px) {
+				display: none;	
+			}
+		}
+
+	&:nth-of-type(2)::before {
+			@media screen and (max-width: 768px) {
+				content: "";
+				display: inline-block;
+				width: 10px;
+				height: 17px;
+				background-image: url($phone-icon);				
+			}
+		}
+
+	&:last-of-type::before {
+			@media screen and (max-width: 768px) {
+				content: "";
+				display: inline-block;
+				width: 18px;
+				height: 12px;
+				background-image: url($mail-icon);	
+			}
+		}
+}	
+
+
+
+
+
+
+
+
+
+
+
+

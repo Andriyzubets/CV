@@ -1,0 +1,77 @@
+.header {
+	position: relative;
+	box-sizing: border-box;
+	width: $main-width;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 43px;
+	height: 234px;
+
+		@media (min-width: 768px) and (max-width: 1024px) {
+			padding-top: 148px;
+			height: 235px;
+		}
+
+		@media screen and (max-width: 768px) {
+			padding-top: 123px;
+			width: 100%;
+			margin: 0;
+			height: 238px;
+		}
+
+	&__logo {
+		background-color: white;
+		text-transform: uppercase;
+		font-family: 'Dorsa', Myriad Pro;
+		color: #263555;
+		text-align: center;
+		border-radius: 50%;	
+		
+			// @media (min-width: 768px) and (max-width: 1024px) {
+
+			// }
+
+
+			&-large {
+				height: 138px;
+				width: 138px;
+				line-height: 138px;
+				font-size: 60px;
+
+				@media screen and (max-width: 1024px) {
+					display: none;
+				}	
+
+			}
+			&-small {
+				display: none;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate( -50%, -50%);
+				width: 102px;
+				height: 102px;
+				font-size: 44px;
+				line-height: 102px;
+				top: 78px;
+				
+				@media screen and (max-width: 1024px) {
+					display: block;
+				}
+
+				@media screen and (max-width: 768px) {
+					width: 78px;
+					height: 78px;
+					font-size: 33px;
+					line-height: 78px;
+					top: 60px;
+				}
+			}
+	}
+
+}
+
+
+
+
+

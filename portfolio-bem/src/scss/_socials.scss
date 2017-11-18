@@ -1,0 +1,53 @@
+.socials {
+    display: flex;
+    justify-content: space-between;
+    margin: 26px 41.3% 23px;
+
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        margin: 21px 38.3% 23px;
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 30px 36.5% 8px;
+    }
+	
+	&__link {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        position: relative;
+
+            @media screen and (max-width: 768px) {
+                width: 26px; 
+                height: 26px;
+            }
+            & svg {
+                width: 15px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                 @media screen and (max-width: 768px) {
+                    width: 10px;
+                 }    
+
+
+            }
+            &:hover svg path, &:hover svg polygon {
+                fill: black;
+            }
+
+        }
+
+    #linkedin {
+        width: 13px;
+
+        @media screen and (max-width: 768px) {
+            width: 8px;
+        }
+    }
+}

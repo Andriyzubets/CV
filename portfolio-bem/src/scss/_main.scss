@@ -1,0 +1,87 @@
+body {
+	background-image: url("../../assets/background-min.png");
+	// background-color: #b2b4b0;
+	background-color: #68aebc;
+	// background-repeat: no-repeat;
+	height: 100%;
+	color: #4e5050;
+	font: 13px/19px Arial;
+	}
+
+.main {
+	box-sizing: border-box;
+	width: $main-width;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 89px 5.2% 102px;
+	background-color: #ffffff;
+	display: block;
+		
+		@media (min-width: 768px) and (max-width: 1024px) {
+			padding: 79px 5.3% 45px;
+		}
+		@media screen and (max-width: 768px) {
+			width: 100%;
+			padding: 53px 7.8% 36px;
+		}
+		
+
+		&__heading {
+			font: 32px 'Pathway Gothic One', Myriad Pro;
+			text-transform: uppercase;
+			padding-bottom: 40px;
+					
+			@media (min-width: 768px) and (max-width: 1024px) {
+				font-size: 28px;
+				padding-bottom: 41px;
+			}
+			@media screen and (max-width: 768px) {
+				font-size: 28px;
+				padding-bottom: 33px;
+			}
+		}		
+}
+
+.top-button {
+	display: block;
+	position: fixed;
+    right: 6.5%;
+    bottom: 17%;
+	width: 24px;
+	height: 24px;
+	background-color: #38afe5;
+	border-radius: 50%;
+	color: #c5e8f7;
+	transform: rotate(270deg) scale(1.3,1.3);
+
+		@media (min-width: 768px) and (max-width: 1024px) {
+			transform: rotate(0deg) scale(1.1,1.1);
+	    	right: 6.3%;
+		}	
+
+		@media screen and (max-width: 768px) {
+			transform: rotate(270deg) scale(1,1);
+	    	right: 1.3%;
+		}	
+
+	&::before {
+		position: absolute;
+		left: 11%;
+		margin-top: 8px;
+		border: solid;
+		content: " ";
+		height: 7px;
+		width: 7px;
+		border-width: 1px;
+		border-color: transparent transparent #c5e8f7 #c5e8f7;
+		transform: rotate(225deg);
+
+			@media (min-width: 768px) and (max-width: 1024px) {	
+	    		left: 29%;
+    			margin-top: 9px;	
+    			transform: rotate(135deg);
+			} 
+	}
+
+}
