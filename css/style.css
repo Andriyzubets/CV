@@ -12,7 +12,7 @@ body {
 	transition-duration: .2s;
 }
 .wrapper {
-	max-width: 1024px;
+	max-width: 90vw;
 	width: 100%;
 	display: flex;
 	margin: 0 auto;
