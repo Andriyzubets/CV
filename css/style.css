@@ -143,12 +143,15 @@ progress::-moz-progress-bar {
     align-content: space-between;
 
 }
-.portfolio-item, .projects-item {
+.portfolio-item, .projects-item  {
     width: 28%;
     padding: 2%;
 	border: 1px solid #b3a5a5;
     box-shadow: 2px 2px 2px #ccc;
 	margin: 0 0 2% 0;
+}
+.projects-item {
+	width: 45%;
 }
 .portfolio-item:hover, .projects-item:hover {
 	box-shadow: 4px 4px 4px #7b7777;
