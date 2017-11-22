@@ -2,11 +2,22 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta content="Touch-enabled image gallery and content slider plugin, that focuses on providing great user experience on every desktop and mobile device." name="description">
+    <meta name="keywords" content="content slider, gallery, plugin, jquery, banner rotator">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Cabinets</title>
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/royalslider.css">
+	<link rel="stylesheet" href="css/rs-default.css">
+	<link rel="stylesheet" href="css/jquery-ui-1.8.22.custom.css">
 
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/highlight.pack.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery-ui-1.8.22.custom.min.js"></script>
+	<script src="js/jquery.royalslider.min.js"></script>
+
+	<script src="js/script.js"></script>
+	 <script> hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 	<header>
@@ -46,6 +57,7 @@
 			</a>
 		</div>
 	</header>
+
 	<section class="argument">
 		<div class="argument-title">
 			<h2>
@@ -61,8 +73,14 @@
 					Надежность
 				</span>
 				<div class="card">
-					<p class="card-big-text">24</p>
-					<p>ГОДА НА РЫНКЕ</p>
+					<div class="up-part">
+						<p class="card-big-text">
+							24
+						</p>
+					</div>
+					<p>
+						ГОДА НА РЫНКЕ
+					</p>
 				</div>
 			</div>
 			<div class="argument-item">
@@ -70,7 +88,10 @@
 					Высокие стандарты
 				</span>
 				<div class="card">
-					<img src="img/iso.png" alt="ISO 9001:2016">
+					<div class="up-part">
+						<img src="img/iso.png" alt="ISO 9001:2016">
+					</div>
+					
 					<p>
 						ISO 9001:2016
 					</p>
@@ -81,7 +102,9 @@
 					Экологичность
 				</span>
 				<div class="card">
-					<img src="img/eco.png" alt="Ecology">
+					<div class="up-part">
+						<img src="img/eco.png" alt="Ecology">
+					</div>
 					<p>
 						Экологически чистые материалы
 					</p>
@@ -92,7 +115,9 @@
 					Опыт
 				</span>
 				<div class="card">
-					<p class="card-big-text">300</p>
+					<div class="up-part last">
+						<p class="card-big-text">300</p>
+					</div>
 					<p>
 						тысяч м<sup>2</sup> офисных пространств обставлено за последние 10 лет
 					</p>
@@ -154,10 +179,36 @@
 			</div>
 		</div>
 	</div>
+	<section class="gallery">
+		<h2>Широкий ассортимент и самый большой в Украине шоу-рум офисной мебели</h2>
+		<p>выставка офисной мебели на площади <b>около 800 м2  (г.Киев, Соломенская 1)</b></p>
+		<div id="gallery-1" class="royalSlider rsDefault visibleNearby">
+		    <a class="rsImg" href="img/hint-image.png">image desc <img  class="rsTmb" src="img/hint-image.png" /></a>
+		    <a class="rsImg" href="img/hint-image.png">image desc <img  class="rsTmb" src="img/hint-image.png" /></a>
+		    <a class="rsImg" href="img/hint-image.png">image desc <img  class="rsTmb" src="img/hint-image.png" /></a>
+		    <a class="rsImg" href="img/hint-image.png">image desc <img  class="rsTmb" src="img/hint-image.png" /></a>
+		    <a class="rsImg" href="img/hint-image.png">image desc <img  class="rsTmb" src="img/hint-image.png" /></a>
+		    <a class="rsImg" href="img/hint-image.png">image desc <img  class="rsTmb" src="img/hint-image.png" /></a>
+		    <a class="rsImg" href="img/hint-image.png">image desc <img  class="rsTmb" src="img/hint-image.png" /></a>
+		</div>	
+	</section>
 	<div class="photos-gallery">
 		<p class="title-photos-text">Ассортимент более 18 серий офисной мебели,</p>
 		<p class="title-photos-text">порядка 25 видов мягкой мебели для офиса, лаунж - зоны, рецепции.</p>
-		<img class="photos" src="img/photos.png" alt="photos">
+		<div class="photos-gallery-content">
+			<a href="#" class="photos-gallery-item">Кабинет Neapolis</a>
+			<a href="#" class="photos-gallery-item">Кабинет Neapolis</a>
+			<a href="#" class="photos-gallery-item">Кабинет Neapolis</a>
+			<a href="#" class="photos-gallery-item">Кабинет Neapolis</a>
+			<a href="#" class="photos-gallery-item">Кабинет Neapolis</a>
+			<a href="#" class="photos-gallery-item">Кабинет Neapolis</a>
+			<a href="#" class="photos-gallery-item">Кабинет Neapolis</a>
+			<a href="#" class="photos-gallery-item">Кабинет Neapolis</a>
+			<a href="#" class="photos-gallery-item">Кабинет Neapolis</a>
+			<a href="#" class="photos-gallery-item">Кабинет Neapolis</a>
+			<a href="#" class="photos-gallery-item">Кабинет Neapolis</a>
+			<a href="#" class="photos-gallery-item">Кабинет Neapolis</a>
+		</div>
 		<button class="photos-button">Посмотерть все серии</button>
 	</div>
 	<section class="discont">
@@ -213,5 +264,6 @@
 			</div>
 		</div>
 	</footer>
+
 </body>
 </html>
