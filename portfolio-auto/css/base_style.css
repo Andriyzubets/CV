@@ -259,11 +259,20 @@
 }
 
 /* END HEADER */
+.row {
+ margin: 0;
+}
 
 /* services */
-
+.thumbnail {
+  max-height: 460px;
+  height: 100%;
+  padding: 5% 0 0 0;
+}
 .thumbnail img {
-    max-height: 200px ;
+    max-height: 170px;
+    height: 100%;
+    width: 90%;
 }
 
 /* end services */
@@ -272,20 +281,22 @@
 #cervices-section {
     min-height: 150px;
     padding-top: 30px;
+
 }
-#corusel-section {
-	height: 85px;
+#menu-carousel {
+	height: 105px;
+  padding: 2.5% 0 0 0;
 }
 #menu-carousel {
   overflow: hidden;
   width: 100%;
 }
-#menu-carousel>div:first-child {
+/*#menu-carousel>div:first-child {
   display: none;
 }
 #menu-carousel>div:last-child div {
   width: 100%;
-}
+}*/
 /* end corusel */
 
 /*footer*/
@@ -307,6 +318,9 @@
 }
 #footer .footer-top {
 	background: url(../img/un-map.png) 0 0 no-repeat;
+}
+h5 {
+  width: 65%;
 }
 .h5-divider {
 	background: #d82f26;
@@ -388,7 +402,7 @@
 .contacts-feedback {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
 }
 .contacts-feedback input {
     margin: 1% 0;
@@ -452,7 +466,23 @@ input:focus::-webkit-input-placeholder {
 }
 
 /* end contacts.html*/
-
+/* start about html*/
+#about {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2% 0;
+  text-align: justify;
+}
+.old-img {
+  float: left;
+  margin: 0 2% 2% 0;
+}
+.new-img {
+  float: right;
+  margin: 2% 0 2% 2%;
+}
+/* end about.html*/
 /* feedback */
 /*MODAL WINDOW*/
 #myDIV {
@@ -521,7 +551,7 @@ input[type=submit]{
 .pulse-button {
   position: fixed;
   top: 79%;
-  right: .5%;
+  right: 2.5%;
   width: 4.5em;
   height: 4.5em;
   font-size: 1.5em;
