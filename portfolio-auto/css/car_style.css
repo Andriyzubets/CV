@@ -25,15 +25,17 @@ button:focus {
     position: relative;
     margin: 0 auto;
     /* overflow: hidden; */
-    height: 18rem;
+    /*height: 18rem;*/
+    width: 100%;
 }
 .car {
 
     position: relative;
     height: 14rem;
-    left: 8rem;
+    left: 11%;
     top: 4rem;
     border-radius: 10em;
+    width: 90%;
 }
 
 .car_img {
@@ -165,7 +167,7 @@ button:focus {
 .clean {
     position: absolute;
     top: 0;
-    left: 1rem;
+
     width: 17rem;
     height: 17rem;
 }
@@ -222,8 +224,9 @@ button:focus {
 } */
 
 #car-section {
-    height: 400px;
-    margin-top:50px;
+        margin: 50px auto 0;
+    max-width: 1280px;
+    width: 100%;
 }
 
 @media screen and (orientation:portrait) and (max-width:992px), screen and (orientation:landscape) and (max-width:768px) {

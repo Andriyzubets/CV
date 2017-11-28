@@ -14,7 +14,6 @@
   }
   body {
     font: 0.7em/1.6 "Open Sans", sans-serif;
-
   }
 
 .no-gutter {
@@ -279,8 +278,8 @@
 }
 
 /* services */
-.thumbnail {
-  max-height: 460px;
+/*.thumbnail {*/
+/*  max-height: 460px;
   height: 100%;
   padding: 5% 0 0 0;
 }
@@ -288,16 +287,118 @@
     max-height: 170px;
     height: 100%;
     width: 90%;
+}*/
+#cervices-section {
+    margin: 10% 0 0 0;
+
 }
+.wrapper-posts {
+   max-width: 1280px;
+   width: 95%;
+    margin: 0 auto;
+}
+/*Оформление блока акции*/
+.img-box {
+    margin-bottom: 1%;
+    height: 250px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    filter: grayscale(100%);
+}
+
+.img-box:hover {
+    box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.1);
+    filter: grayscale(0%);
+}
+.post-1 {
+  background: url(../img/changing-oil.png) no-repeat;
+    background-size: cover; 
+}
+.post-2 {
+  background: url(../img/dry-cleaning.png) no-repeat;
+    background-size: cover;
+}
+.post-3 {
+  background: url(../img/electrician.png) no-repeat;
+    background-size: cover;
+}
+.post-4 {
+  background: url(../img/salon.png) no-repeat;
+    background-size: cover;
+}
+.post-5 {
+  background: url(../img/under.png) no-repeat;
+    background-size: cover;
+}
+.post-6 {
+  background: url(../img/wheels.png) no-repeat;
+    background-size: cover;
+}
+/*Оформление кнопок*/
+.services-button-box {
+ display: flex;
+ justify-content: space-around;
+ position: relative;
+
+     height: 18%;
+    margin: 0 -13px 1%;
+}
+.ghost-button {
+    color: #ffffff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  color: red;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+  transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+}
+.text-h3-services {
+    color: bisque;
+  text-shadow: 3px 3px 7px #000;
+}
+.btn-services {
+    font-size: large;
+    width: 49%;
+}
+.btn-success {
+    background-color: #5a99d4;
+    border-bottom-left-radius: 8px;
+  }
+.btn-primary {
+    background-color: #9e8079;
+    border-bottom-right-radius: 8px;
+  }
+@media (max-width: 768px) {
+    .text-h3-services {
+        font-size: 40px;
+    }
+    .btn-services {
+        /*width: 40%;*/
+        font-size: large;
+    }
+    #cervices-section {
+    margin: 2% 0 0 0;
+
+}
+}
+
 
 /* end services */
 
 /* corusel */
-#cervices-section {
-    min-height: 150px;
-    padding-top: 30px;
 
-}
 #menu-carousel {
 	height: 105px;
   padding: 2.5% 0 0 0;
