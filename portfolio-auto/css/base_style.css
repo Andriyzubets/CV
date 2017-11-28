@@ -1,3 +1,8 @@
+* {
+  -webkit-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
 @font-face {
     font-family: b52;
     src: url('../fonts/b52.eot') format('eot'),
@@ -9,6 +14,7 @@
   }
   body {
     font: 0.7em/1.6 "Open Sans", sans-serif;
+
   }
 
 .no-gutter {
@@ -21,7 +27,16 @@
 .site-info-block a{
     color:#fff;
 }
-
+/*Changed navbar bs*/
+.navbar-toggle {
+  margin-top: 15%;
+}
+.navbar-right {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    text-align: center;
+}
+/*navbar*/
 .header .top-bar {
 	background-color: #7a6652;
 }
@@ -34,7 +49,7 @@
 .nav-top > li > a {
 	color: #494C58;
 	font-weight: 600;
-    line-height: 63px;
+    line-height: 1.5em;
     font-size: 1.5em;
     font-family: 'b52', 'Arial', sans-serif;
 }
@@ -61,7 +76,7 @@
 
 .navbar-right {
 	margin-right: 20px;
-	margin-top: 55px;
+	margin-top: 3% !important;
 }
 
 .header .header-logo {
@@ -435,6 +450,44 @@ input:focus::-webkit-input-placeholder {
     text-align: center;
 }
 
+/*Promo page*/
+.promo {
+    max-width: 1145px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+.promo-item {
+  height: 15em;
+  margin: 2% 0;
+}
+.promo-item:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 2px #778899;
+}
+.promo h2 {
+      text-align: center;
+    margin: 0 0 3% 0;
+}
+.img-promo {
+  
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 20em;
+  height: 15em;
+      float: left;
+    margin: 0 5% 2% 0;
+}
+.img-promo-1 {
+  background-image: url(../img/slider2.jpg);
+}
+.img-promo-2 {
+  background-image: url(../img/slider1.jpg);
+}
+.img-promo-3 {
+  background-image: url(../img/slider3.jpg);
+}
+
 @media (max-width: 768px) {
     .google-map-route {
         width: 90%;
@@ -463,6 +516,44 @@ input:focus::-webkit-input-placeholder {
         margin: 0 auto;
         text-align: center;
     }
+    #footer .footer-top {
+    background: url(../img/un-map.png) 0 0 no-repeat;
+    -ms-background-position-x: 50%;
+    background-position-x: 50%;
+    }
+    h5 {
+      width: 100%;
+      text-align: center;
+      left: 0!important;
+    }
+    .h5-divider {
+    left: 46%;
+    width: 50px;
+    height: 3px;
+}
+.footer-about-menu, .footer-servicese-list-menu, .footer-wrk-hours, .contact-info-menu {
+      text-align: center;
+    padding: 0;
+}
+#footer .footer-top .social-media {
+    margin-left: 46%;
+}
+.header .header-logo {
+    max-width: 300px;
+    text-align: center;
+    margin: 10px 0 10px 5%;
+  }
+  .promo-item {
+    height: auto;
+    padding: 2%;
+  }
+  .img-promo {
+    float: none;
+    margin: 4% auto;
+  }
+  .promo .btn {
+    margin-left: 38%;
+  }
 }
 
 /* end contacts.html*/
