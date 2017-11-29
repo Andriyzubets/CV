@@ -84,34 +84,34 @@ $(document).ready(function($) {
       return false;
   });
 
-  win.resize( function() {
-     updateLightboxSize();
-  });
+  // win.resize( function() {
+  //    updateLightboxSize();
+  // });
 
   // dynamic lightbox resizing
-  function updateLightboxSize() {
-      // define sze of lightbox
-      w = win.width();
-      if(w > 1200) {
-        w = '700px';
-      } else if(w < 800) {
-        w = '90%';
-      } else {
-        w = '60%';
-      }
-       $.colorbox.resize({
-           width: w
-       });
-      if(currRs) {
-        currRs.updateSliderSize();
-      }
-      // fix scrolbar space
-      setTimeout(function() {
-        $.colorbox.resize({
-           width: w
-        });
-      },1);
+  // function updateLightboxSize() {
+  //     // define sze of lightbox
+  //     // w = win.width();
+  //     // if(w > 1200) {
+  //     //   w = '700px';
+  //     // } else if(w < 800) {
+  //     //   w = '90%';
+  //     // } else {
+  //     //   w = '60%';
+  //     // }
+  //      // $.colorbox.resize({
+  //      //     width: w
+  //      // });
+  //     // if(currRs) {
+  //     //   currRs.updateSliderSize();
+  //     // }
+  //     // fix scrolbar space
+  //     // setTimeout(function() {
+  //     //   $.colorbox.resize({
+  //     //      width: w
+  //     //   });
+  //     // },1);
 
-  }
+  // }
 });
 
