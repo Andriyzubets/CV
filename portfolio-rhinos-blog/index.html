@@ -3,9 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Rhinos blog</title>
+	<title>RHINOS BLOG</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800" rel="stylesheet">
 	<link rel="shortcut icon" href="img/brand.ico" title="Favicon">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+	<!-- <script src="http://swip.codylindley.com/jquery.popupWindow.js"></script> -->
+	<script src="js/script.js"></script>
+
 </head>
 <body>
 	<section class="header">
@@ -14,19 +20,19 @@
 				<div class="logo">
 					<a href="#">
 						<img src="img/brand.png" alt="RHINOS" class="logo-img">
+						<img src="img/brand_hover.png" alt="RHINOS" class="logo-hover">
 						RHINOS
 					</a>
 				</div>
 				<div class="menu">
 					<ul class="main-menu">
-						<li><a href="#">some1</a></li>
-						<li><a href="#">some2</a></li>
-						<li><a href="#">some3</a></li>
-						<li><a href="#">some4</a></li>
-						<li><a href="#">english</a></li>
+						<li><a href="#">О МАРКЕТИНГЕ</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">НАШИ РАБОТЫ</a></li>
+						<li><a href="tel:+380684911401">+38 068 491 14 01</a></li>
 					</ul>
 					<div class="navbar">
-						<a href="#">english</a>
+						<a href="tel:+380684911401">+38 068 491 14 01</a>
 						<button>
 							<div class="sandwich">
 								<div></div>
@@ -34,10 +40,10 @@
 								<div></div>
 							</div>
 							<ul class="menu-hidden">
-								<li><a href="#">some1</a></li>
-								<li><a href="#">some2</a></li>
-								<li><a href="#">some3</a></li>
-								<li><a href="#">some4</a></li>
+								<li><a href="#">О МАРКЕТИНГЕ</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">НАШИ РАБОТЫ</a></li>
+
 							</ul>
 						</button>
 						
@@ -46,10 +52,10 @@
 			</div>
 			<div class="blog-header">
 				<h1>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					Тут будет заголовок статьи
 				</h1>
 				<div class="social">
-					<a href="https://www.facebook.com/kievriarhinos" target="_blank">
+					<a id="share-fb" href="http://www.facebook.com/sharer.php?u=https://andriyzubets.github.io/rhinos-blog/">
 						<img src="img/facebook-logo-white.png" alt="Follow us on Facebook">
 					</a>
 					<a href="https://www.instagram.com/aleksandr.bold/?hl=ru" target="_blank">
@@ -72,15 +78,15 @@
 					Евгения Крюкова
 				</a>
 			</p>
-			<p id="clock-count">
+			<p>
 				<img src="img/clock_time.png" alt="Time with us">
-				Время чтения:
+				Время прочтения: <span class="time_read"></span>
 			</p>
 			<a href="#" class="blog-tech__widget">
 				Нет времени читать?
 			</a>
 		</div>
-		<div class="blog-content">
+		<div class="blog-content text_read">
 			<p>
 				Землевладельца, которые он сам сказал, стояло на свободу пред анной, и многие. Губернатор, свитский генерал торжественно открывавший выборы, говоривший речь. Нашего хозяина поверку сумм губернского предводителя, и весело провел время обеда. Финансовыми делами и чтоб он испытывал приятное чувство торжества. Восторга, не ошибался, думая, что успеху. Что, кроме этого шального господина, женатого.
 			</p>
@@ -108,13 +114,13 @@
 			<p>
 				Ее вслух, заметив: надо их порадовать это. Новых деятелей и сам сказал. Другой шутливый дворянин рассказал, как дарье 
 				<a href="#">
-					александровне телеграмму.
+					александровне телеграмму
 				</a>
-				Знала, что самые выборы так заняло его, так хорошо. Тем же удовольствием, с бокалом обращаясь. Маслов катька, – простые, ровные. Под уздцы, чтобы строго исполнить все находились новых.
+				. Знала, что самые выборы так заняло его, так хорошо. Тем же удовольствием, с бокалом обращаясь. Маслов катька, – простые, ровные. Под уздцы, чтобы строго исполнить все находились новых.
 			</p>
 			<p>
 				Новых обедали в двадцать человек. Хозяин губернии, торжественно открывавший выборы, говоривший речь предводителя. Нейдущих глупостей, каждый дворянин, с. Катька, – такое было очень. 
-				<a href="#" class="a-variant">
+				<a href="#">
 					Le télégraphe кити щербацкой
 				</a>
 				, который был маслов катька. Имени мужа суждение о рубле за губернатора, и. De bottes с тем же удовольствием, с которым он счастлив.
@@ -133,7 +139,7 @@
 				<span>
 					Расскажите о нас:
 				</span>
-				<a href="https://www.facebook.com/kievriarhinos" target="_blank">
+				<a  id="share-fb" href="http://www.facebook.com/sharer.php?u=https://andriyzubets.github.io/rhinos-blog/">
 					<img src="img/facebook-logo_black.png" alt="Follow us on Facebook">
 				</a>
 				<a href="https://www.instagram.com/aleksandr.bold/?hl=ru" target="_blank">
@@ -146,7 +152,7 @@
 		</div>
 	</section>
 	<section class="popular-blogs">
-		<h2>Не пропустите!</h2>
+		<h2>Здесь еще больше полезного!</h2>
 		<div class="popular-item">
 			<a href="#">
 				<div class="first-line">
@@ -182,7 +188,7 @@
 		<div class="popular-item">
 			<a href="#">
 				<div class="third-line">
-				
+
 				</div>
 				<h3>
 					Как правильный брендинт помогает избавиться от конкурентов
@@ -224,5 +230,18 @@
 			</li>
 		</ul>
 	</section>
+	<script type="text/javascript">
+		$('#share-fb').popupWindow({ 
+			width:550, 
+			height:400,
+			centerBrowser:1
+		});
+	</script>
+	<script>
+		$(".text_read").readtime({
+			images: 1,
+			wpm: 240
+		});
+	</script>
 </body>
 </html>
