@@ -1,0 +1,373 @@
+* {
+	margin: 0;
+	padding: 0;
+	transition: all .2s;
+}
+.header {
+	background-image: linear-gradient(to bottom, black -40%, transparent 160%), url(../img/header.png);
+	background-size: cover;
+	background-position: 50%;
+	height: 400px;
+	width: 100%;
+
+}
+
+header {
+	max-width: 1145px;
+	width: 96%;
+	margin: 0 auto;
+	padding: 2%;
+	display: flex;
+	justify-content: space-between;
+	height: 80%;
+	flex-direction: column;
+}
+.up-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo-link {
+	width: 28%;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+	text-decoration: none;
+	color: #ffffff;
+}
+.logo-link:hover .hidden {
+	display: block;
+}
+.logo-link:hover .logo-main {
+	display: none;
+}
+.hidden {
+	display: none;
+}
+.logo-link p {
+	font-size: 10px;
+}
+.logo-link img {
+	width: 100px;
+
+}
+
+.logo-link span {
+	font-size: 55px;
+}
+.logo-link:hover span, .logo-link:hover p {
+	color: #d2b356;
+	text-shadow: 0 0 10px #000000;
+}
+.header-contacts {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header-contacts a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 25px;
+}
+.header-contacts a:hover {
+	color: #d2b356;
+	text-shadow: 0 0 10px #000000;
+
+}
+.download-link {
+    border: 1px solid #ffffff;
+    width: 180px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 1%;
+    text-decoration: none;
+    color: #ffffff;
+}
+.download-link:hover {
+	border: 1px solid #d2b356;
+	color: #d2b356;
+	text-shadow: 0 0 10px #000000;
+	box-shadow: 0 0 10px #000000;
+
+}
+.download-link img {
+	width: 30px;
+}
+h1 {
+	text-align: center;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.menu {
+	padding: 1% 0;
+	background: linear-gradient(to bottom, white -40%, transparent 160%);
+	width: 100%;
+	height: 50px;
+	margin: 1% 0;
+}
+.menu nav {
+	max-width: 1145px;
+	width: 96%;
+	margin: 0 auto;
+	padding: 0 2%;
+	height: 100%;
+}
+.main-menu {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	height: 100%;
+	align-items: center;
+}
+.main-menu a {
+	text-decoration: none;
+	color: #111111;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.main-menu a:hover, .contactsinner a:hover {
+	color: #d2b356;
+	text-shadow: 0 0 10px #ffffff;
+	text-decoration: underline;
+}
+.catalogue {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1145px;
+	width: 96%;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+.catalogue-item {
+	width: 29%;
+	margin: 2% 0;
+	padding: 2%;
+}
+.catalogue-item:hover {
+	transform: scale(1.01);
+}
+.catalogue-item img {
+    height: auto;
+    max-height: 190px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.catalogue-item:hover {
+	box-shadow: 0 0 10px #000000;
+}
+.catalogue-item p {
+	text-align: justify;
+}
+.catalogue-item a {
+	text-decoration: none;
+	color: #111111;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+h2 {
+	text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 1% 0;
+    line-height: 3em;
+    color: #000000;
+    text-shadow: 0 0 4px #8c8c8c;
+    background-color: #DDD7D7;
+    background-size: 50px 50px;
+    background-image: linear-gradient(-45deg, transparent 52%, rgba(255,255,255,0.9) 54%, transparent 55%, transparent), linear-gradient(45deg, transparent 52%, rgba(255,255,255,0.6) 54%, transparent 55%, transparent), linear-gradient(-45deg, transparent 50%, rgba(0,0,0,0.1) 52%, transparent 53%, transparent), linear-gradient(45deg, transparent 50%, rgba(0,0,0,0.05) 52%, transparent 53%, transparent);
+}
+h3 {
+	text-align: center;
+    text-transform: uppercase;
+}
+
+.service {
+    width: 96%;
+    padding: 0 1%;
+}
+.service-wrapper, .service-description {
+	max-width: 1145px;
+	width: 96%;
+	margin: 0 auto;
+	color: #111111;
+	text-align: justify;
+	font-size: 18px;
+	padding: 0 1%;
+}
+.service p {
+	color: #111111;
+	text-shadow: 0 0 10px #ffffff;
+}
+.service h2 {
+	color: #ffffff;
+	margin: 0 0 10%;
+}
+.service p {
+	margin: 0 0 1%;
+}
+.service a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #111111;
+}
+.finance, .about, .contacts, .navantazhuvach {
+	max-width: 1145px;
+	width: 96%;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+.finance p, .about p {
+	margin: 1% 0;
+    text-align: justify;
+}
+.finance ul, .about ul {
+	    margin: 0 0 0 1.5%;
+}
+.finance a, .about a {
+	text-decoration: none;
+	color: #111111;
+	font-weight: bold;
+}
+.about img {
+	width: 100%;
+}
+.contacts table {
+    margin: 0 auto;
+}
+.contacts img {
+	width: 60%;
+    margin: 5%;
+}
+.contacts a {
+	text-decoration: none;
+    color: #111111;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer {
+	text-align: center;
+}
+.navantazhuvach {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  	height: 800px;
+}
+.cat-item {
+    width: 30%;
+    background-size: cover;
+    background-position: 50%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 8px;
+    margin: 0 auto;
+}
+.cat-item:hover {
+    box-shadow: 0 0 20px;
+}
+.tele-1 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/531-70-2007-1600/1.jpg);
+}
+.tele-2 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/531-70-2009-3400/1.jpg);
+}
+.tele-3 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/531-70-agri-2010/1.jpg);
+}
+.tele-4 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/531-70-2011-2100/1.jpg);
+}
+.tele-5 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/541-70-2008/1.jpg);
+}
+.tele-6 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/533-105-2004/1.jpg);
+}
+.tele-7 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/532-120-2004/1.jpg);
+}
+.vyl-1 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/toyota-02-8FGF15/1.jpg);
+}
+.vyl-2 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/cat-gp25k/1.jpg);
+}
+.vyl-3 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/case-sr150/1.jpg);
+}
+.mini-1 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/8016-2012-1400/1.jpg);
+}
+.mini-2 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/8030-2012/1.jpg);
+}
+.clean-1 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/swingo-200-2011/1.jpg);
+}
+.tyaga-1 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/tyagach-ef13s/1.jpg);
+}
+.katky-1 {
+	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/tv1200/1.jpg);
+}
+.cat-item h3 {
+	margin: 5% 0px;
+    color: #ffffff;
+    font-size: 15px;
+    text-shadow: 0 0 10px #111111;
+}
+.cat-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+.cat-item a {
+	display: none;
+	text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 45%;
+    height: 2em;
+    border: 1px solid #ffffff;
+    margin: 0 2% 2% 2%;
+    line-height: 2em;
+    border-radius: 4px;
+}
+a.photo, a.description {
+	display: block;
+}
+.cat-item a:hover {
+	background: #111;
+	color: #d2b356;
+	border: 1px solid #d2b356;
+}
+.hide {
+	display: none;
+}
+.footer {
+	text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 1% 0;
+    line-height: 1.5em;
+    color: #000000;
+    text-shadow: 0 0 4px #8c8c8c;
+    background-color: #DDD7D7;
+    background-size: 50px 50px;
+    background-image: linear-gradient(-45deg, transparent 52%, rgba(255,255,255,0.9) 54%, transparent 55%, transparent), linear-gradient(45deg, transparent 52%, rgba(255,255,255,0.6) 54%, transparent 55%, transparent), linear-gradient(-45deg, transparent 50%, rgba(0,0,0,0.1) 52%, transparent 53%, transparent), linear-gradient(45deg, transparent 50%, rgba(0,0,0,0.05) 52%, transparent 53%, transparent);
+}
+.contactsinner {
+	display: flex;
+	justify-content: space-between;
+}
+
