@@ -255,14 +255,11 @@ h3 {
 	font-weight: bold;
 	font-size: 20px;
 }
-.footer {
-	text-align: center;
-}
 .navantazhuvach {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	height: 800px;
+
 }
 .cat-item {
 	width: 30%;
@@ -273,7 +270,7 @@ h3 {
 	flex-direction: column;
 	justify-content: space-between;
 	box-shadow: 0 0 8px;
-	margin: 0 auto;
+	margin: 0 auto 5%;
 }
 .cat-item:hover {
 	box-shadow: 0 0 20px;
@@ -361,7 +358,7 @@ a.photo, a.description {
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
-	margin: 1% 0;
+	margin: 1% 0 0;
 	line-height: 1.5em;
 	color: #000000;
 	text-shadow: 0 0 4px #8c8c8c;
@@ -445,9 +442,13 @@ a.photo, a.description {
 	h2 {
 		font-size: 30px;
 	}
-	.catalogue-item {
+	.catalogue-item, .cat-item {
 		width: 45%;
 	}
+	.cat-item {
+		margin: 0 0 5%;
+	}
+	
 	.service p, .finance p, .finance ul, .about ul, .about p, .contactsinner a {
 		margin: 0 0 2%;
 		font-size: 22px;
@@ -489,6 +490,10 @@ a.photo, a.description {
 	}
 	.contactsinner table {
 		margin:0;
+	}
+	.cat-item {
+		width: 80%;
+		margin: 0 auto 5%;
 	}
 }
 @media screen and (max-width: 480px) {
