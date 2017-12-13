@@ -28,10 +28,10 @@ header {
 	align-items: center;
 }
 .logo-link {
-	width: 28%;
+	width: 30%;
 	display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+	flex-wrap: wrap;
+	align-items: center;
 	text-decoration: none;
 	color: #ffffff;
 }
@@ -60,10 +60,10 @@ header {
 	text-shadow: 0 0 10px #000000;
 }
 .header-contacts {
-    width: 40%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	width: 40%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .header-contacts a {
 	text-decoration: none;
@@ -76,16 +76,16 @@ header {
 
 }
 .download-link {
-    border: 1px solid #ffffff;
-    width: 180px;
-    height: 30px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0 0 1%;
-    text-decoration: none;
-    color: #ffffff;
+	border: 1px solid #ffffff;
+	width: 180px;
+	height: 30px;
+	border-radius: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0 0 1%;
+	text-decoration: none;
+	color: #ffffff;
 }
 .download-link:hover {
 	border: 1px solid #d2b356;
@@ -99,15 +99,15 @@ header {
 }
 h1 {
 	text-align: center;
-    font-size: 30px;
-    color: #fff;
-    text-transform: uppercase;
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
 }
 .menu {
 	padding: 1% 0;
 	background: linear-gradient(to bottom, white -40%, transparent 160%);
 	width: 100%;
-	height: 50px;
+	min-height: 50px;
 	margin: 1% 0;
 }
 .menu nav {
@@ -136,6 +136,9 @@ h1 {
 	text-shadow: 0 0 10px #ffffff;
 	text-decoration: underline;
 }
+.smart {
+	display: none;
+}
 .catalogue {
 	display: flex;
 	justify-content: space-between;
@@ -154,10 +157,10 @@ h1 {
 	transform: scale(1.01);
 }
 .catalogue-item img {
-    height: auto;
-    max-height: 190px;
-    margin: 0 auto;
-    max-width: 100%;
+	height: auto;
+	max-height: 190px;
+	margin: 0 auto;
+	max-width: 100%;
 }
 .catalogue-item:hover {
 	box-shadow: 0 0 10px #000000;
@@ -174,24 +177,24 @@ h1 {
 }
 h2 {
 	text-align: center;
-    text-transform: uppercase;
-    width: 100%;
-    margin: 1% 0;
-    line-height: 3em;
-    color: #000000;
-    text-shadow: 0 0 4px #8c8c8c;
-    background-color: #DDD7D7;
-    background-size: 50px 50px;
-    background-image: linear-gradient(-45deg, transparent 52%, rgba(255,255,255,0.9) 54%, transparent 55%, transparent), linear-gradient(45deg, transparent 52%, rgba(255,255,255,0.6) 54%, transparent 55%, transparent), linear-gradient(-45deg, transparent 50%, rgba(0,0,0,0.1) 52%, transparent 53%, transparent), linear-gradient(45deg, transparent 50%, rgba(0,0,0,0.05) 52%, transparent 53%, transparent);
+	text-transform: uppercase;
+	width: 100%;
+	margin: 1% 0;
+	line-height: 3em;
+	color: #000000;
+	text-shadow: 0 0 4px #8c8c8c;
+	background-color: #DDD7D7;
+	background-size: 50px 50px;
+	background-image: linear-gradient(-45deg, transparent 52%, rgba(255,255,255,0.9) 54%, transparent 55%, transparent), linear-gradient(45deg, transparent 52%, rgba(255,255,255,0.6) 54%, transparent 55%, transparent), linear-gradient(-45deg, transparent 50%, rgba(0,0,0,0.1) 52%, transparent 53%, transparent), linear-gradient(45deg, transparent 50%, rgba(0,0,0,0.05) 52%, transparent 53%, transparent);
 }
 h3 {
 	text-align: center;
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .service {
-    width: 96%;
-    padding: 0 1%;
+	width: 96%;
+	padding: 0 1%;
 }
 .service-wrapper, .service-description {
 	max-width: 1145px;
@@ -226,10 +229,10 @@ h3 {
 }
 .finance p, .about p {
 	margin: 1% 0;
-    text-align: justify;
+	text-align: justify;
 }
 .finance ul, .about ul {
-	    margin: 0 0 0 1.5%;
+	margin: 0 0 0 1.5%;
 }
 .finance a, .about a {
 	text-decoration: none;
@@ -240,40 +243,40 @@ h3 {
 	width: 100%;
 }
 .contacts table {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 .contacts img {
 	width: 60%;
-    margin: 5%;
+	margin: 5%;
 }
 .contacts a {
 	text-decoration: none;
-    color: #111111;
-    font-weight: bold;
-    font-size: 20px;
+	color: #111111;
+	font-weight: bold;
+	font-size: 20px;
 }
 .footer {
 	text-align: center;
 }
 .navantazhuvach {
 	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  	height: 800px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 800px;
 }
 .cat-item {
-    width: 30%;
-    background-size: cover;
-    background-position: 50%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: 0 0 8px;
-    margin: 0 auto;
+	width: 30%;
+	background-size: cover;
+	background-position: 50%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 0 8px;
+	margin: 0 auto;
 }
 .cat-item:hover {
-    box-shadow: 0 0 20px;
+	box-shadow: 0 0 20px;
 }
 .tele-1 {
 	background-image: linear-gradient(to bottom, black -100%, transparent 130%), url(../img/531-70-2007-1600/1.jpg);
@@ -322,9 +325,9 @@ h3 {
 }
 .cat-item h3 {
 	margin: 5% 0px;
-    color: #ffffff;
-    font-size: 15px;
-    text-shadow: 0 0 10px #111111;
+	color: #ffffff;
+	font-size: 15px;
+	text-shadow: 0 0 10px #111111;
 }
 .cat-bottom {
 	display: flex;
@@ -333,15 +336,15 @@ h3 {
 .cat-item a {
 	display: none;
 	text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
-    width: 45%;
-    height: 2em;
-    border: 1px solid #ffffff;
-    margin: 0 2% 2% 2%;
-    line-height: 2em;
-    border-radius: 4px;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	width: 45%;
+	height: 2em;
+	border: 1px solid #ffffff;
+	margin: 0 2% 2% 2%;
+	line-height: 2em;
+	border-radius: 4px;
 }
 a.photo, a.description {
 	display: block;
@@ -356,18 +359,144 @@ a.photo, a.description {
 }
 .footer {
 	text-align: center;
-    text-transform: uppercase;
-    width: 100%;
-    margin: 1% 0;
-    line-height: 1.5em;
-    color: #000000;
-    text-shadow: 0 0 4px #8c8c8c;
-    background-color: #DDD7D7;
-    background-size: 50px 50px;
-    background-image: linear-gradient(-45deg, transparent 52%, rgba(255,255,255,0.9) 54%, transparent 55%, transparent), linear-gradient(45deg, transparent 52%, rgba(255,255,255,0.6) 54%, transparent 55%, transparent), linear-gradient(-45deg, transparent 50%, rgba(0,0,0,0.1) 52%, transparent 53%, transparent), linear-gradient(45deg, transparent 50%, rgba(0,0,0,0.05) 52%, transparent 53%, transparent);
+	text-transform: uppercase;
+	width: 100%;
+	margin: 1% 0;
+	line-height: 1.5em;
+	color: #000000;
+	text-shadow: 0 0 4px #8c8c8c;
+	background-color: #DDD7D7;
+	background-size: 50px 50px;
+	background-image: linear-gradient(-45deg, transparent 52%, rgba(255,255,255,0.9) 54%, transparent 55%, transparent), linear-gradient(45deg, transparent 52%, rgba(255,255,255,0.6) 54%, transparent 55%, transparent), linear-gradient(-45deg, transparent 50%, rgba(0,0,0,0.1) 52%, transparent 53%, transparent), linear-gradient(45deg, transparent 50%, rgba(0,0,0,0.05) 52%, transparent 53%, transparent);
 }
 .contactsinner {
 	display: flex;
 	justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
 
+}
+@media screen and (max-width: 922px) {
+	.up-header {
+		flex-direction: column;
+		height: 70%;
+	}
+	.logo-link, .header-contacts{
+		width: 100%;
+		margin: 0 auto 3%;
+		justify-content: center;
+		flex-wrap: wrap;
+	} 
+	.header-contacts {
+		flex-direction: column;
+		text-align: center;
+		word-wrap: break-word;
+	}
+	.logo-link p  {
+		width: 100%;
+		text-align: center;
+
+	}
+	.download-link {
+		margin: 0 auto;
+	}
+	header {
+		height: 90%;
+	}
+	.full-menu {
+		display: none;
+	}
+	.sandwitch {
+		margin: 0 0 0 5%;
+	}
+	.sandwitch:hover div, .sandwitch:active div {
+		display: none;
+	}
+	.sandwitch:hover .smart, .sandwitch:active .smart {
+		display: block;
+	}
+	.sandwitch div {
+		width: 30px;
+		border-bottom: 4px solid #111111;
+		height: 5px;
+	}
+	
+	.smart-menu {
+		list-style: none;
+	}
+	.menu nav {
+		width: 100%;
+		padding: 0;
+	}
+	.smart-menu a {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: #111111;
+		font-size: 30px;
+	}
+	.smart-menu li {
+		margin: 0 0 1%;
+	}
+	.smart-menu a:hover {
+		color: #d2b356;
+		text-shadow: 0 0 10px #ffffff;
+		text-decoration: underline;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	.catalogue-item {
+		width: 45%;
+	}
+	.service p, .finance p, .finance ul, .about ul, .about p, .contactsinner a {
+		margin: 0 0 2%;
+		font-size: 22px;
+	}
+	.finance ul, .about ul {
+		margin: 0 0 5% 5%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.header-contacts a {
+		font-size: 32px;
+	}
+	.download-link {
+		padding: 0 0 0 5%;
+	}
+	h3 {
+		font-size: 25px;
+		margin: 0 0 5%;
+	}
+	.catalogue-item p {
+		text-align: justify;
+		font-size: 20px;
+	}
+	.service p, .finance p, .finance ul, .about ul, .about p, .contactsinner a {
+		margin: 0 0 5%;
+		font-size: 24px;
+	}
+	.finance, .about, .contacts, .navantazhuvach, .service {
+		margin: 0 auto;
+		width: 85%;
+	}
+	.finance ul, .about ul {
+		margin: 0 0 5% 5%;
+	}
+	.contactsinner {
+		display: flex;
+		flex-direction: column;
+		padding: 5% 0;
+	}
+	.contactsinner table {
+		margin:0;
+	}
+}
+@media screen and (max-width: 480px) {
+	.catalogue {
+
+		justify-content: center;
+	}
+	.catalogue-item {
+		width: 80%;
+	}
+}
