@@ -110,7 +110,7 @@ h2 {
 	flex-direction:row-reverse;
 	}
 .lang-panel li {
-	margin:2%
+	margin:2%;
 	}
 .skills-detailed table {
 	width:100%
@@ -221,6 +221,9 @@ progress::-moz-progress-bar {
 	}
 .port7 {
 	background-image: url(../img/rhino.png);
+}
+.port8 {
+	background-image: url(../img/spec-new-ico.png);
 }
 .proj1 {
 	background-image:url(../img/pul.png)
