@@ -58,6 +58,7 @@
 	background: -webkit-linear-gradient(#5c5e6810, #494c5880); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#5c5e6810, #494c5880); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#5c5e6810, #494c5880); /* For Firefox 3.6 to 15 */
+	background: -webkit-gradient(linear, left top, left bottom, from(#5c5e6810), to(#494c5880));
 	background: linear-gradient(#5c5e6810, #494c5880); /* Standard syntax */
 	color:rgb(158, 167, 189);
 }
@@ -268,6 +269,7 @@
 }
 
 .info-slider button:hover{
+  -webkit-box-shadow:4px 4px 6px black;
   box-shadow:4px 4px 6px black;
 
 }
@@ -303,14 +305,27 @@
     height: 250px;
     border: 3px solid #fff;
     border-radius: 10px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 
 .img-box:hover {
+    -webkit-box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0 5px 2px -3px rgba(0, 0, 0, 0.5), 0 1px 0px rgba(0, 0, 0, 0.1);
+    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
 .post-1 {
@@ -339,7 +354,12 @@
 }
 /*Оформление кнопок*/
 .services-button-box {
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
  display: flex;
+ -webkit-justify-content: space-around;
+ -ms-flex-pack: distribute;
  justify-content: space-around;
  position: relative;
 
@@ -351,6 +371,10 @@
     text-align: center;
     outline: none;
     text-decoration: none;
+    -webkit-transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
     transition: background-color 0.2s ease-out,
               color 0.2s ease-out;
 }
@@ -361,6 +385,10 @@
   background-color: rgba(255, 255, 255, 0.4);
   border-color: #fff;
   border-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
+  -o-transition: background-color 0.3s ease-in,
+              border-color 0.3s ease-in;
   transition: background-color 0.3s ease-in,
               border-color 0.3s ease-in;
 }
@@ -485,8 +513,16 @@ h5 {
     max-width: 1024px;
     width: 100%;
     min-height: 1px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0 auto;
     padding: 2% 2% 4%;
@@ -500,6 +536,7 @@ h5 {
     width: 58%;
     height: 100%;
     border: 1px solid #ccc;
+    -webkit-box-shadow: 3px 2px 4px #ccc;
     box-shadow: 3px 2px 4px #ccc;
 }
 .contacts-table {
@@ -516,7 +553,14 @@ h5 {
 }
 
 .contacts-feedback {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 90%;
 }
@@ -525,7 +569,9 @@ h5 {
     text-align: center;
     outline: none;
     border-radius: 4px;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
+    -webkit-box-shadow: 1px 1px 2px #ccc;
     box-shadow: 1px 1px 2px #ccc;
 }
 .contacts-feedback input:nth-child(7n) {
@@ -563,7 +609,10 @@ input:focus::-webkit-input-placeholder {
   margin: 2% 0;
 }
 .promo-item:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
   transform: scale(1.02);
+  -webkit-box-shadow: 2px 2px 2px #778899;
   box-shadow: 2px 2px 2px #778899;
 }
 .promo h2 {
@@ -592,11 +641,17 @@ input:focus::-webkit-input-placeholder {
 @media (max-width: 768px) {
     .google-map-route {
         width: 90%;
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
         order: 2;
         margin: 4% auto 2%;
     }
     .contacts-table {
         width: 90%;
+        -webkit-box-ordinal-group: 1;
+        -webkit-order: 0;
+        -ms-flex-order: 0;
         order: 0;
         margin: 0 auto;
     }
@@ -690,6 +745,7 @@ input, select, textarea {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
@@ -702,6 +758,7 @@ input[type-date]{
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
@@ -753,6 +810,7 @@ input[type=submit]{
   color: white;
   text-shadow: 0 1px 0 #1f4c76;
   border: 1px solid #3480c7;
+  -webkit-box-shadow: 0 0 0 0 rgba(90, 153, 220, 0.7), inset 0 1px 0 #abcbe9;
   box-shadow: 0 0 0 0 rgba(90, 153, 220, 0.7), inset 0 1px 0 #abcbe9;
   border-radius: 6px;
   vertical-align: middle;
@@ -761,6 +819,7 @@ input[type=submit]{
   background-image: -webkit-linear-gradient(#6ea6d9, #468ccf);
   background-image: -moz-linear-gradient(#6ea6d9, #468ccf);
   background-image: -o-linear-gradient(#6ea6d9, #468ccf);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6ea6d9), to(#468ccf));
   background-image: linear-gradient(#6ea6d9, #468ccf);
   cursor: pointer;
   -webkit-animation: pulse 2s infinite cubic-bezier(0.6, 0, 0, 1);
@@ -772,6 +831,7 @@ input[type=submit]{
 
 @-webkit-keyframes pulse {
   to {
+    -webkit-box-shadow: 0 0 0 15px rgba(90, 153, 220, 0), inset 0 1px 0 #abcbe9;
     box-shadow: 0 0 0 15px rgba(90, 153, 220, 0), inset 0 1px 0 #abcbe9;
   }
 }

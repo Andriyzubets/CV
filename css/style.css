@@ -4,31 +4,56 @@
 	-webkit-transition:all .2s;
 	-o-transition:all .2s;
 	transition:all .2s
-	}
+}
 :root {
 	font-size:calc(1vw + 1vh + .5vmin)
-	}
+}
 body {
 	font-weight:400;
 	font-size:1em/1.6;
 	font-family:'Montserrat', sans-serif
-	}
+}
 .wrapper {
-	max-width:90vw;
-	width:100%;
+	max-width:1024px;
+	width:90%;
 	display:-webkit-box;
 	display:-webkit-flex;
 	display:-ms-flexbox;
 	display:flex;
 	margin:0 auto
-	}
+}
 .left-section {
+	width: 35%;
 	background:#f1f1f1;
 	padding:0 3% 5% 4%
-	}
+}
 .header-hidden {
 	display:none
-	}
+}
+.photo-section {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 5% 0 0;
+}
+.photo-section img {
+	width: 80%;
+	margin: 0 0 5%;
+}
 .photo {
 	background-image:url(../img/photo/photo_min.png);
 	background-size:cover;
@@ -39,63 +64,64 @@ body {
 	border-top-left-radius:25px;
 	-webkit-box-shadow:4px 4px 4px lightgrey;
 	box-shadow:4px 4px 4px lightgrey
-	}
+}
 .photo:hover {
 	-webkit-filter:brightness(0.7);
 	filter:brightness(0.7)
-	}
+}
 .name {
 	font-size:1.1em;
 	font-weight:500;
 	text-align:center;
-	margin:0 0 20%
-	}
+	margin:0 0 10%
+}
 .contacts,.education,.expierience,.objective,.portfolios,.prof-skills,.projects,.target,.trainings {
 	display:-webkit-box;
 	display:-webkit-flex;
 	display:-ms-flexbox;
 	display:flex;
 	height:30px
-	}
+}
 .icon {
 	width:30px;
 	margin:0 3% 0 0
-	}
+}
 h2 {
 	font-size:.7em;
 	-webkit-align-self:center;
 	-ms-flex-item-align:center;
 	align-self:center
-	}
+}
 .contactsinner,.description-left {
 	text-align:justify;
 	color:#443f3f;
 	margin:5% 0;
 	font-size:.65em
-	}
+}
 .skill-list li {
 	list-style:none;
-	margin:0 0 3% 0
-	}
+	margin:0 0 3% 0;
+}
 .conico {
 	width:1.2em
-	}
+}
 .contactsinner table,.edu-list table,.expierience-list table,.trainings-list table {
 	border-collapse:separate;
 	border-spacing:10px;
 	margin-left: -10px;
-	}
+}
 .contactsinner a,.lang-panel a {
 	text-decoration:none;
 	color:#7a7a7a;
-	text-shadow:grey 2px 2px 4px
-	}
+	text-shadow:#ccc 0 0 7px ;
+}
 .rightcon {
 	vertical-align:baseline
-	}
+}
 .right-section {
-	padding:0 3% 5% 4%
-	}
+	padding:0 3% 5% 4%;
+	width: 65%;
+}
 .lang-panel {
 	list-style:none;
 	font-size:.7em;
@@ -108,51 +134,25 @@ h2 {
 	-webkit-flex-direction:row-reverse;
 	-ms-flex-direction:row-reverse;
 	flex-direction:row-reverse;
-	}
+}
 .lang-panel li {
 	margin:2%;
-	}
+}
 .skills-detailed table {
 	width:100%
-	}
-.progress {
-	width:100%;
-	vertical-align:middle
-	}
-progress {
-	background-color:#f3f3f3;
-	border:0;
-	height:14px;
-	border-radius:9px
-	}
-progress::-webkit-progress-bar {
-	background-color:#f3f3f3;
-	border:0;
-	height:14px;
-	border-radius:9px
-	}
-progress::-webkit-progress-value {
-	background-color:#858585;
-	border:0;
-	height:14px;
-	border-radius:9px
-	}
-progress::-moz-progress-bar {
-	background-color:#f3f3f3;
-	border:0;
-	height:14px;
-	border-radius:9px
-	}
-.lefttd {
-	width:50%;
-	font-size:.7em
-	}
-.righttd {
-	text-align:right;
-	width:45%;
-	padding-right:0px;
-	padding-bottom:3px
-	}
+}
+
+.skills-detailed div {
+	background: #ffffff;
+	color: #111111;
+	border: 1px solid #ccc;
+	width: 80%;
+	padding: 1% 0 1% 3%;
+	border-radius: 6px;
+	font-size: 12px;
+	margin: 0 0 3%;
+}
+
 .portfolios-list,.projects-list {
 	display:-webkit-box;
 	display:-webkit-flex;
@@ -167,7 +167,7 @@ progress::-moz-progress-bar {
 	-webkit-align-content:space-between;
 	-ms-flex-line-pack:justify;
 	align-content:space-between
-	}
+}
 .portfolio-item,.projects-item {
 	width:28%;
 	padding:2%;
@@ -178,18 +178,18 @@ progress::-moz-progress-bar {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 
-	}
+}
 .projects-item {
 	width:45%;
 
-	}
+}
 .portfolio-item:hover,.projects-item:hover {
 	-webkit-box-shadow:4px 4px 4px #7b7777;
 	box-shadow:4px 4px 4px #7b7777;
 	-webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
 
-	}
+}
 .ico {
 	background-size:cover;
 	width:100%;
@@ -197,186 +197,209 @@ progress::-moz-progress-bar {
 	margin:0 0 5%;
 	-webkit-box-shadow:4px 4px 4px #ccc;
 	box-shadow:4px 4px 4px #ccc
-	}
+}
 .ico:hover,h3:hover {
 	opacity:0.8
-	}
+}
 .port1 {
 	background-image:url(../img/mo8.png)
-	}
+}
 .port2 {
 	background-image:url(../img/bsp.png)
-	}
+}
 .port3 {
 	background-image:url(../img/mo8.png)
-	}
+}
 .port4 {
 	background-image:url(../img/spt.png)
-	}
+}
 .port5 {
 	background-image:url(../img/cna.png)
-	}
+}
 .port6 {
 	background-image:url(../img/mrx.png)
-	}
+}
 .port7 {
 	background-image: url(../img/rhino.png);
 }
 .port8 {
 	background-image: url(../img/spec-new-ico.png);
 }
+.port9 {
+	background-image: url(../img/brandmm.png);
+}
 .proj1 {
 	background-image:url(../img/pul.png)
-	}
+}
 .proj2 {
 	background-image:url(../img/gri.png)
-	}
+}
 .proj3 {
 	background-image:url(../img/org.png)
-	}
+}
 .proj4 {
 	background-image:url(../img/dir.png)
-	}
+}
 .proj5 {
 	background-image:url(../img/reit.png)
-	}
+}
 .proj6 {
 	background-image:url(../img/sui.png)
-	}
+}
 .portfolio-item h3,.projects-item h3 {
 	font-size:.7em;
 	text-align:center;
 	text-shadow:2px 2px 4px grey;
 	word-wrap:break-word
-	}
+}
 .portfolio-item p,.projects-item p {
 	text-align:justify;
 	font-size:.65em;
 	margin:5% 0 0 0;
 	word-wrap:break-word
-	}
+}
 .edu-list,.expierience-list,.portfolios-list,.projects-list,.skills-detailed,.trainings-list {
 	margin:5% auto
-	}
+}
 .leftedu,.leftexp {
 	width:20%;
 	font-weight:900;
 	vertical-align:top;
 	font-size:medium
-	}
+}
 .rightedu p {
 	font-size:medium
-	}
+}
 .rightedu {
 	font-size:.8em
-	}
+}
 .leftedu {
 	padding:2% 0 0 0
-	}
+}
 .rightexp,.rightexp2,a {
 	text-decoration:none;
 	color:inherit;
 	text-shadow:grey 2px 2px 4px
-	}
+}
 .rightexp2:hover,.rightexp:hover,a:hover {
 	text-shadow:4px 4px 4px #7b7777
-	}
+}
 .rightexp {
 	font-weight:600;
 	font-size: 0.8em;
-	}
+}
+.rightexp2 b {
+	line-height: 40px;
+}
 .rightexp2 p {
 	font-size:medium;
 	margin:1% 0 0 0
-	}
+}
+.rightexp2 ul {
+	list-style: none;
+	padding: 0 0 0 3%;
+}
+.expierience-list>p{
+	margin: 5% 0;
+}
 .full-conts {
 	display:-webkit-box;
 	display:-webkit-flex;
 	display:-ms-flexbox;
 	display:flex;
 
-	}
+}
 .hide-conts {
 	display:none;
 
-	}
+}
 @media (max-width:768px) {
 	.hide-conts
- {
- 	display:-webkit-box;
- 	display:-webkit-flex;
- 	display:-ms-flexbox;
- 	display:flex;
- 	width:100%;
-
- 	}
-.full-conts {
-	display:none;
+	{
+		display:-webkit-box;
+		display:-webkit-flex;
+		display:-ms-flexbox;
+		display:flex;
+		width:100%;
 
 	}
-.wrapper {
-	-webkit-flex-wrap:wrap;
-	-ms-flex-wrap:wrap;
-	flex-wrap:wrap
+	.left-section, .right-section {
+		width: 100%;
+		padding: 0;
 	}
-.left-section,.right-section {
-	background:#fff;
-	padding:1% 8% 1% 10%
+	.skills-detailed div {
+		font-size: larger;
+		background: #ccc;
+		color: #000;
+		font-weight: 600;
 	}
-.header-hidden {
-	display:block
-	}
-.lang-panel {
-	font-size:1.5em
-	}
-.photo {
-	width:15em;
-	height:15em;
-	margin:1em auto 1em
-	}
-.name {
-	font-size:2.5em;
-	margin:0 0 5%
-	}
-h2 {
-	font-size:1.8em
-	}
-.description-left {
-	font-size:1.5em
-	}
-.conico {
-	width:2em
-	}
-.contactsinner a {
-	font-size:2em;
-	margin-left:2em
-	}
-.max {
-	display:none
-	}
-.ico {
-	height:13em
-	}
-.lefttd {
-	font-size:1.2em
-	}
-.portfolio-item,.projects-item {
-	width:100%
-	}
-.portfolio-item h3,.projects-item h3 {
-	font-size:1.3em
-	}
-.portfolio-item p,.projects-item p {
-	font-size:1.2em
-	}
-.rightedu {
-	font-size:1.7em
-	}
-.rightexp {
-	font-size:1.7em
-	}
-.rightexp2 {
-	font-size:1.5em
-	}
+	.full-conts {
+		display:none;
 
 	}
+	.wrapper {
+		-webkit-flex-wrap:wrap;
+		-ms-flex-wrap:wrap;
+		flex-wrap:wrap
+	}
+	.left-section,.right-section {
+		background:#fff;
+		padding:1% 8% 1% 10%
+	}
+	.header-hidden {
+		display:block
+	}
+	.lang-panel {
+		font-size:1.5em
+	}
+	.photo {
+		width:15em;
+		height:15em;
+		margin:1em auto 1em
+	}
+	.name {
+		font-size:2.5em;
+		margin:0 0 5%
+	}
+	h2 {
+		font-size:1.8em
+	}
+	.description-left {
+		font-size:1.5em
+	}
+	.conico {
+		width:2em
+	}
+	.contactsinner a {
+		font-size:2em;
+		margin-left:2em
+	}
+	.max {
+		display:none
+	}
+	.ico {
+		height:13em
+	}
+	.lefttd {
+		font-size:1.2em
+	}
+	.portfolio-item,.projects-item {
+		width:100%
+	}
+	.portfolio-item h3,.projects-item h3 {
+		font-size:1.3em
+	}
+	.portfolio-item p,.projects-item p {
+		font-size:1.2em
+	}
+	.rightedu {
+		font-size:1.7em
+	}
+	.rightexp {
+		font-size:1.7em
+	}
+	.rightexp2 {
+		font-size:1.5em
+	}
+
+}

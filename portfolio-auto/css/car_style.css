@@ -74,6 +74,7 @@ button:focus {
     /* opacity: 1; */
     position: absolute;
     left: 0.1rem; 
+    -webkit-filter: drop-shadow(0px 0px 10px red); 
     filter: drop-shadow(0px 0px 10px red);
 }
 .wheel:hover .list_transmition {
@@ -101,6 +102,7 @@ button:focus {
 .engine:hover .engine-btn {
     display: initial;
     /* opacity: 1; */
+    -webkit-filter: drop-shadow(0px 0px 10px red);
     filter: drop-shadow(0px 0px 10px red);
 }
 .engine:hover .list_engine {
@@ -129,6 +131,7 @@ button:focus {
 .frontlight:hover .fl-btn {
     display: initial;
     /* opacity: 1; */
+    -webkit-filter: drop-shadow(0px 0px 10px red);
     filter: drop-shadow(0px 0px 10px red);
     
 }
@@ -158,6 +161,7 @@ button:focus {
 .body:hover .body-btn {
     display: initial;
     /* opacity: 1; */
+    -webkit-filter: drop-shadow(0px 0px 10px red);
     filter: drop-shadow(0px 0px 10px red);
 }
 .body:hover .list_body {
@@ -189,6 +193,7 @@ button:focus {
 .clean:hover > .clean-btn, .clean-btn:hover {
     display: initial;
     /* opacity: 1; */
+    -webkit-filter: drop-shadow(0px 0px 10px red);
     filter: drop-shadow(0px 0px 10px red);
 }
 .clean:hover > .list_clean, .list_clean:hover {
