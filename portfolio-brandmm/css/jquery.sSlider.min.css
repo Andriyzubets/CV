@@ -1,6 +1,6 @@
 .sSlider{width:100%;height:400px;margin:0;padding:0;position:relative;overflow-x:hidden;overflow-y:hidden;background:url('../img/load.gif') center center no-repeat #fff}
 .sSlider div{position:absolute;width:100%;height:450px}
-.sSlider div>img{width:inherit;height:inherit}
+.sSlider div>img{}
 .sSlider div>p{    position: absolute;
     bottom: 30%;
     right: 10%;

@@ -489,6 +489,10 @@ h5 {
 	background: #ccc;
 	margin: 0 auto;
 }
+.news>p {
+	width: 80%;
+	margin: 0 auto;
+}
 .news-item {
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -520,6 +524,7 @@ h5 {
 	display: -o-flex;
 	display: flex;flex-direction: column;
 	text-align: left;
+	margin: 0 0 0 3%;
 }
 .news-item h5 {
 	text-transform: uppercase;
@@ -581,10 +586,134 @@ footer h6 {
 	height: 100%;
 }
 @media screen and (max-width: 1024px) {
-	
+	.about, .works-nav, .portfolios, .temps-wrapper, .results-wrapper, .team, .skills, .news, .video {
+		max-width: 100%;
+		width: 90%;
+	}
+	.video iframe {
+		height: 56vw;
+	}
+	.works-nav {
+		margin: 0 auto 5%;
+		flex-wrap: wrap;
+	}
+
+}
+@media screen and (max-width: 922px) {
+	.about-items, .skills-matter {
+		flex-direction: column;
+		font-size: larger;
+		align-items: center;
+		text-align: center;
+	}
+	.portfolios-item {
+		width: 45%;
+	}
+	.results-wrapper, .team-list {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.team-item {
+		width: 45%;
+		margin: 2% 0;
+	}
+	.results-item {
+		width: 45%;
+	}
+	.pre-skills, .skills-list {
+		width: 80%;
+		justify-content: center;
+		text-align: center;
+	}
+
 }
 @media screen and (max-width: 768px) {
- 	.header-content {
- 		flex-direction: column;
- 	}
- } 
+	.header-content {
+		flex-direction: column;
+		width: 90%;
+		overflow: hidden;
+		padding: 5% 0;
+	}
+	.about-items {
+		font-size: x-large;
+	}
+	.portfolios-item {
+		width: 75%;
+		margin: 0 auto 5%;
+	}
+	.choose {
+		max-width: 100%;
+		width: 90%;
+		margin: 5% auto;
+	}
+	.choose-content {
+		margin: 0 0 0 5%;
+	}
+	.temps-wrapper {
+		flex-direction: column;
+		padding: 5% 0;
+		text-align: center;
+		word-wrap: break-word;
+	}
+	.temps-wrapper img {
+		margin: 5% auto 0;
+	}
+	.team>p {
+		width: 80%;
+		font-size: larger;
+	}
+	.team-item {
+		width: 70%;
+	}
+	.slider img {
+		display: none;
+	}
+	.sSlider div>p {
+		width: 80%;
+	}
+	.news>p, .news-content {
+		font-size: larger;
+	}
+	.news-item {
+		flex-direction: column;
+		align-items: center;
+	}
+	.news-content, .news-item>a {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.news-content p {
+		width: 100%;
+	}
+	.social {
+		width: 80%;
+		padding: 5% 0;
+	}
+} 
+@media screen and (max-width: 480px) {
+	.choose-item {
+		flex-direction: column;
+	}
+	.choose-content {
+		margin: 5% 0;
+		text-align: center;
+	}
+	.temps-wrapper img {
+		width: 80%;
+	}
+	.results-item {
+		width: 80%;
+	}
+	.team>p {
+		font-size: x-large;
+	}
+	.skills-list div {
+		max-width: 50vw;
+	}
+	.pre-skills p {
+		padding: 1em 0 20%;
+	}
+	.news>p, .news-content {
+		font-size: x-large;
+	}
+}
