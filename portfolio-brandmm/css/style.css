@@ -580,8 +580,11 @@ footer h6 {
 	margin: 1% auto 3%;
 	height: 100%;
 }
-.social a {
-	/*width: 20px;
-	height: 20px;
-	background-size: cover;*/
+@media screen and (max-width: 1024px) {
+	
 }
+@media screen and (max-width: 768px) {
+ 	.header-content {
+ 		flex-direction: column;
+ 	}
+ } 
