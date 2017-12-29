@@ -313,7 +313,16 @@ h2 {
 	display:none;
 
 }
-@media (max-width:768px) {
+.prof-skills-print, .skills-detailed-print {
+	display: none;
+}
+.PS-print {
+	display: none;
+}
+.print-btn img {
+	width: 20px;
+}
+@media screen and (max-width:768px) {
 	.hide-conts
 	{
 		display:-webkit-box;
@@ -402,4 +411,52 @@ h2 {
 		font-size:1.5em
 	}
 
+}
+@media print {
+	.lang-panel {
+		display: none;
+	}
+	.portfolios, .portfolios-list, .projects, .projects-list, .trainings, .trainings-list, .education, .edu-list {
+		display: none;	
+	}
+	.prof-skills, .skills-detailed {
+		display: none;
+	}
+	.prof-skills-print, .skills-detailed-print {
+		display: block;
+	}
+	.prof-skills-print {
+		display: flex;
+		height: 30px;
+		margin: 7.5% 0 0 0;
+	}
+	.skills-detailed-print {
+		margin: 5% auto;
+	}
+	.skills-detailed-print div {
+		border: 1px solid #ccc;
+		width: 80%;
+		padding: 1% 0 1% 3%;
+		border-radius: 6px;
+		font-size: 12px;
+		margin: 0 0 1%;
+		background: #ccc;
+		color: #000;
+	}
+	.rightexp2 {
+		font-size: small;
+	}
+	.PS {
+		display: none;
+	}
+	footer {
+		max-width: 1024px;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.PS-print {
+		display: block;
+		font-size: 16px;
+		text-align: justify;
+	}
 }
