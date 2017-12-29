@@ -12,7 +12,7 @@ header {
 	display: flex;
 }
 #main-menu {
-	display: none;
+	width: 0px;
 }
 header nav {
 	max-width: 275px;
@@ -38,18 +38,20 @@ header nav {
 	margin: 10% auto;
 }
 header nav:hover #main-menu, header nav:focus #main-menu, header nav:active #main-menu {
-	display: block;
+	width: 225px;
 }
 header nav:hover, header nav:focus, header nav:active {
 	width: 100%;
 }
 #main-menu {
-	width: 225px;
 	height: 90vh;
 	margin: 10% 0 0;
 }
 #main-menu li {
 	border-bottom: 1px solid #fff;
+}
+#main-menu li:hover {
+	opacity: 0.5;
 }
 #main-menu a {
 	margin: 0 0 0 5%;
@@ -87,6 +89,10 @@ h1 span {
 	text-decoration: none;
 	color: #111;
 	border-bottom: 1px solid #111;
+}
+.more:hover {
+	color: #d2b356;
+	border-bottom: 1px solid #d2b356;
 }
 .about {
 	max-width: 1024px;
@@ -188,6 +194,9 @@ h4 {
 	-webkit-background-size: cover;
 	background-size: cover;
 }
+.portfolios-item a:hover, .team-item a:hover, .news-item>a:hover  {
+	box-shadow: 0 0 15px #111;
+}
 .portfolios-item p {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.1em;
@@ -261,14 +270,26 @@ h5 {
 .pen1 {
 	background: url(../img/pencil.png);
 }
+.pen1:hover {
+	background: url(../img/pencil-hover.png);
+}
 .pen2 {
 	background: url(../img/pencil.png) 0 -202px;
+}
+.pen2:hover {
+	background: url(../img/pencil-hover.png) 0 -202px;
 }
 .pen3 {
 	background: url(../img/pencil.png) 0 -401px;
 }
+.pen3:hover {
+	background: url(../img/pencil-hover.png) 0 -401px;
+}
 .pen4 {
 	background: url(../img/pencil.png) 0 -607px;
+}
+.pen4:hover {
+	background: url(../img/pencil-hover.png) 0 -607px;
 }
 .temps {
 	width: 100%;
@@ -559,6 +580,10 @@ h5 {
 	font-family: 'Source Sans Pro', sans-serif;
 	text-decoration: none;
 }
+.news-content a:hover {
+	color: #d2b356;
+}
+
 footer {
 	background: #292929;
 	width: 100%;
@@ -584,6 +609,9 @@ footer h6 {
 	width: 50%;
 	margin: 1% auto 3%;
 	height: 100%;
+}
+footer a:hover {
+	opacity: .5;
 }
 @media screen and (max-width: 1024px) {
 	.about, .works-nav, .portfolios, .temps-wrapper, .results-wrapper, .team, .skills, .news, .video {
