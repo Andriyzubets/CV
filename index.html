@@ -25,6 +25,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+
 	<section class="wrapper">
 		<section class="left-section">
 			<div class="header-hidden">
@@ -51,19 +52,19 @@
 					</li>
 				</ul>
 			</div>
-			<div class="photo-section">
+			<div class="photo-section sl">
 				<img src="img/photo.png" alt="АНДРЕЙ ЗУБЕЦ">
 				<h1 class="name">
 					АНДРЕЙ ЗУБЕЦ
 				</h1>
 			</div>
-			<div class="target">
+			<div class="target ">
 				<img src="img/target.png" alt="Target" class="icon">
 				<h2>
 					ЦЕЛЬ
 				</h2>
 			</div>
-			<div class="description-left">
+			<div class="description-left ">
 				<p>
 					IT - сфера, которая вдохновляет и позволяет с огромной энергией решать сложные и не стандартные задачи.
 				</p>
@@ -847,5 +848,18 @@
 		</p>
 
 	</footer>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$.fn.fade_img = function (ops) {
+				var $elem = this;
+				var res = $.extend({ delay: 1000, speed: 2000 }, ops);
+				for (var i=0, pause=0, l=$elem.length; i<l; i++, pause+=res.delay) {
+					$elem.eq(i).delay(pause).addClass('slideUp');
+				}
+				return $elem;
+			};
+			$('div.sl').fade_img();
+		});
+	</script>
 </body>
 </html>

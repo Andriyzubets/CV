@@ -1,9 +1,9 @@
 * {
 	margin:0;
 	padding:0;
-	-webkit-transition:all .2s;
+/*	-webkit-transition:all .2s;
 	-o-transition:all .2s;
-	transition:all .2s
+	transition:all .2s*/
 }
 :root {
 	font-size:calc(1vw + 1vh + .5vmin)
@@ -13,6 +13,8 @@ body {
 	font-size:1em/1.6;
 	font-family:'Montserrat', sans-serif
 }
+
+
 .wrapper {
 	max-width:1024px;
 	width:90%;
@@ -22,6 +24,7 @@ body {
 	display:flex;
 	margin:0 auto
 }
+
 .left-section {
 	width: 35%;
 	background:#f1f1f1;
@@ -49,6 +52,7 @@ body {
 	-ms-flex-align: center;
 	align-items: center;
 	padding: 5% 0 0;
+	visibility: hidden!important;
 }
 .photo-section img {
 	width: 80%;
@@ -324,6 +328,62 @@ h2 {
 }
 .print-btn img {
 	width: 20px;
+}
+.slideUp{
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;    
+ 
+    animation-duration: 2s; 
+    -webkit-animation-duration: 2s;
+ 
+    animation-timing-function: ease;    
+    -webkit-animation-timing-function: ease;
+	animation-delay: 2s;
+    visibility: visible !important;         
+}
+.slideUp1 {
+
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    50%{
+        transform: translateY(-8%);
+    }
+    65%{
+        transform: translateY(4%);
+    }
+    80%{
+        transform: translateY(-4%);
+    }
+    95%{
+        transform: translateY(2%);
+    }           
+    100% {
+        transform: translateY(0%);
+    }   
+}
+ 
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(100%);
+    }
+    50%{
+        -webkit-transform: translateY(-8%);
+    }
+    65%{
+        -webkit-transform: translateY(4%);
+    }
+    80%{
+        -webkit-transform: translateY(-4%);
+    }
+    95%{
+        -webkit-transform: translateY(2%);
+    }           
+    100% {
+        -webkit-transform: translateY(0%);
+    }   
 }
 @media screen and (max-width:768px) {
 	.hide-conts
