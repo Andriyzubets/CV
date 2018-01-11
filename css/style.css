@@ -52,7 +52,7 @@ body {
 	-ms-flex-align: center;
 	align-items: center;
 	padding: 5% 0 0;
-	visibility: hidden!important;
+	visibility: hidden;
 }
 .photo-section img {
 	width: 80%;
@@ -329,7 +329,7 @@ h2 {
 .print-btn img {
 	width: 20px;
 }
-.slideUp{
+/*.slideUp{
     animation-name: slideUp;
     -webkit-animation-name: slideUp;    
  
@@ -338,8 +338,8 @@ h2 {
  
     animation-timing-function: ease;    
     -webkit-animation-timing-function: ease;
-	animation-delay: 2s;
-    visibility: visible !important;         
+	animation-delay: 1s;    
+	visibility: visible;
 }
 .slideUp1 {
 
@@ -384,7 +384,7 @@ h2 {
     100% {
         -webkit-transform: translateY(0%);
     }   
-}
+}*/
 @media screen and (max-width:768px) {
 	.hide-conts
 	{
