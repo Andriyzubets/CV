@@ -100,13 +100,14 @@
                 <div class="row">
                     <div class="slider">
                         <div id="mySlider" class="sSlider">
-                            <div class="slide slide1"><img src="assets/img/photo.png"/>
-                                <p>"Любому коллеге и руководителю комфортно и в удовольствие работать со мной"</p>
-                                
-                            </div>
+
                             <div class="slide slide2" style="flex-direction: row-reverse;">
                                 <p style="left: 10%;">"Кодить - всегда было моим хобби. Я получаю неимоверное удовольствие от создания продукта"</p>
                                 <img src="assets/img/photo-unit-sm.png" style="height: 95%" />
+                            </div>
+                            <div class="slide slide1"><img src="assets/img/photo.png"/>
+                                <p>"Любому коллеге и руководителю комфортно и в удовольствие работать со мной"</p>
+                                
                             </div>
                         </div>
                     </div>
@@ -430,9 +431,9 @@
                     </p>
                 </div>
                 <div class="col-sm-3 col-sm-offset-1 col-xs-2 animate fadeInLeft text-center">
-                   <span class="date">до<br>2017</span>
-               </div>
-               <div class="col-sm-8 col-xs-10 animate fadeInRight">
+                 <span class="date">до<br>2017</span>
+             </div>
+             <div class="col-sm-8 col-xs-10 animate fadeInRight">
                 <p class="duties">
                     карьера не была связана тесно с IT. Узнать детальнее о предыдущих местах работы, а также о моем образовании можно по ссылке <a href="https://goo.gl/15HMeB" target="_blank"> linkedin.com/in/andriyzubets</a>
                 </p>
@@ -445,7 +446,7 @@
     <div id="base">
         <div class="container padding-vert-30 margin-sm-top-30">
             <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-4 col-sm-offset-0">
+                <div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-4 col-sm-offset-0 animate fadeInLeft">
                     <h3 class="margin-bottom-10">Мои контакты</h3>
                     <p>
                         <span class="fa-phone"></span><a href="tel:+380935004421" target="_blank">+38 093 500 44 21</a>
@@ -459,7 +460,7 @@
                     </p>
                     <p  class="loc"  style="margin: 0">Киев, Украина</p>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-4 col-sm-offset-0 margin-top-30">
+                <div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-4 col-sm-offset-0 margin-top-30 animate fadeInUp">
                     <p>
                         <span class="fa-skype"></span>
                         <a href="callto:zubetsandrew" target="_blank">zubetsandrew</a>
@@ -471,8 +472,8 @@
                         <a href="https://goo.gl/15HMeB" target="_blank">linkedin.com/in/andriyzubets</a>
                     </p>
                 </div>
-                <div class="col-md-3 col-sm-4 col-xs-5 col-xs-offset-3 col-sm-offset-0 text-center">
-                 <ul class="menu">
+                <div class="col-md-3 col-sm-4 col-xs-5 col-xs-offset-3 col-sm-offset-0 animate fadeInRight text-center">
+                   <ul class="menu">
                     <li>
                         <a href="#about" class="fa-font">Обо мне</a>
                     </li>
@@ -532,7 +533,7 @@
     });
 </script>
 <script type="text/javascript">
-   $(function(){
+ $(function(){
     $('a[href*=#]').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
             && location.hostname == this.hostname) {
