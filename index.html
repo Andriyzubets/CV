@@ -1,865 +1,552 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-		ga('create', 'UA-110405039-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-	
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Andriy Zubets</title>
-	
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700" rel="stylesheet">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<script src="js/script.js"></script>
-	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen"/>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        ga('create', 'UA-110405039-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <title>Andriy Zubets</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/jquery.sslider.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <div id="body-bg">
+        <ul class="social-icons pull-right hidden-xs">
+            <li class="social-facebook">
+                <a href="http://facebook.com/zubec" target="_blank" title="Facebook"></a>
+            </li>
+            <li class="social-linkedin">
+                <a href="https://goo.gl/15HMeB" target="_blank" title="Linkedin"></a>
+            </li>
+            <li class="social-mail">
+                <a href="mailto:zubets.andriy@gmail.com" target="_blank" title="Mail me"></a>
+            </li>
+            <li class="social-skype">
+                <a href="callto:zubetsandrew" target="_blank" title="Skype"></a>
+            </li>
+            <li class="social-github">
+                <a href="https://andriyzubets.github.io/CV/" target="_blank" title="Github"></a>
+            </li>
+        </ul>
+        <div id="pre-header" class="container" style="height:45vh">
+            <figure id="header-figure" class="animate fadeInRight header-figure">
+                <img alt="Brovary-avto" src="assets/img/photo1.png" class="header-photo">
+            </figure>
+        </div>
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <h1 class="logo">
+                        <a href="index.html" title="">
+                            Андрей Зубец
+                            
+                        </a>
+                        <span>front-end разработчик</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div id="hornav" class="container no-padding">
+            <div class="row">
+                <div class="col-md-12 no-padding">
+                    <div class="text-center visible-lg">
+                        <ul id="hornavmenu" class="nav navbar-nav">
+                            <!-- <li>
+                                <a href="index.html" class="fa-home">Главная</a>
+                            </li> -->
+                            <li>
+                                <a href="#about" class="fa-font">Обо мне</a>
+                            </li>
+                            <li>
+                                <a href="#skills" class="fa-signal">Навыки</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio" class="fa-th">Портфолио</a>
+                            </li>
+                            <li>
+                                <a href="#experience" class="fa-code">Опыт</a>
+                            </li>
+                            <li>
+                                <a href="#base" class="fa-comment">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="post_header" class="container" >
+        </div>
+        <div id="content-top-border" class="container">
+        </div>
+        <div id="content">
+            <div class="container no-padding">
+                <div class="row">
+                    <div class="slider">
+                        <div id="mySlider" class="sSlider">
+                            <div class="slide slide1"><img src="assets/img/photo.png"/>
+                                <p>"Любому коллеге и руководителю комфортно и в удовольствие работать со мной"</p>
+                                
+                            </div>
+                            <div class="slide slide2" style="flex-direction: row-reverse;">
+                                <p style="left: 10%;">"Кодить - всегда было моим хобби. Я получаю неимоверное удовольствие от создания продукта"</p>
+                                <img src="assets/img/photo-unit-sm.png" style="height: 95%" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-	<section class="wrapper">
-		<section class="left-section">
-			<div class="header-hidden">
-				<ul class="lang-panel">
-					<li>
-						<a href="#" class="print-btn" onclick="window.print();">
-							<img src="img/printer.png" alt="Print">
-						</a>
-					</li>
-					<li>
-						<a href="img/ru.pdf" download>
-							<img src="img/pdf.png" alt="Download CV">
-						</a>
-					</li>
-					<li>
-						<a href="en.html">
-							EN
-						</a>
-					</li>
-					<li>
-						<a class="index.html">
-							RU
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="photo-section sl">
-				<img src="img/photo.png" alt="АНДРЕЙ ЗУБЕЦ">
-				<h1 class="name">
-					АНДРЕЙ ЗУБЕЦ
-				</h1>
-			</div>
-			<div class="target ">
-				<img src="img/target.png" alt="Target" class="icon">
-				<h2>
-					ЦЕЛЬ
-				</h2>
-			</div>
-			<div class="description-left ">
-				<p>
-					IT - сфера, которая вдохновляет и позволяет с огромной энергией решать сложные и не стандартные задачи.
-				</p>
-				<p>
-					Основная цель - получить должность Front-End разработчика, где, раскрывая свой потенциал и оттачивая навыки, смогу стать профессиональным программистом.
-				</p>
-			</div>
-			<div class="prof-skills">
-				<img src="img/prof_skills.png" alt="Professional skills" class="icon">
-				<h2>
-					ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ
-				</h2>
-			</div>
-			<div class="skills-detailed">
-				<div style="width: 75%">
-					HTML/HTML 5
-				</div>
-				<div style="width: 60%">
-					CSS
-				</div>
-				<div style="width: 30%">
-					QC
-				</div>
-				<div style="width: 55%">
-					PUG, SASS, SCSS
-				</div>
-				<div style="width: 50%">
-					BOOTSTRAP
-				</div>
-				<div style="width: 35%">
-					JAVASCRIPT
-				</div>
-				<div style="width: 30%">
-					JQUERY
-				</div>
-				<div style="width: 60%">
-					WORDPRESS CMS
-				</div>
-				<div style="width: 75%">
-					PHOTOSHOP
-				</div>
-				<div style="width: 65%">
-					AGILE METHODOLOGY
-				</div>
-				<div style="width: 70%">
-					РАЗРАБОТКА БИЗНЕС-ПЛАНОВ
-				</div>
-				<div style="width: 90%">
-					ФИНАНСОВЫЙ АНАЛИЗ
-				</div>
-				<div style="width: 80%">
-					ЮРИДИЧЕСКАЯ ГРАМОТНОСТЬ
-				</div>
-				<div style="width: 90%">
-					УПРАВЛЕНИЕ РИСКАМИ
-				</div>
-				<div style="width: 75%">
-					АНГЛИЙСКИЙ
-				</div>
-			</div>
-			<div class="contacts full-conts">
-				<img src="img/contacts.png" alt="Contacts" class="icon">
-				<h2>
-					КОНТАКТЫ
-				</h2>
-			</div>
-			<div class="contactsinner full-conts">
-				<table>
-					<tr>
-						<td class="leftcon">
-							<img src="img/phone.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="tel:+380935004421">
-								+38 093 500 44 21
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftcon">
-							<img src="img/viber.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="viber://chat?number=380935004421">
-								+38 093 500 44 21
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftcon">
-							<img src="img/mail.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="mailto:zubets.andriy@gmail.com">
-								zubets.andriy@gmail.com
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftcon">
-							<img src="img/skype.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="callto:zubetsandrew">
-								zubetsandrew
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftcon">
-							<img src="img/li.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="https://goo.gl/15HMeB" target="_blank">
-								linkedin.com/in/andriyzubets
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftcon">
-							<img src="img/fb.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="http://facebook.com/zubec" target="_blank">
-								facebook.com/zubec
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftcon">
-							<img src="img/github.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="https://andriyzubets.github.io/CV/" target="_blank">
-								https://andriyzubets.github.io/CV/
-							</a>
-						</td>
-					</tr>
-				</table>
-			</div>
-		</section>
+            <div id="about" class="container background-white">
+                <div class="row margin-vert-30">
+                    <div class="col-md-12">
+                        <h2 class="text-center animate fadeInLeft">
+                            Несколько слов обо мне
+                        </h2>
+                        <p class="text-justify animate fadeInUp">
+                            Привет! Еще со студенческих лет я интересовался и на любительском уровне занимался версткой и ведением небольших сайтов. Но так получилось, что профессионально развивался в другой сфере. Я работал в маленьких и больших коллективах и обожаю общение. Критику воспринимаю, как путь для собственного развития и каждому руководителю и коллеге всегда легко и приятно со мной работать.
+                        </p>
+                        <p class="text-justify animate fadeInUp">
+                            Наибольшее удовольствие я получаю от создания продуктов (даже маленьких) таких, как написание и интеграция Web ресурсов, автоматизация и обработка баз данных, написание и внедрение бизнес-процессов. Кроме программирования, обожаю читать книги, составлять и проводить тренинги. 
+                        </p>
+                        <p class="text-justify animate fadeInUp">
+                            Сейчас я работаю и активно осваиваю технологии в области web разработки для того чтобы в ближайшие пару лет стать Senior fullstack developer. Основная цель на текущий момент - получить должность Front-End разработчика в компании, где, раскрывая свой потенциал и оттачивая навыки, смогу стать профессиональным программистом.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="skills" class="container background-gray-lighter padding-vert-20">
+                <h2 class="text-center padding-vert-20">
+                    ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ
+                </h2>
+                <div class="left-skills col-sm-6 col-xs-12">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                            HTML/HTML 5
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                            CSS/CSS 3
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                            QC
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
+                            PUG, SASS, SCSS
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            BOOTSTRAP
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+                            JS
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                            JQUERY
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            CMS (WORDPRESS, OPENCART)
+                        </div>
+                    </div>
+                </div>
+                <div class="right-skills col-sm-6 col-xs-12">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                            VCS (Git)
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                            PHOTOSHOP
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                            AGILE METHODOLOGY
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                            РАЗРАБОТКА БИЗНЕС-ПЛАНОВ
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                            ФИНАНСОВЫЙ АНАЛИЗ
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                            ЮРИДИЧЕСКАЯ ГРАМОТНОСТЬ
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                            УПРАВЛЕНИЕ РИСКАМИ
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                            АНГЛИЙСКИЙ
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Вставить разделитель и цитату -->
+            <div id="portfolio" class="container background-white">
+                <div class="row padding-vert-20">
+                    <h2 class="text-center">
+                        Несколько моих работ
+                    </h2>
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-10">
+                        <ul class="portfolio-group">
 
-		<section class="right-section">
-			<header>
-				<ul class="lang-panel max">
-					<li>
-						<a href="#" class="print-btn" onclick="window.print();">
-							<img src="img/printer.png" alt="Print">
-						</a>
-					</li>
-					<li>
-						<a href="img/ru.pdf" download>
-							<img src="img/pdf.png" alt="Download CV">
-						</a>
-					</li>
-					<li>
-						<a href="en.html">
-							EN
-						</a>
-					</li>
-					<li>
-						<a href="index.html">
-							RU
-						</a>
-					</li>
-				</ul>
-			</header>
-			<div class="prof-skills-print">
-				<img src="img/prof_skills.png" alt="Professional skills" class="icon">
-				<h2>
-					ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ
-				</h2>
-			</div>
-			<div class="skills-detailed-print">
-				<div style="width: 75%">
-					HTML/HTML 5
-				</div>
-				<div style="width: 60%">
-					CSS
-				</div>
-				<div style="width: 30%">
-					QC
-				</div>
-				<div style="width: 55%">
-					PUG, SASS, SCSS
-				</div>
-				<div style="width: 50%">
-					BOOTSTRAP
-				</div>
-				<div style="width: 35%">
-					JAVASCRIPT
-				</div>
-				<div style="width: 30%">
-					JQUERY
-				</div>
-				<div style="width: 60%">
-					WORDPRESS CMS
-				</div>
-				<div style="width: 75%">
-					PHOTOSHOP
-				</div>
-				<div style="width: 65%">
-					AGILE METHODOLOGY
-				</div>
-				<div style="width: 70%">
-					РАЗРАБОТКА БИЗНЕС-ПЛАНОВ
-				</div>
-				<div style="width: 90%">
-					ФИНАНСОВЫЙ АНАЛИЗ
-				</div>
-				<div style="width: 80%">
-					ЮРИДИЧЕСКАЯ ГРАМОТНОСТЬ
-				</div>
-				<div style="width: 90%">
-					УПРАВЛЕНИЕ РИСКАМИ
-				</div>
-				<div style="width: 75%">
-					АНГЛИЙСКИЙ
-				</div>
-			</div>
-			
-			<div class="portfolios">
-				<img src="img/portfolio.png" alt="Portfolio" class="icon">
-				<h2>
-					МОИ РАБОТЫ FRONT-END
-				</h2>
-			</div>
-			<div class="portfolios-list">
-				<div class="portfolio-item">
-					<a href="MM-studio/index.html" target="_blank">
-						<div class="ico port10">
-						</div>
-						<h3>
-							Лендинг студии
-						</h3>
-					</a>
-					<p>
-						Сайт-лендинг
-					</p>
-					
-				</div>
-				<div class="portfolio-item">
-					<a href="portfolio-brandmm/index.html" target="_blank">
-						<div class="ico port9">
-						</div>
-						<h3>
-							Лендинг
-						</h3>
-					</a>
-					<p>
-						Сайт-лендинг
-					</p>
-					
-				</div>
-				<div class="portfolio-item">
-					<a href="http://brovary-avto.kiev.ua/" target="_blank">
-						<div class="ico port5">
-						</div>
-						
-						<h3>
-							HTML, CSS, JS(+Bootstrap), PHP
-						</h3>
-					</a>
-					<p>
-						Сайт каталог с интеграцией в Wordpress
-					</p>
-					
-				</div>
-				<div class="portfolio-item">
-					<a href="portfolio-spectekhnika/index.html" target="_blank">
-						<div class="ico port8">
-						</div>
-						
-						
-						<h3>
-							HTML, CSS, Каталог
-						</h3>
-					</a>
-					<p>
-						Сайт-каталог
-					</p>
-					
-				</div>
-				<div class="portfolio-item">
-					<a href="merx-22/index.html" target="_blank">
-						<div class="ico port6">
-						</div>
-						
-						
-						<h3>
-							HTML, CSS, JS (landing)
-						</h3>
-					</a>
-					<p>
-						Лендинг пейдж. Адаптивная верстка. Время, затраченное на написание - 8 часов.
-					</p>
-					
-				</div>
-				<div class="portfolio-item">
-					<a href="portfolio-landing/index.html" target="_blank">	
-						<div class="ico port4">
-						</div>
-						
-						<h3>
-							HTML, CSS, JS (landing)
-						</h3>
-					</a>
-					<p>
-						Лендинг-пейдж. Одна из первых полноценных работ, с наименьшими знаниями (на тот момент) верстки и дизайна.
-					</p>
-					
-				</div>
-				<div class="portfolio-item">
-					<a href="portfolio-auto/index.html" target="_blank">
-						<div class="ico port5">
-						</div>
-						
-						<h3>
-							HTML, CSS, JS(+Bootstrap)
-						</h3>
-					</a>
-					<p>
-						Сайт каталог
-					</p>
-					
-				</div>
-				<div class="portfolio-item">
-					<a href="portfolio-rhinos-blog/index.html" target="_blank">
-						<div class="ico port7">
-							
-						</div>
-						<h3>
-							HTML, CSS
-						</h3>
-					</a>
-					<p>
-						По ссылке хранится шаблон для блога.
-					</p>
-				</div>
-				<div class="portfolio-item">
-					<a href="portfolio-base/index.html" target="_blank">
-						<div class="ico port1">
-							
-						</div>
-						<h3>
-							HTML, CSS, JS
-						</h3>
-					</a>
-					<p>
-						По ссылке хранится шестистраничный сайт с  адаптивной версткой, написанный в процессе обучения.
-					</p>
-				</div>
-			<!-- 	<div class="portfolio-item">
-					<a href="portfolio-bootstrap/index.html" target="_blank">
-						<div class="ico port2">
-						</div>
-						
-						<h3>
-							Bootstrap
-						</h3>
-					</a>
-					<p>
-						Адаптивная верстка с помощью Bootstrap. 
-					</p>
-					
-				</div>
-				<div class="portfolio-item">
-					<a href="portfolio-bem/dist/index.html" target="_blank">
-						<div class="ico port3">
-						</div>
-						
-						<h3>
-							Prepros, BEM, PUG, SCSS
-						</h3>
-					</a>
-					<p>
-						Страничка умений BEM, PUG, SCSS, SASS, Prepros.  
-					</p>
-					
-				</div> -->
-				
-				
-				<!-- <div class="portfolio-item">
-					<a href="#">
-						<div class="ico">
-						</div>
-					
-					
-						<h3>
-							HTML, CSS, JS
-						</h3>
-					</a>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, repellat. Aperiam 
-					</p>
-					
-				</div> -->
-			</div>
-			<div class="projects">
-				<img src="img/portfolio.png" alt="Projects" class="icon">
-				<h2>
-					МОИ ПРОЕКТЫ В МЕНЕДЖМЕНТЕ
-				</h2>
-			</div>
-			<div class="projects-list">
-				<div class="projects-item">
-					<a rel="var5" href="#inline5">
-						<div class="ico proj1">
-							
-						</div>
-						<h3>
-							PullsOk
-						</h3>
-					</a>
-					<p>
-						Написание и внедрение системы не материальной мотивации персонала локального объекта.
-						<br><b>Результат: </b><br>
-						Уменьшение текучести кадров на 80%. <br>
-						Увеличение результативности продаж на 165% <br>
-						Улучшение качества обслуживания персоналом - до 100%
-					</p>
-					<div style="display: none;">
-						<div id="inline5" style="width:350px;height:150px;overflow:auto;text-align:center;">
-							Буду рад поделиться с Вами всеми деталями и результатами проекта: <br>
-							<b><a href="tel:+380935004421">
-								+38 093 500 44 21
-							</a></b>
-							<b>
-								<a href="mailto:zubets.andriy@gmail.com">
-									zubets.andriy@gmail.com
-								</a>
-							</b>
-						</div>
-					</div>
-				</div>
-				<div class="projects-item">
-					<a rel="var6" href="#inline6">
-						<div class="ico proj2">
-						</div>
-						
-						<h3>
-							Gryfonomania
-						</h3>
-					</a>
-					<p>
-						Написание и внедрение системы не материальной мотивации персонала для 60 объектов филиала.
-						<br><b>Результат: </b><br>
-						Уменьшение текучести кадров на 25%. <br>
-						Увеличение результативности продаж на 55% <br>
-						Улучшение качества обслуживания персоналом на 8%
-					</p>
-					<div style="display: none;">
-						<div id="inline6" style="width:350px;height:150px;overflow:auto;text-align:center;">
-							Буду рад поделиться с Вами всеми деталями и результатами проекта: <br>
-							<b><a href="tel:+380935004421">
-								+38 093 500 44 21
-							</a></b>
-							<b>
-								<a href="mailto:zubets.andriy@gmail.com">
-									zubets.andriy@gmail.com
-								</a>
-							</b>
-						</div>
-					</div>
-				</div>
-				<div class="projects-item">
-					<a rel="var7" href="#inline7">
-						<div class="ico proj3">
-						</div>
-						
-						<h3>
-							Оргэффективность
-						</h3>
-					</a>
-					<p>
-						Идивидуальный, динамический расчет необходимости персонала, основываясь на нагрузку.
-						<br><b>Результат:</b> <br>
-						Сокращение ежемесячных затрат сети торговых точек на 450 тыс. грн.
-						Ускорение составления графиков выхода
-					</p>
-					<div style="display: none;">
-						<div id="inline7" style="width:350px;height:150px;overflow:auto;text-align:center;">
-							Буду рад поделиться с Вами всеми деталями и результатами проекта: <br>
-							<b><a href="tel:+380935004421">
-								+38 093 500 44 21
-							</a></b>
-							<b>
-								<a href="mailto:zubets.andriy@gmail.com">
-									zubets.andriy@gmail.com
-								</a>
-							</b>
-						</div>
-					</div>
-				</div>
-				<div class="projects-item">
-					<a rel="var8" href="#inline8">	
-						<div class="ico proj4">
-						</div>
-						
-						<h3>
-							3 Р (Регламент работы руководителя)
-						</h3>
-					</a>
-					<p>
-						Составление, оптимизация и внедрение регламента работы руководителей предприятий.
-						<br><b>Результат</b><br>
-						Увеличение продаж на 65% <br>
-						Уменьшение нарушений при проверках
-					</p>
-					<div style="display: none;">
-						<div id="inline8" style="width:350px;height:150px;overflow:auto;text-align:center;">
-							Буду рад поделиться с Вами всеми деталями и результатами проекта: <br>
-							<b><a href="tel:+380935004421">
-								+38 093 500 44 21
-							</a></b>
-							<b>
-								<a href="mailto:zubets.andriy@gmail.com">
-									zubets.andriy@gmail.com
-								</a>
-							</b>
-						</div>
-					</div>
-				</div>
-				<div class="projects-item">
-					<a rel="var9" href="#inline9">
-						<div class="ico proj5">
-						</div>
-						
-						<h3>
-							Рейтингование
-						</h3>
-					</a>
-					<p>
-						Оптимизация, автоматизация и стандартизация учета результатов персонала на ежедневной основе.
-						<br><b>Результат</b><br>
-						Увеличение продаж (среднего чека) - на 78%
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="http://asl.com.ua"  target="_blank">
+                                    <figure class="animate fadeInLeft">
+                                        <img alt="Asl" src="assets/img/portfolio/asl.jpg">
+                                        <figcaption>
+                                            <h3>Сайт-визитка</h3>
+                                            <!-- <span>Один из популярных сейчас лендингов-визиток</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="http://cinematicstar.com"  target="_blank">
+                                    <figure class="animate fadeInUp">
+                                        <img alt="ShvedShevalin" src="assets/img/portfolio/cinematicstar.jpg">
+                                        <figcaption>
+                                            <h3>Сайт-визитка</h3>
+                                            <!-- <span>Один из популярных сейчас лендингов-визиток</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="hassel/index.html"  target="_blank">
+                                    <figure class="animate fadeInRight">
+                                        <img alt="hassel" src="assets/img/hassel.jpg">
+                                        <figcaption>
+                                            <h3>Лендинг</h3>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="https://andriyzubets.github.io/dikoscanner/"  target="_blank">
+                                    <figure class="animate fadeInLeft">
+                                        <img alt="Dikoscanner" src="assets/img/portfolio/dikoscanner.jpg">
+                                        <figcaption>
+                                            <h3>Сайт-визитка</h3>
+                                            <!-- <span>Один из популярных сейчас лендингов-визиток</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="psyhology/index.html"  target="_blank">
+                                    <figure class="animate fadeInUp">
+                                        <img alt="Psyholog" src="assets/img/portfolio/psyhology.jpg">
+                                        <figcaption>
+                                            <h3>Сайт-визитка</h3>
+                                            <!-- <span>Один из популярных сейчас лендингов-визиток</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="mm-studio/index.html"  target="_blank">
+                                    <figure class="animate fadeInRight">
+                                        <img alt="MM-studio" src="assets/img/portfolio/mm-studio.jpg">
+                                        <figcaption>
+                                            <h3>Лендинг</h3>
+                                            <!-- <span>Один из популярных сейчас лендингов-визиток</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="portfolio-brandmm/index.html"  target="_blank">
+                                    <figure class="animate fadeInLeft">
+                                        <img alt="Brand-MM" src="assets/img/portfolio/brand-mm.jpg">
+                                        <figcaption>
+                                            <h3>Лендинг</h3>
+                                            <!-- <span>Еще одна работа над лендинг-пейдж.</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
 
-					</p>
-					<div style="display: none;">
-						<div id="inline9" style="width:350px;height:150px;overflow:auto;text-align:center;">
-							Буду рад поделиться с Вами всеми деталями и результатами проекта: <br>
-							<b><a href="tel:+380935004421">
-								+38 093 500 44 21
-							</a></b>
-							<b>
-								<a href="mailto:zubets.andriy@gmail.com">
-									zubets.andriy@gmail.com
-								</a>
-							</b>
-						</div>
-					</div>
-				</div>
-				<div class="projects-item">
-					<a rel="var10" href="#inline10">
-						<div class="ico proj6">
-						</div>
-						<h3>
-							Система управления процессами
-						</h3>
-					</a>
-					<p>
-						Составление, разработка и внедрение универсальной системы управления процессами в сети розничных объектов.
-						<br><b>Результат</b><br>
-						Улучшение дисциплины на объектах<br>
-						Увеличение доходности объектов на 12%
-					</p>
-					<div style="display: none;">
-						<div id="inline10" style="width:350px;height:150px;overflow:auto;text-align:center;">
-							Буду рад поделиться с Вами всеми деталями и результатами проекта: <br>
-							<b><a href="tel:+380935004421">
-								+38 093 500 44 21
-							</a></b>
-							<b>
-								<a href="mailto:zubets.andriy@gmail.com">
-									zubets.andriy@gmail.com
-								</a>
-							</b>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="education">
-				<img src="img/edu.png" alt="Education" class="icon">
-				<h2>
-					ОБРАЗОВАНИЕ
-				</h2>
-			</div>
-			<div class="edu-list">
-				<table>
-					<tr>
-						<td class="leftedu">
-							2008
-						</td>
-						<td class="rightedu">
-							СПЕЦИАЛИСТ ПО ФИНАНСАМ
-							<p>
-								Киевский Славистический Университет
-							</p>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="trainings">
-				<img src="img/edu.png" alt="Trainings" class="icon">
-				<h2>
-					ТРЕНИНГИ
-				</h2>
-			</div>
-			<div class="trainings-list">
-				<table>
-					<tr>
-						<td class="leftedu">
-							2016
-						</td>
-						<td class="rightedu">
-							ЭФФЕКТИВНЫЕ ПЕРЕГОВОРЫ
-							<p>
-								Укравто, Киев
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftedu">
-							2013
-						</td>
-						<td class="rightedu">
-							СИТУАЦИОННОЕ ЛИДЕРСТВО
-							<p>
-								ОККО, Киев
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftedu">
-							2013
-						</td>
-						<td class="rightedu">
-							ЭФФЕКТИВНЫЙ ТАЙММЕНЕДЖМЕНТ
-							<p>
-								ОККО, Киев
-							</p>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="expierience">
-				<img src="img/expier.png" alt="Expierience" class="icon">
-				<h2>
-					ОПЫТ РАБОТЫ
-				</h2>
-			</div>
-			<div class="expierience-list">
-				<table>
-					<tr>
-						<td rowspan="3" class="leftexp">  Август
-							<p>2017
-							</p>
-						</td>
-						<td class="rightexp">
-							Младший фронтенд разработчик
-						</td>
-					</tr>
-					<td class="rightexp2">
-						"Винайти" ООО, Киев.
-						<br>
-						<b>
-							Обязанности
-						</b>
-						<ul>
-							<li>
-								Адаптивная верстка web-ресурсов с готовых макетов;
-							</li>
-							<li>
-								Корректировка макетов;
-							</li>
-							<li>
-								Интеграция верстки в админпанель под управлением CMS;
-							</li>
-							<li>
-								Редакция чужой верстки;
-							</li>
-							<li>
-								Оптимизация web-ресурсов;
-							</li>
-							<li>
-								Администрирование контента.
-							</li>
-						</ul>
-					</td>
-				</table>
-				<p class="PS">
-					До 2017 года моя карьера не была связана тесно с IT. Узнать детальнее о предыдущих местах работы можно по ссылке <a href="https://goo.gl/15HMeB" target="_blank"> linkedin.com/in/andriyzubets</a>
-				</p>
-			</div>
-			<div class="contacts hide-conts">
-				<img src="img/contacts.png" alt="Contacts" class="icon">
-				<h2>
-					КОНТАКТЫ
-				</h2>
-			</div>
-			<div class="contactsinner hide-conts">
-				<table>
-					<tr>
-						<td class="leftcon">
-							<img src="img/phone.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="tel:+380935004421">
-								+38 093 500 44 21
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftcon">
-							<img src="img/viber.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="viber://chat?number=380935004421">
-								+38 093 500 44 21
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftcon">
-							<img src="img/mail.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="mailto:zubets.andriy@gmail.com">
-								zubets.andriy@gmail.com
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftcon">
-							<img src="img/skype.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="callto:zubetsandrew">
-								zubetsandrew
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftcon">
-							<img src="img/li.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="https://goo.gl/15HMeB" target="_blank">
-								linkedin.com/in/andriyzubets
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftcon">
-							<img src="img/fb.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="http://facebook.com/zubec" target="_blank">
-								facebook.com/zubec
-							</a>
-						</td>
-					</tr>
-					<tr>
-						<td class="leftcon">
-							<img src="img/github.png" class="conico">
-						</td>
-						<td class="rightcon">
-							<a href="https://andriyzubets.github.io/CV/" target="_blank">
-								https://andriyzubets.github.io/CV/
-							</a>
-						</td>
-					</tr>
-				</table>
-			</div>
-		</section>
-		
-	</section>
-	<footer>
-		<p class="PS-print">
-			До 2017 года моя карьера не была связана тесно с IT. Узнать детальнее о предыдущих местах работы можно по ссылке <a href="https://goo.gl/15HMeB" target="_blank"> linkedin.com/in/andriyzubets</a>
-		</p>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="portfolio-spectekhnika/index.html" target="_blank">
+                                    <figure class="animate fadeInUp">
+                                        <img alt="Vinit" src="assets/img/portfolio/vinit-new.jpg">
+                                        <figcaption>
+                                            <h3>Сайт-каталог</h3>
+                                            <!-- <span>Несколько страничный сайт</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="http://brovary-avto.kiev.ua" target="_blank">
+                                    <figure class="animate fadeInRight">
+                                        <img alt="Brovary-avto" src="assets/img/portfolio/cn-auto.jpg">
+                                        <figcaption>
+                                            <h3>Сайт-визитка</h3>
+                                            <!-- <span>Сайт-визитка с каталогом и с интеграцией в Wordpress</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
 
-	</footer>
-		<!-- <script type="text/javascript">
-		$(document).ready(function(){
-			$.fn.fade_img = function (ops) {
-				var $elem = this;
-				var res = $.extend({ delay: 1000, speed: 2000 }, ops);
-				for (var i=0, pause=0, l=$elem.length; i<l; i++, pause+=res.delay) {
-					$elem.eq(i).delay(pause).addClass('slideUp');
-				}
-				return $elem;
-			};
-			$('div.sl').fade_img();
-		});
-	</script> -->
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="portfolio-spectekhnika/index.html" target="_blank">
+                                    <figure class="animate fadeInLeft">
+                                        <img alt="Vinit" src="assets/img/portfolio/vinit.jpg">
+                                        <figcaption>
+                                            <h3>Сайт-каталог</h3>
+                                            <!-- <span>Лендинг с каталогом на главной странице</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="merx-22/index.html" target="_blank">
+                                    <figure class="animate fadeInUp">
+                                        <img alt="Merx" src="assets/img/portfolio/merx.jpg">
+                                        <figcaption>
+                                            <h3>Лендинг </h3>
+                                            <!-- <span>Лендинг-каталог для подраздела основного сайта</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="portfolio-auto/index.html" target="_blank">
+                                    <figure class="animate fadeInRight">
+                                        <img alt="Cn-auto" src="assets/img/portfolio/cn-auto.jpg">
+                                        <figcaption>
+                                            <h3>Сайт-визитка</h3>
+                                            <!-- <span>Сайт-визитка с каталогом</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="portfolio-rhinos-blog/index.html" target="_blank">
+                                    <figure class="animate fadeInLeft">
+                                        <img alt="Rhinos" src="assets/img/portfolio/rhinos.jpg">
+                                        <figcaption>
+                                            <h3>Сайт-блог</h3>
+                                            <!-- <span>Сайт для ведения блога как дополнение основного сайта. + интеграция в Wordpress</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="portfolio-base/index.html" target="_blank">
+                                    <figure class="animate fadeInUp">
+                                        <img alt="Join" src="assets/img/portfolio/base.jpg">
+                                        <figcaption>
+                                            <h3>Сайт визитка</h3>
+                                            <!-- <span>Сайт-визитка турфирмы</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
+                                <a href="pravo/index.html" target="_blank">
+                                    <figure class="animate fadeInRight">
+                                        <img alt="Pravo" src="assets/img/portfolio/pravo.jpg">
+                                        <figcaption>
+                                            <h3>Сайт визитка</h3>
+                                            <!-- <span>Сайт-визитка</span> -->
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 animate fadeInRight">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- работа -->
+
+        <div id="experience" class="container experience background-gray-lighter padding-vert-20">
+            <div class="row">
+                <h2 class="text-center padding-vert-20">
+                    Опыт работы
+                </h2>
+                <div class="col-sm-3 col-sm-offset-1 col-xs-2 animate fadeInLeft text-center">
+                    <span class="date">авг<br>2017</span>
+                </div>
+                <div class="col-sm-8 col-xs-10 animate fadeInRight">
+                    <p class="position">Младший фронтенд разработчик</p>
+                    <p class="job">"Винайти" ООО, Киев.</p>
+                    <p class="duties-title">Обязанности:</p>
+                    <p class="duties">
+                        Адаптивная верстка web-ресурсов с готовых макетов;<br>
+                        Корректировка макетов;<br>
+                        Интеграция верстки в админпанель под управлением CMS;<br>
+                        Редакция чужой верстки;<br>
+                        Оптимизация web-ресурсов;<br>
+                        Администрирование контента.
+                    </p>
+                </div>
+                <div class="col-sm-3 col-sm-offset-1 col-xs-2 animate fadeInLeft text-center">
+                   <span class="date">до<br>2017</span>
+               </div>
+               <div class="col-sm-8 col-xs-10 animate fadeInRight">
+                <p class="duties">
+                    карьера не была связана тесно с IT. Узнать детальнее о предыдущих местах работы, а также о моем образовании можно по ссылке <a href="https://goo.gl/15HMeB" target="_blank"> linkedin.com/in/andriyzubets</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- === BEGIN FOOTER === -->
+    <div id="content-bottom-border" class="container">
+    </div>
+    <div id="base">
+        <div class="container padding-vert-30 margin-sm-top-30">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-4 col-sm-offset-0">
+                    <h3 class="margin-bottom-10">Мои контакты</h3>
+                    <p>
+                        <span class="fa-phone"></span><a href="tel:+380935004421" target="_blank">+38 093 500 44 21</a>
+                        <br>
+                        <span class="fa-envelope"></span>
+                        <a href="mailto:zubets.andriy@gmail.com" target="_blank">zubets.andriy@gmail.com</a>
+                        <br>
+                        <span class="fa-link"></span>
+                        <a href="https://andriyzubets.github.io/CV/index.html">andriyzubets.github.io/CV</a>
+                        <br>
+                    </p>
+                    <p  class="loc"  style="margin: 0">Киев, Украина</p>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-4 col-sm-offset-0 margin-top-30">
+                    <p>
+                        <span class="fa-skype"></span>
+                        <a href="callto:zubetsandrew" target="_blank">zubetsandrew</a>
+                        <br>
+                        <span class="fa-linkedin"></span>
+                        <a href="https://goo.gl/15HMeB" target="_blank">linkedin.com/in/andriyzubets</a>
+                        <br>
+                        <span class="fa-facebook"></span>
+                        <a href="https://goo.gl/15HMeB" target="_blank">linkedin.com/in/andriyzubets</a>
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-5 col-xs-offset-3 col-sm-offset-0 text-center">
+                 <ul class="menu">
+                    <li>
+                        <a href="#about" class="fa-font">Обо мне</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="fa-signal">Навыки</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="fa-th">Портфолио</a>
+                    </li>
+                    <li>
+                        <a href="#experience" class="fa-code">Опыт</a>
+                    </li>
+                    <li>
+                        <a href="#base" class="fa-comment">Контакты</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div id="copyright" class="col-md-12">
+                <p class="text-center">(c) <script type='text/javascript'>var mdate = new Date();document.write(mdate.getFullYear());</script> Andriy Zubets</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JS -->
+<script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/scripts.js"></script>
+<!-- Isotope - Portfolio Sorting -->
+<script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+<!-- Mobile Menu - Slicknav -->
+<script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+<!-- Animate on Scroll-->
+<script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+<!-- Sticky Div -->
+<script type="text/javascript" src="assets/js/jquery.sticky.js" charset="utf-8"></script>
+<!-- Slimbox2-->
+<script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+<!-- Modernizr -->
+<script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+<script src="assets/js/jquery.sslider.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('#mySlider').sSlider({
+            'nav': true,
+            'speed': 6000,
+            'fixedSize': { 'width': '100%', 'height': '300px' }
+        });
+    });
+</script>
+<script type="text/javascript">
+   $(function(){
+    $('a[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+            && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+        $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+        if ($target.length) {
+                    var targetOffset = $target.offset().top - ($("#hornav").outerHeight(true)+ 175); //#main-header - заменить на ваш элемент
+                    $('html,body').animate({scrollTop: targetOffset}, 700);
+                    return false;
+                }
+            }
+        });
+});
+
+</script>
 </body>
 </html>

@@ -1,0 +1,100 @@
+@media screen and (max-width: 1200px) {
+	#post_header {
+		height: calc(100vh - 45vh - 120px);
+	}
+}
+/* #Tablet (Landscape)
+================================================== */
+
+@media only screen and (max-width: 1080px) {
+
+.is-sticky #header,
+.is-sticky #hornav {
+	position: relative !important;
+	width: auto !important;
+	top: 0 !important;
+	left: 0;
+	margin-left: 0;
+}
+
+.primary-container-background .primary-container {width: 100%;}
+
+/* Disable CSS animations */
+.animated {
+    -webkit-animation-duration: 0;
+    animation-duration: 0;
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+}
+
+}
+
+/* #Tablet (Portrait)
+================================================== */
+    
+@media only screen and (max-width: 959px) {
+
+
+}
+
+/* #Mobile (Landscape)
+================================================== */
+
+@media only screen and (max-width: 767px) {
+
+.carousel-control.right span, .carousel-control.icon-next span {
+    right: 20%;
+}
+.carousel-control.left span, .carousel-control.icon-prev span {
+    left: 15%;
+}
+.logo span {
+	margin: 6.5% 0 0 0;
+}
+.loc {
+	display: none;
+}
+#base .row > div {
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#base .menu a:before {
+	display: none;
+}
+#base ul.menu a {
+	text-align: left;
+}
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+@media only screen and (max-width: 480px) {
+	.logo span {
+	margin: 10.5% 0 0 0;
+}
+	.slider img {
+		display: none;
+	}
+	.sSlider div > p {
+		width: 90%;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+	}
+	.portfolio-item {
+		width: 100%;
+	}
+	#base .row > div {
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+#base ul.menu a {
+	text-align: center;
+}
+}
+
+
