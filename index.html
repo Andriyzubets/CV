@@ -22,69 +22,136 @@
     <link rel="stylesheet" href="assets/css/jquery.sslider.min.css">
     <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="body-bg">
-        <ul class="social-icons pull-right hidden-xs">
-            <li class="social-facebook">
-                <a href="http://facebook.com/zubec" target="_blank" title="Facebook"></a>
-            </li>
-            <li class="social-linkedin">
-                <a href="https://goo.gl/15HMeB" target="_blank" title="Linkedin"></a>
-            </li>
-            <li class="social-mail">
-                <a href="mailto:zubets.andriy@gmail.com" target="_blank" title="Mail me"></a>
-            </li>
-            <li class="social-skype">
-                <a href="callto:zubetsandrew" target="_blank" title="Skype"></a>
-            </li>
-            <li class="social-github">
-                <a href="https://andriyzubets.github.io/CV/" target="_blank" title="Github"></a>
-            </li>
-        </ul>
-        <div id="pre-header" class="container" style="height:45vh">
-            <figure id="header-figure" class="animate fadeInRight header-figure">
-                <img alt="Brovary-avto" src="assets/img/photo1.png" class="header-photo">
-            </figure>
-        </div>
-        <div id="header">
-            <div class="container">
-                <div class="row">
-                    <h1 class="logo">
-                        <a href="index.html" title="">
-                            Андрей Зубец
-                            
-                        </a>
-                        <span>front-end разработчик</span>
-                    </h1>
+    <script>
+        window.onload = function(){
+            $('body').removeClass('fixed-mix');
+            $('.preloader').removeClass('active');
+        }
+    </script>
+    <div class="preloader active">
+        <div id="particles-background" class="vertical-centered-box"></div>
+        <div id="particles-foreground" class="vertical-centered-box"></div>
+
+        <div class="vertical-centered-box">
+            <div class="content">
+                <div class="loader-circle"></div>
+                <div class="loader-line-mask">
+                    <div class="loader-line"></div>
                 </div>
+                
             </div>
         </div>
-        <div id="hornav" class="container no-padding">
+    </div>
+    <script>
+            /*!
+ * Particleground
+ *
+ * @author Jonathan Nicol - @mrjnicol
+ * @version 1.1.0
+ * @description Creates a canvas based particle system background
+ *
+ * Inspired by http://requestlab.fr/ and http://disruptivebydesign.com/
+ */
+!function(a,b){"use strict";function c(a){a=a||{};for(var b=1;b<arguments.length;b++){var c=arguments[b];if(c)for(var d in c)c.hasOwnProperty(d)&&("object"==typeof c[d]?deepExtend(a[d],c[d]):a[d]=c[d])}return a}function d(d,g){function h(){if(y){r=b.createElement("canvas"),r.className="pg-canvas",r.style.display="block",d.insertBefore(r,d.firstChild),s=r.getContext("2d"),i();for(var c=Math.round(r.width*r.height/g.density),e=0;c>e;e++){var f=new n;f.setStackPos(e),z.push(f)}a.addEventListener("resize",function(){k()},!1),b.addEventListener("mousemove",function(a){A=a.pageX,B=a.pageY},!1),D&&!C&&a.addEventListener("deviceorientation",function(){F=Math.min(Math.max(-event.beta,-30),30),E=Math.min(Math.max(-event.gamma,-30),30)},!0),j(),q("onInit")}}function i(){r.width=d.offsetWidth,r.height=d.offsetHeight,s.fillStyle=g.dotColor,s.strokeStyle=g.lineColor,s.lineWidth=g.lineWidth}function j(){if(y){u=a.innerWidth,v=a.innerHeight,s.clearRect(0,0,r.width,r.height);for(var b=0;b<z.length;b++)z[b].updatePosition();for(var b=0;b<z.length;b++)z[b].draw();G||(t=requestAnimationFrame(j))}}function k(){i();for(var a=d.offsetWidth,b=d.offsetHeight,c=z.length-1;c>=0;c--)(z[c].position.x>a||z[c].position.y>b)&&z.splice(c,1);var e=Math.round(r.width*r.height/g.density);if(e>z.length)for(;e>z.length;){var f=new n;z.push(f)}else e<z.length&&z.splice(e);for(c=z.length-1;c>=0;c--)z[c].setStackPos(c)}function l(){G=!0}function m(){G=!1,j()}function n(){switch(this.stackPos,this.active=!0,this.layer=Math.ceil(3*Math.random()),this.parallaxOffsetX=0,this.parallaxOffsetY=0,this.position={x:Math.ceil(Math.random()*r.width),y:Math.ceil(Math.random()*r.height)},this.speed={},g.directionX){case"left":this.speed.x=+(-g.maxSpeedX+Math.random()*g.maxSpeedX-g.minSpeedX).toFixed(2);break;case"right":this.speed.x=+(Math.random()*g.maxSpeedX+g.minSpeedX).toFixed(2);break;default:this.speed.x=+(-g.maxSpeedX/2+Math.random()*g.maxSpeedX).toFixed(2),this.speed.x+=this.speed.x>0?g.minSpeedX:-g.minSpeedX}switch(g.directionY){case"up":this.speed.y=+(-g.maxSpeedY+Math.random()*g.maxSpeedY-g.minSpeedY).toFixed(2);break;case"down":this.speed.y=+(Math.random()*g.maxSpeedY+g.minSpeedY).toFixed(2);break;default:this.speed.y=+(-g.maxSpeedY/2+Math.random()*g.maxSpeedY).toFixed(2),this.speed.x+=this.speed.y>0?g.minSpeedY:-g.minSpeedY}}function o(a,b){return b?void(g[a]=b):g[a]}function p(){console.log("destroy"),r.parentNode.removeChild(r),q("onDestroy"),f&&f(d).removeData("plugin_"+e)}function q(a){void 0!==g[a]&&g[a].call(d)}var r,s,t,u,v,w,x,y=!!b.createElement("canvas").getContext,z=[],A=0,B=0,C=!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|BB10|mobi|tablet|opera mini|nexus 7)/i),D=!!a.DeviceOrientationEvent,E=0,F=0,G=!1;return g=c({},a[e].defaults,g),n.prototype.draw=function(){s.beginPath(),s.arc(this.position.x+this.parallaxOffsetX,this.position.y+this.parallaxOffsetY,g.particleRadius/2,0,2*Math.PI,!0),s.closePath(),s.fill(),s.beginPath();for(var a=z.length-1;a>this.stackPos;a--){var b=z[a],c=this.position.x-b.position.x,d=this.position.y-b.position.y,e=Math.sqrt(c*c+d*d).toFixed(2);e<g.proximity&&(s.moveTo(this.position.x+this.parallaxOffsetX,this.position.y+this.parallaxOffsetY),g.curvedLines?s.quadraticCurveTo(Math.max(b.position.x,b.position.x),Math.min(b.position.y,b.position.y),b.position.x+b.parallaxOffsetX,b.position.y+b.parallaxOffsetY):s.lineTo(b.position.x+b.parallaxOffsetX,b.position.y+b.parallaxOffsetY))}s.stroke(),s.closePath()},n.prototype.updatePosition=function(){if(g.parallax){if(D&&!C){var a=(u-0)/60;w=(E- -30)*a+0;var b=(v-0)/60;x=(F- -30)*b+0}else w=A,x=B;this.parallaxTargX=(w-u/2)/(g.parallaxMultiplier*this.layer),this.parallaxOffsetX+=(this.parallaxTargX-this.parallaxOffsetX)/10,this.parallaxTargY=(x-v/2)/(g.parallaxMultiplier*this.layer),this.parallaxOffsetY+=(this.parallaxTargY-this.parallaxOffsetY)/10}var c=d.offsetWidth,e=d.offsetHeight;switch(g.directionX){case"left":this.position.x+this.speed.x+this.parallaxOffsetX<0&&(this.position.x=c-this.parallaxOffsetX);break;case"right":this.position.x+this.speed.x+this.parallaxOffsetX>c&&(this.position.x=0-this.parallaxOffsetX);break;default:(this.position.x+this.speed.x+this.parallaxOffsetX>c||this.position.x+this.speed.x+this.parallaxOffsetX<0)&&(this.speed.x=-this.speed.x)}switch(g.directionY){case"up":this.position.y+this.speed.y+this.parallaxOffsetY<0&&(this.position.y=e-this.parallaxOffsetY);break;case"down":this.position.y+this.speed.y+this.parallaxOffsetY>e&&(this.position.y=0-this.parallaxOffsetY);break;default:(this.position.y+this.speed.y+this.parallaxOffsetY>e||this.position.y+this.speed.y+this.parallaxOffsetY<0)&&(this.speed.y=-this.speed.y)}this.position.x+=this.speed.x,this.position.y+=this.speed.y},n.prototype.setStackPos=function(a){this.stackPos=a},h(),{option:o,destroy:p,start:m,pause:l}}var e="particleground",f=a.jQuery;a[e]=function(a,b){return new d(a,b)},a[e].defaults={minSpeedX:.1,maxSpeedX:.7,minSpeedY:.1,maxSpeedY:.7,directionX:"center",directionY:"center",density:1e4,dotColor:"#666666",lineColor:"#666666",particleRadius:7,lineWidth:1,curvedLines:!1,proximity:100,parallax:!0,parallaxMultiplier:5,onInit:function(){},onDestroy:function(){}},f&&(f.fn[e]=function(a){if("string"==typeof arguments[0]){var b,c=arguments[0],g=Array.prototype.slice.call(arguments,1);return this.each(function(){f.data(this,"plugin_"+e)&&"function"==typeof f.data(this,"plugin_"+e)[c]&&(b=f.data(this,"plugin_"+e)[c].apply(this,g))}),void 0!==b?b:this}return"object"!=typeof a&&a?void 0:this.each(function(){f.data(this,"plugin_"+e)||f.data(this,"plugin_"+e,new d(this,a))})})}(window,document),/**
+ * requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
+ * @see: http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+ * @see: http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+ * @license: MIT license
+ */
+ function(){for(var a=0,b=["ms","moz","webkit","o"],c=0;c<b.length&&!window.requestAnimationFrame;++c)window.requestAnimationFrame=window[b[c]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[b[c]+"CancelAnimationFrame"]||window[b[c]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(b){var c=(new Date).getTime(),d=Math.max(0,16-(c-a)),e=window.setTimeout(function(){b(c+d)},d);return a=c+d,e}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(a){clearTimeout(a)})}();
+
+
+ particleground(document.getElementById('particles-foreground'), {
+  dotColor: 'rgba(255, 255, 255, 1)',
+  lineColor: 'rgba(255, 255, 255, 0.05)',
+  minSpeedX: 0.3,
+  maxSpeedX: 0.6,
+  minSpeedY: 0.3,
+  maxSpeedY: 0.6,
+  density: 50000, // One particle every n pixels
+  curvedLines: false,
+  proximity: 250, // How close two dots need to be before they join
+  parallaxMultiplier: 10, // Lower the number is more extreme parallax
+  particleRadius: 4, // Dot size
+});
+
+ particleground(document.getElementById('particles-background'), {
+  dotColor: 'rgba(255, 255, 255, 0.5)',
+  lineColor: 'rgba(255, 255, 255, 0.05)',
+  minSpeedX: 0.075,
+  maxSpeedX: 0.15,
+  minSpeedY: 0.075,
+  maxSpeedY: 0.15,
+  density: 30000, // One particle every n pixels
+  curvedLines: false,
+  proximity: 20, // How close two dots need to be before they join
+  parallaxMultiplier: 20, // Lower the number is more extreme parallax
+  particleRadius: 2, // Dot size
+});  
+</script>
+<div id="body-bg">
+    <ul class="social-icons pull-right hidden-xs">
+        <li class="social-facebook">
+            <a href="http://facebook.com/zubec" target="_blank" title="Facebook"></a>
+        </li>
+        <li class="social-linkedin">
+            <a href="https://goo.gl/15HMeB" target="_blank" title="Linkedin"></a>
+        </li>
+        <li class="social-mail">
+            <a href="mailto:zubets.andriy@gmail.com" target="_blank" title="Mail me"></a>
+        </li>
+        <li class="social-skype">
+            <a href="callto:zubetsandrew" target="_blank" title="Skype"></a>
+        </li>
+        <li class="social-github">
+            <a href="https://andriyzubets.github.io/CV/" target="_blank" title="Github"></a>
+        </li>
+    </ul>
+    <div id="pre-header" class="container" style="height:65vh">
+        <figure id="header-figure" class="animate fadeInRight header-figure">
+            <img alt="Brovary-avto" src="assets/img/photo1.png" class="header-photo">
+        </figure>
+    </div>
+    <div id="header">
+        <div class="container">
             <div class="row">
-                <div class="col-md-12 no-padding">
-                    <div class="text-center visible-lg">
-                        <ul id="hornavmenu" class="nav navbar-nav">
+                <h1 class="logo">
+                    <a href="index.html" title="">
+                        Andriy Zubets
+
+                    </a>
+                    <span>Web development</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div id="hornav" class="container no-padding">
+        <div class="row">
+            <div class="col-md-12 no-padding">
+                <div class="text-center visible-lg">
+                    <ul id="hornavmenu" class="nav navbar-nav">
                             <!-- <li>
                                 <a href="index.html" class="fa-home">Главная</a>
                             </li> -->
                             <li>
-                                <a href="#about" class="fa-font">Обо мне</a>
+                                <a href="#about" class="fa-font">About</a>
                             </li>
                             <li>
-                                <a href="#skills" class="fa-signal">Навыки</a>
+                                <a href="#skills" class="fa-signal">Skills</a>
                             </li>
                             <li>
-                                <a href="#portfolio" class="fa-th">Портфолио</a>
+                                <a href="#portfolio" class="fa-th">Works</a>
                             </li>
                             <li>
-                                <a href="#experience" class="fa-code">Опыт</a>
+                                <a href="#experience" class="fa-code">Experience</a>
                             </li>
                             <li>
-                                <a href="#base" class="fa-comment">Контакты</a>
+                                <a href="#base" class="fa-comment">Contacts</a>
                             </li>
                         </ul>
                     </div>
@@ -102,11 +169,11 @@
                         <div id="mySlider" class="sSlider">
 
                             <div class="slide slide2" style="flex-direction: row-reverse;">
-                                <p style="left: 10%;">"Кодить - всегда было моим хобби. Я получаю неимоверное удовольствие от создания продукта"</p>
+                                <p style="left: 10%;">"Creation of a quality software product is the greatest pleasure for me. Whether written by me or my team, each of these products is my pride"</p>
                                 <img src="assets/img/photo-unit-sm.png" style="height: 95%" />
                             </div>
                             <div class="slide slide1"><img src="assets/img/photo.png"/>
-                                <p>"Любому коллеге и руководителю комфортно и в удовольствие работать со мной"</p>
+                                <p>"To understand the business processes of web development, I learned how to create products from 0 and I liked it so much that since 2017 I have already created more than 100 sites and platforms"</p>
                                 
                             </div>
                         </div>
@@ -118,105 +185,125 @@
                 <div class="row margin-vert-30">
                     <div class="col-md-12">
                         <h2 class="text-center animate fadeInLeft">
-                            Несколько слов обо мне
+                            A few words about me
                         </h2>
                         <p class="text-justify animate fadeInUp">
-                            Привет! Еще со студенческих лет я интересовался и на любительском уровне занимался версткой и ведением небольших сайтов. Но так получилось, что профессионально развивался в другой сфере. Я работал в маленьких и больших коллективах и обожаю общение. Критику воспринимаю, как путь для собственного развития и каждому руководителю и коллеге всегда легко и приятно со мной работать.
+                            Hi!
+                            <br>What's behind the back:
+                            <ul>
+                                <li>12 years of management experience <b>(3 of them in IT)</b></li>
+                                <li>Collectives <b>from 10 to 470 people</b> in subordination</li>
+                                <li><b>Multiple victories</b> in all-Ukrainian corporate commercial competitions</li>
+                                <li><b>More than 40 developed and conducted trainings</b> to improve the qualifications of subordinate management personnel</li>
+                                <li>Mentoring <b>more than 15 mid-level directors</b>, developing them from 0</li>
+                                <li>More than <b>300 situational interviews</b> conducted with candidates for various positions</li>
+                                <li>Participation in <b>3 business projects</b></li>
+                                <li><b>More than 100 web sites and platforms developed</b> personally (front and back end)</li>
+                                <li><b>More than 50 sites created</b> by subordinate teams</li>
+                                <li> There is extensive knowledge, based on practice, of <b>how to digitize and automate furniture, a restaurant, pharmaceutical and automotive businesses</b>.</li>
+                                <li>The practice of effective <b>automation of e-commerce to increase sales and reduce labor costs</b></li>
+                                <li>Understanding and creating conditions for <b>placing licensed and excisable products on the web</b></li>
+                                <li> I see at least <b>2 more ideas than others on how to scale a business</b></li>
+                                <li>I can break a business to its bones in 2 months in order <b>to find opportunities for growth, remove leaks and inefficient use of labor and material resources</b></li>
+                            </ul>
                         </p>
                         <p class="text-justify animate fadeInUp">
-                            Наибольшее удовольствие я получаю от создания продуктов (даже маленьких) таких, как написание и интеграция Web ресурсов, автоматизация и обработка баз данных, написание и внедрение бизнес-процессов. Кроме программирования, обожаю читать книги, составлять и проводить тренинги. 
+                            Once I took part in a competition for <b>a leadership position in IT</b>. However, my <b>technical knowledge was not enough</b> even for the interview. <br>
+                            As a result, I explored different areas. I tried JAVA, QA, UI / UX design and <b>layout creation. Stopped at the last one. </b><br>
+                            For more than a year <b>I worked as a HTML coder, also closing the back-end</b> in the form of pulling my layout onto the wordpress and opencart admin panels.
                         </p>
                         <p class="text-justify animate fadeInUp">
-                            Сейчас я работаю и активно осваиваю технологии в области web разработки для того чтобы в ближайшие пару лет стать Senior fullstack developer. Основная цель на текущий момент - получить должность Front-End разработчика в компании, где, раскрывая свой потенциал и оттачивая навыки, смогу стать профессиональным программистом.
+                            In 2018, I accepted an offer <b>to become the head of a small web studio</b> with full-time vendors and programmers. This is what <b>I have been doing for the last 3 years</b>, not forgetting to sit down at the keyboard and create interesting resources. <br>
+                            <b>Today I feel a real craving for corporate structure, corporate values and my own development.</b> Therefore, I am considering the opportunity <b>to become the head of the department</b> of an enterprise in the field of IT, where I can apply all the accumulated experience and unrealized potential.
                         </p>
                     </div>
                 </div>
             </div>
             <div id="skills" class="container background-gray-lighter padding-vert-20">
                 <h2 class="text-center padding-vert-20">
-                    ПРОФЕССИОНАЛЬНЫЕ НАВЫКИ
+                    SKILLS
                 </h2>
                 <div class="left-skills col-sm-6 col-xs-12">
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                            HTML/HTML 5
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width: 80%'>
+                            Enterprise management
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                            CSS/CSS 3
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100' style='width: 90%'>
+                            IT Project management
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                            QC
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100' style='width: 90%'>
+                            Tutorship
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%">
-                            PUG, SASS, SCSS
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width: 80%'>
+                            Financial analysis
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                            BOOTSTRAP
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='95' aria-valuemin='0' aria-valuemax='100' style='width: 95%'>
+                            Management of risks
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
-                            JS
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100' style='width: 90%'>
+                            Recruitment, assessment and development
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
-                            JQUERY
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width: 80%'>
+                            Emotional state management personnel
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                            CMS (WORDPRESS, OPENCART)
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width: 80%'>
+                            Teamwork
                         </div>
                     </div>
                 </div>
                 <div class="right-skills col-sm-6 col-xs-12">
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                            VCS (Git)
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100' style='width: 70%'>
+                            PHP
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                            PHOTOSHOP
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width: 80%'>
+                            JS
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
-                            AGILE METHODOLOGY
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100' style='width: 90%'>
+                            CMS (Wordpress, Opencart)
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                            РАЗРАБОТКА БИЗНЕС-ПЛАНОВ
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100' style='width: 90%'>
+                            Project Planning
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                            ФИНАНСОВЫЙ АНАЛИЗ
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width: 80%'>
+                            Agile
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                            ЮРИДИЧЕСКАЯ ГРАМОТНОСТЬ
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100' style='width: 85%'>
+                            QC
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-                            УПРАВЛЕНИЕ РИСКАМИ
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100' style='width: 70%'>
+                            Google sheets scripts and API
                         </div>
                     </div>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-primary animate fadeInLeft" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
-                            АНГЛИЙСКИЙ
+                    <div class='progress'>
+                        <div class='progress-bar progress-bar-primary animate fadeInLeft' role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%'>
+                            SEO
                         </div>
                     </div>
                 </div>
@@ -225,183 +312,31 @@
             <div id="portfolio" class="container background-white">
                 <div class="row padding-vert-20">
                     <h2 class="text-center">
-                        Несколько моих работ
+                        Several of my works
                     </h2>
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-md-10">
-                        <ul class="portfolio-group">
+                    <div class="porfolio_wrap container">
+                        <div class="heading">
+                            <div class="item">
+                                <div class="title">
+                                    Title
+                                </div>
+                                <div class="link">
+                                    Link
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="title">
+                                    Title
+                                </div>
+                                <div class="link">
+                                    Link
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body">
 
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="http://asl.com.ua"  target="_blank">
-                                    <figure class="animate fadeInLeft">
-                                        <img alt="Asl" src="assets/img/portfolio/asl.jpg">
-                                        <figcaption>
-                                            <h3>Сайт-визитка</h3>
-                                            <!-- <span>Один из популярных сейчас лендингов-визиток</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="http://cinematicstar.com"  target="_blank">
-                                    <figure class="animate fadeInUp">
-                                        <img alt="ShvedShevalin" src="assets/img/portfolio/cinematicstar.jpg">
-                                        <figcaption>
-                                            <h3>Сайт-визитка</h3>
-                                            <!-- <span>Один из популярных сейчас лендингов-визиток</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="hassel/index.html"  target="_blank">
-                                    <figure class="animate fadeInRight">
-                                        <img alt="hassel" src="assets/img/hassel.jpg">
-                                        <figcaption>
-                                            <h3>Лендинг</h3>
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="http://dikoscanner.com/"  target="_blank">
-                                    <figure class="animate fadeInLeft">
-                                        <img alt="Dikoscanner" src="assets/img/portfolio/dikoscanner.jpg">
-                                        <figcaption>
-                                            <h3>Сайт-визитка</h3>
-                                            <!-- <span>Один из популярных сейчас лендингов-визиток</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="psyhology/index.html"  target="_blank">
-                                    <figure class="animate fadeInUp">
-                                        <img alt="Psyholog" src="assets/img/portfolio/psyhology.jpg">
-                                        <figcaption>
-                                            <h3>Сайт-визитка</h3>
-                                            <!-- <span>Один из популярных сейчас лендингов-визиток</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="MM-studio/index.html"  target="_blank">
-                                    <figure class="animate fadeInRight">
-                                        <img alt="MM-studio" src="assets/img/portfolio/mm-studio.jpg">
-                                        <figcaption>
-                                            <h3>Лендинг</h3>
-                                            <!-- <span>Один из популярных сейчас лендингов-визиток</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="portfolio-brandmm/index.html"  target="_blank">
-                                    <figure class="animate fadeInLeft">
-                                        <img alt="Brand-MM" src="assets/img/portfolio/brand-mm.jpg">
-                                        <figcaption>
-                                            <h3>Лендинг</h3>
-                                            <!-- <span>Еще одна работа над лендинг-пейдж.</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="portfolio-spectekhnika/index.html" target="_blank">
-                                    <figure class="animate fadeInUp">
-                                        <img alt="Vinit" src="assets/img/portfolio/vinit-new.jpg">
-                                        <figcaption>
-                                            <h3>Сайт-каталог</h3>
-                                            <!-- <span>Несколько страничный сайт</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="http://brovary-avto.kiev.ua" target="_blank">
-                                    <figure class="animate fadeInRight">
-                                        <img alt="Brovary-avto" src="assets/img/portfolio/cn-auto.jpg">
-                                        <figcaption>
-                                            <h3>Сайт-визитка</h3>
-                                            <!-- <span>Сайт-визитка с каталогом и с интеграцией в Wordpress</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="portfolio-spectekhnika/index.html" target="_blank">
-                                    <figure class="animate fadeInLeft">
-                                        <img alt="Vinit" src="assets/img/portfolio/vinit.jpg">
-                                        <figcaption>
-                                            <h3>Сайт-каталог</h3>
-                                            <!-- <span>Лендинг с каталогом на главной странице</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="merx-22/index.html" target="_blank">
-                                    <figure class="animate fadeInUp">
-                                        <img alt="Merx" src="assets/img/portfolio/merx.jpg">
-                                        <figcaption>
-                                            <h3>Лендинг </h3>
-                                            <!-- <span>Лендинг-каталог для подраздела основного сайта</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="portfolio-auto/index.html" target="_blank">
-                                    <figure class="animate fadeInRight">
-                                        <img alt="Cn-auto" src="assets/img/portfolio/cn-auto.jpg">
-                                        <figcaption>
-                                            <h3>Сайт-визитка</h3>
-                                            <!-- <span>Сайт-визитка с каталогом</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="portfolio-rhinos-blog/index.html" target="_blank">
-                                    <figure class="animate fadeInLeft">
-                                        <img alt="Rhinos" src="assets/img/portfolio/rhinos.jpg">
-                                        <figcaption>
-                                            <h3>Сайт-блог</h3>
-                                            <!-- <span>Сайт для ведения блога как дополнение основного сайта. + интеграция в Wordpress</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="portfolio-base/index.html" target="_blank">
-                                    <figure class="animate fadeInUp">
-                                        <img alt="Join" src="assets/img/portfolio/base.jpg">
-                                        <figcaption>
-                                            <h3>Сайт визитка</h3>
-                                            <!-- <span>Сайт-визитка турфирмы</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                            <li class="portfolio-item col-sm-4 col-xs-6 padding-10">
-                                <a href="pravo/index.html" target="_blank">
-                                    <figure class="animate fadeInRight">
-                                        <img alt="Pravo" src="assets/img/portfolio/pravo.jpg">
-                                        <figcaption>
-                                            <h3>Сайт визитка</h3>
-                                            <!-- <span>Сайт-визитка</span> -->
-                                        </figcaption>
-                                    </figure>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-1 animate fadeInRight">
-
+                        </div>
+                        <div class="more"></div>
                     </div>
                 </div>
             </div>
@@ -410,143 +345,158 @@
         <!-- работа -->
 
         <div id="experience" class="container experience background-gray-lighter padding-vert-20">
-            <div class="row">
+            <di v class="row">
                 <h2 class="text-center padding-vert-20">
-                    Опыт работы
+                    Work experience
                 </h2>
-                <div class="col-sm-3 col-sm-offset-1 col-xs-2 animate fadeInLeft text-center">
-                    <span class="date">авг<br>2017</span>
+                <div class="col-sm-2 col-sm-offset-4 dt col-xs-4 animate fadeInLeft text-right">
+                    <span class="date">Sep<br>2018</span>
                 </div>
-                <div class="col-sm-8 col-xs-10 animate fadeInRight">
-                    <p class="position">Младший фронтенд разработчик</p>
-                    <p class="job">"Винайти" ООО, Киев.</p>
-                    <p class="duties-title">Обязанности:</p>
-                    <p class="duties">
-                        Адаптивная верстка web-ресурсов с готовых макетов;<br>
-                        Корректировка макетов;<br>
-                        Интеграция верстки в админпанель под управлением CMS;<br>
-                        Редакция чужой верстки;<br>
-                        Оптимизация web-ресурсов;<br>
-                        Администрирование контента.
-                    </p>
+                <div class="col-sm-3 sep col-xs-8 animate fadeInRight">
+                    <p class="position">CEO</p>
+                    <p class="job">"Vinit" LLC, Kyiv</p>
                 </div>
-                <div class="col-sm-3 col-sm-offset-1 col-xs-2 animate fadeInLeft text-center">
-                 <span class="date">до<br>2017</span>
-             </div>
-             <div class="col-sm-8 col-xs-10 animate fadeInRight">
-                <p class="duties">
-                    карьера не была связана тесно с IT. Узнать детальнее о предыдущих местах работы, а также о моем образовании можно по ссылке <a href="https://goo.gl/15HMeB" target="_blank"> linkedin.com/in/andriyzubets</a>
-                </p>
+
+                <div class="col-sm-2 col-sm-offset-4 dt col-xs-4 animate fadeInLeft text-right">
+                    <span class="date">Aug<br>2017</span>
+                </div>
+                <div class="col-sm-3 sep col-xs-8 animate fadeInRight">
+                    <p class="position">Front-end developer</p>
+                    <p class="job">Y-not, Kyiv</p>
+                </div>
+
+                <div class="col-sm-2 col-sm-offset-4 dt col-xs-4 animate fadeInLeft text-right">
+                    <span class="date">Apr<br>2016</span>
+                </div>
+                <div class="col-sm-3 sep col-xs-8 animate fadeInRight">
+                    <p class="position">Branch director</p>
+                    <p class="job">"Ukrauto" PJSC, Kyiv</p>
+                </div>
+
+                <div class="col-sm-2 col-sm-offset-4 dt col-xs-4 animate fadeInLeft text-right">
+                    <span class="date">Aug<br>2015</span>
+                </div>
+                <div class="col-sm-3 sep col-xs-8 animate fadeInRight">
+                    <p class="position">Regional manager</p>
+                    <p class="job">"Pharmastore" PE, Kyiv</p>
+                </div>
+
+                <div class="col-sm-2 col-sm-offset-4 dt col-xs-4 animate fadeInLeft text-right">
+                    <span class="date">Jan<br>2012</span>
+                </div>
+                <div class="col-sm-3 sep col-xs-8 animate fadeInRight">
+                    <p class="position">Area manager, Risk manager</p>
+                    <p class="job">"Galnaftogas" PJSC, Kyiv</p>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- === BEGIN FOOTER === -->
-    <div id="content-bottom-border" class="container">
-    </div>
-    <div id="base">
-        <div class="container padding-vert-30 margin-sm-top-30">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-4 col-sm-offset-0 animate fadeInLeft">
-                    <h3 class="margin-bottom-10">Мои контакты</h3>
-                    <p>
-                        <span class="fa-phone"></span><a href="tel:+380935004421" target="_blank">+38 093 500 44 21</a>
-                        <br>
-                        <span class="fa-envelope"></span>
-                        <a href="mailto:zubets.andriy@gmail.com" target="_blank">zubets.andriy@gmail.com</a>
-                        <br>
-                        <span class="fa-link"></span>
-                        <a href="https://andriyzubets.github.io/CV/index.html">andriyzubets.github.io/CV</a>
-                        <br>
-                    </p>
-                    <p  class="loc"  style="margin: 0">Киев, Украина</p>
+        <!-- === BEGIN FOOTER === -->
+        <div id="content-bottom-border" class="container">
+        </div>
+        <div id="base">
+            <div class="container padding-vert-30 margin-sm-top-30">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-4 col-sm-offset-0 animate fadeInLeft">
+                        <h3 class="margin-bottom-10">Feel free to contact me</h3>
+                        <p>
+                            <span class="fa-phone"></span><a href="tel:+380935004421" target="_blank">+38 093 500 44 21</a>
+                            <br>
+                            <span class="fa-envelope"></span>
+                            <a href="mailto:zubets.andriy@gmail.com" target="_blank">zubets.andriy@gmail.com</a>
+                            <br>
+                            <span class="fa-link"></span>
+                            <a href="https://andriyzubets.github.io/CV/index.html">andriyzubets.github.io/CV</a>
+                            <br>
+                        </p>
+                        <p  class="loc"  style="margin: 0">Kyiv, Ukraine</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-4 col-sm-offset-0 margin-top-30 animate fadeInUp">
+                        <p>
+                            <span class="fa-skype"></span>
+                            <a href="callto:zubetsandrew" target="_blank">zubetsandrew</a>
+                            <br>
+                            <span class="fa-linkedin"></span>
+                            <a href="https://goo.gl/15HMeB" target="_blank">linkedin.com/in/andriyzubets</a>
+                            <br>
+                            <span class="fa-facebook"></span>
+                            <a href="https://www.facebook.com/zubec" target="_blank">facebook.com/zubec</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-5 col-xs-offset-3 col-sm-offset-0 animate fadeInRight text-center">
+                       <ul class="menu">
+                        <li>
+                            <a href="#about" class="fa-font">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="fa-signal">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="fa-th">Works</a>
+                        </li>
+                        <li>
+                            <a href="#experience" class="fa-code">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#base" class="fa-comment">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-4 col-sm-offset-0 margin-top-30 animate fadeInUp">
-                    <p>
-                        <span class="fa-skype"></span>
-                        <a href="callto:zubetsandrew" target="_blank">zubetsandrew</a>
-                        <br>
-                        <span class="fa-linkedin"></span>
-                        <a href="https://goo.gl/15HMeB" target="_blank">linkedin.com/in/andriyzubets</a>
-                        <br>
-                        <span class="fa-facebook"></span>
-                        <a href="https://www.facebook.com/zubec" target="_blank">facebook.com/zubec</a>
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-4 col-xs-5 col-xs-offset-3 col-sm-offset-0 animate fadeInRight text-center">
-                   <ul class="menu">
-                    <li>
-                        <a href="#about" class="fa-font">Обо мне</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="fa-signal">Навыки</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="fa-th">Портфолио</a>
-                    </li>
-                    <li>
-                        <a href="#experience" class="fa-code">Опыт</a>
-                    </li>
-                    <li>
-                        <a href="#base" class="fa-comment">Контакты</a>
-                    </li>
-                </ul>
                 <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
         </div>
     </div>
-</div>
-<div id="footer">
-    <div class="container">
-        <div class="row">
-            <div id="copyright" class="col-md-12">
-                <p class="text-center">(c) <script type='text/javascript'>var mdate = new Date();document.write(mdate.getFullYear());</script> Andriy Zubets</p>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div id="copyright" class="col-md-12">
+                    <p class="text-center">(c) <script type='text/javascript'>var mdate = new Date();document.write(mdate.getFullYear());</script> Andriy Zubets</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- JS -->
-<script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="assets/js/scripts.js"></script>
-<!-- Isotope - Portfolio Sorting -->
-<script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
-<!-- Mobile Menu - Slicknav -->
-<script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
-<!-- Animate on Scroll-->
-<script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
-<!-- Sticky Div -->
-<script type="text/javascript" src="assets/js/jquery.sticky.js" charset="utf-8"></script>
-<!-- Slimbox2-->
-<script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
-<!-- Modernizr -->
-<script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
-<script src="assets/js/jquery.sslider.min.js"></script>
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <!-- Isotope - Portfolio Sorting -->
+    <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+    <!-- Mobile Menu - Slicknav -->
+    <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+    <!-- Animate on Scroll-->
+    <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+    <!-- Sticky Div -->
+    <script type="text/javascript" src="assets/js/jquery.sticky.js" charset="utf-8"></script>
+    <!-- Slimbox2-->
+    <script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+    <!-- Modernizr -->
+    <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.sslider.min.js"></script>
 
-<script>
-    $(document).ready(function(){
-        $('#mySlider').sSlider({
-            'nav': true,
-            'speed': 6000,
-            'fixedSize': { 'width': '100%', 'height': '300px' }
+    <script>
+        $(document).ready(function(){
+            $('#mySlider').sSlider({
+                'nav': true,
+                'speed': 6000,
+                'fixedSize': { 'width': '100%', 'height': '300px' }
+            });
         });
-    });
-</script>
-<script type="text/javascript">
- $(function(){
-    $('a[href*=#]').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-            && location.hostname == this.hostname) {
-            var $target = $(this.hash);
-        $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
-        if ($target.length) {
-                    var targetOffset = $target.offset().top - ($("#hornav").outerHeight(true)+ 175); //#main-header - заменить на ваш элемент
+    </script>
+    <script type="text/javascript">
+     $(function(){
+        $('a[href*=#]').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                && location.hostname == this.hostname) {
+                var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                    var targetOffset = $target.offset().top - ($("#hornav").outerHeight(true)+ 155); //#main-header - заменить на ваш элемент
                     $('html,body').animate({scrollTop: targetOffset}, 700);
                     return false;
                 }
             }
         });
-});
+    });
 
 </script>
 </body>
