@@ -1159,10 +1159,10 @@ h6 {
 a {
    text-decoration: none;
    color: #cfd0cd;
-   -webkit-transition: color 0.15s ease-in;
-   -moz-transition: color 0.15s ease-in;
-   -o-transition: color 0.15s ease-in;
-   transition: color 0.15s ease-in;
+   -webkit-transition: all 0.15s ease-in;
+   -moz-transition: all 0.15s ease-in;
+   -o-transition: all 0.15s ease-in;
+   transition: all 0.15s ease-in;
 }
 a:hover {
    text-decoration: none;
