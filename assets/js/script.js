@@ -50,8 +50,8 @@ $(document).ready(function() {
 	advsBar();
 
 	$(window).resize(function() {
-		moveProgressBar();
-		advsBar();
+		// moveProgressBar();
+		// advsBar();
 	});
 	function moveProgressBar() {
 		$('.skills .item').each(function() {
