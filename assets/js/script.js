@@ -168,5 +168,13 @@ $(document).ready(function() {
 		$('body').toggleClass('op')
 		$('.m_toggle').toggleClass('active')
 		$('.short_info').toggleClass('active')
+		$('.sibg').toggleClass('active')
+	})
+	$('.sibg').click(function(event){
+		event.preventDefault();
+		$('body').removeClass('op')
+		$('.m_toggle').removeClass('active')
+		$('.short_info').removeClass('active')
+		$('.sibg').removeClass('active')
 	})
 });

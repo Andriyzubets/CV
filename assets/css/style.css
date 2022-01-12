@@ -690,6 +690,23 @@ h1,h2,h3,h4,a,p,div,span, {
 	text-align: right;
 	color:var(--gray);
 }
+.sibg {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: #0009;
+	z-index: 4;
+	transition: all .3s ease-out .3s;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+}
+.sibg.active {
+	opacity: 1;
+	visibility: visible;
+}
 @media screen and (max-width: 1440px) {
 	.main {
 		max-width: 95%;
@@ -713,7 +730,11 @@ h1,h2,h3,h4,a,p,div,span, {
 		left: 0;
 	}
 	.m_toggle {
-		display: block;
+		display: flex;
+		width: 20px;
+		height: 20px;
+		align-items: center;
+		justify-content: center;
 		color:#fff;
 		left: 30px;
 		top:20px;
@@ -722,7 +743,7 @@ h1,h2,h3,h4,a,p,div,span, {
 		transition: all .5s ease-out;
 	}
 	.m_toggle.active {
-		left:260px;
+		left:250px;
 	}
 	.main .det_info {
 		padding-left: 0;
