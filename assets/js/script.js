@@ -9,6 +9,35 @@ $(document).ready(function() {
 		}
 		return age;
 	}
+	if($('.cases_items .item').length > 0) {
+		$(document).on('click', '.cases_items .item > a', function(event){
+			event.preventDefault();
+			let content = ($(this).siblings('.full_descr').html() != '') ? $(this).siblings('.full_descr').html() : '';
+			if(content != '') {
+				if($('.case_popup, .cpbg').length > 0) {
+					$('.case_popup, .cpbg').remove();
+				}
+				let pop = $('<div class="case_popup"></div>').html(content).append('<a class="close" href=""></a>');
+				let popBg = $('<div class="cpbg"></div>');
+				$('body').append(pop);
+				$('body').append(popBg);
+				setTimeout(function(){
+					pop.addClass('active');
+					popBg.addClass('active');
+					$('body').addClass('fixed');
+				},400);
+			}
+		})
+		$('.cases_items .item ul li').prepend($('<i class="fas fa-check" aria-hidden="true"></i>'))
+		$(document).on('click','.case_popup .close, .cpbg', function(event){
+			event.preventDefault();
+			$('.case_popup, .cpbg').removeClass('active');
+			$('body').removeClass('fixed');
+			setTimeout(function(){
+				$('.case_popup, .cpbg').remove();
+			},400)
+		})
+	}
 	$('.short_info .age').html(getAge('1986-10-17'));
 	// circles
 	const globalConfig = {
@@ -81,7 +110,14 @@ $(document).ready(function() {
 			// var getPercent = (dataPers / 100);
 			// var getProgressWrapWidth = $(this).width();
 			// var progressTotal = getPercent * getProgressWrapWidth;
-			var animationLength = 2000;
+			animationLength = 2000;
+			if(dataPers < 10) {
+				animationLength = 1000;
+			} else if (dataPers < 100) {	
+				animationLength = 1500;
+			} else {
+				animationLength = 2000;
+			}
 			var label = $(this).find('span');
 			var start = new Date().getTime();
 			setTimeout(function() {
@@ -99,13 +135,13 @@ $(document).ready(function() {
 	// type words
 	var typed = new Typed('.det_info .hero .code .inline', {
 		strings: [
-		'modern web sites.',
-		'various integrations.',
-		'analytic dashboards.',
-		'Wordpress sites.',
-		'Opencart sites.',
-		'self-written cms.'
-		],
+			'modern web sites.',
+			'various integrations.',
+			'analytic dashboards.',
+			'Wordpress sites.',
+			'Opencart sites.',
+			'self-written cms.'
+			],
 		stringsElement: null,
 		typeSpeed: 100,
 		startDelay: 0,
