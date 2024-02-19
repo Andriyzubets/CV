@@ -137,9 +137,12 @@ $(document).ready(function() {
 		strings: [
 			'modern web sites.',
 			'various integrations.',
+			'Healthcare platforms',
+			'AI integrations.',
 			'analytic dashboards.',
 			'Wordpress sites.',
 			'Opencart sites.',
+			'Codeigniter sites.',
 			'self-written cms.'
 			],
 		stringsElement: null,
