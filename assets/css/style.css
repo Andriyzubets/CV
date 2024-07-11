@@ -484,7 +484,7 @@ h1,h2,h3,h4,a,p,div,span, {
 	opacity: 0;
 }
 
-.main .det_info .wrap .works .item .title {
+.main .det_info .wrap .works .item .title, .main .det_info .wrap .works .items .item span.title {
 	color: var(--white);
 	margin-bottom: 10px;
 	font-size: 14px;

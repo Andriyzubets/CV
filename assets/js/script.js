@@ -135,16 +135,16 @@ $(document).ready(function() {
 	// type words
 	var typed = new Typed('.det_info .hero .code .inline', {
 		strings: [
-			'modern web sites.',
-			'various integrations.',
-			'Healthcare platforms',
-			'AI integrations.',
-			'analytic dashboards.',
-			'Wordpress sites.',
-			'Opencart sites.',
-			'Codeigniter sites.',
-			'self-written cms.'
-			],
+		'modern web sites.',
+		'various integrations.',
+		'Healthcare platforms',
+		'AI integrations.',
+		'analytic dashboards.',
+		'Wordpress sites.',
+		'Opencart sites.',
+		'Codeigniter sites.',
+		'self-written cms.'
+		],
 		stringsElement: null,
 		typeSpeed: 100,
 		startDelay: 0,
@@ -172,7 +172,7 @@ $(document).ready(function() {
 		xhr.open('GET', file, false);
 		xhr.send();
 		if (xhr.status != 200) {
-			console.log('Ошибка ' + xhr.status + ': ' + xhr.statusText);
+			console.log('Error ' + xhr.status + ': ' + xhr.statusText);
 		} else {
 			$('.main .det_info .wrap .works .box').css('opacity','0');
 			setTimeout(function(){
@@ -180,7 +180,12 @@ $(document).ready(function() {
 				var data = JSON.parse(xhr.responseText);
 				arr = data.result;
 				arr.forEach(function(item, i, arr) {
-					$('<div class="item h"><a href="'+item[1]+'" class="title" target="_blank" rel="nofollow">'+item[2]+'</a><p>'+item[0]+'</p><span>'+item[3]+'</span></div>').appendTo('.works .items');
+					if(item[1] == '#') {
+						$('<div class="item h"><span class="title">'+item[2]+'</span><p>'+item[0]+'</p><span>'+item[3]+'</span></div>').appendTo('.works .items');
+
+					} else {
+						$('<div class="item h"><a href="'+item[1]+'" class="title" target="_blank" rel="nofollow">'+item[2]+'</a><p>'+item[0]+'</p><span>'+item[3]+'</span></div>').appendTo('.works .items');
+					}
 				});
 				var its = setInterval(opn, 100);
 				$('.main .det_info .wrap .works .more').show();
