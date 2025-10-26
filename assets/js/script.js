@@ -135,15 +135,18 @@ $(document).ready(function() {
 	// type words
 	var typed = new Typed('.det_info .hero .code .inline', {
 		strings: [
-		'modern web sites.',
-		'various integrations.',
-		'Healthcare platforms',
-		'AI integrations.',
-		'analytic dashboards.',
-		'Wordpress sites.',
-		'Opencart sites.',
-		'Codeigniter sites.',
-		'self-written cms.'
+		'Laravel / JS apps.',
+		'FastAPI microservices.',
+		'AI assistants & RAG.',
+		'vector search with FAISS.',
+		'Stripe subscriptions.',
+		'PDF pipelines (WeasyPrint).',
+		'Playwright E2E tests.',
+		'Dockerized scrapers.',
+		'Azure slot deploys.',
+		'SEO-friendly WordPress.',
+		'OpenCart integrations.',
+		'Fine-tuned models.'
 		],
 		stringsElement: null,
 		typeSpeed: 100,
