@@ -3,77 +3,384 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add('js');</script>
   <title>Andriy Zubets — Senior AI Solutions Engineer</title>
-  <meta name="description" content="Senior AI Solutions Engineer turning complex business problems into working software and AI-enabled products.">
-  <meta name="theme-color" content="#f3f0e8">
+  <meta name="description" content="Senior AI Solutions Engineer who turns difficult business problems into practical software and AI products.">
+  <meta name="theme-color" content="#f7f6f2">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Andriy Zubets — Senior AI Solutions Engineer">
-  <meta property="og:description" content="Business discovery, software architecture, AI products, and full-stack delivery.">
+  <meta property="og:description" content="I solve difficult business problems with software and AI.">
   <meta property="og:url" content="https://andriyzubets.github.io/CV/">
   <meta property="og:image" content="https://andriyzubets.github.io/CV/assets/img/top_photo.png">
   <link rel="canonical" href="https://andriyzubets.github.io/CV/">
   <link rel="alternate" hreflang="en" href="https://andriyzubets.github.io/CV/">
   <link rel="alternate" hreflang="fr" href="https://andriyzubets.github.io/CV/fr/">
   <link rel="alternate" hreflang="x-default" href="https://andriyzubets.github.io/CV/">
-  <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="assets/css/style2.css?v=3.6">
-  <script>document.documentElement.classList.add('js');</script>
-  <script src="assets/js/script2.js?v=3.0" defer></script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Andriy Zubets",
-    "url": "https://andriyzubets.github.io/CV/",
-    "image": "https://andriyzubets.github.io/CV/assets/img/top_photo.png",
-    "jobTitle": "Senior AI Solutions Engineer",
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "Cantal",
-      "addressCountry": "FR"
-    },
-    "sameAs": [
-      "https://t.me/dev_zav",
-      "https://wa.me/33745735126",
-      "https://www.linkedin.com/in/andriyzubets/"
-    ],
-    "knowsAbout": [
-      "Solution Architecture",
-      "Business Discovery",
-      "LLM Applications",
-      "AI Agents",
-      "Full-Stack Software Delivery"
-    ]
-  }
-  </script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=4.1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=4.1">
+  <link rel="stylesheet" href="assets/css/reveal.css?v=4.5">
+  <script src="assets/js/reveal.js?v=4.5" defer></script>
+  <style>
+    :root {
+      --page: #f7f6f2;
+      --surface: #ffffff;
+      --surface-soft: #eeeee9;
+      --ink: #17282b;
+      --muted: #5c696b;
+      --dark: #12282c;
+      --dark-soft: #1b383d;
+      --line: #d8ddd9;
+      --line-dark: rgba(255,255,255,.16);
+      --accent: #cf5b3f;
+      --accent-soft: #f2ddd5;
+      --mint: #b9d8cf;
+      --radius: 18px;
+      --container: 1240px;
+      --header: 70px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header) + 18px); }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    body.nav-open { overflow: hidden; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    h1, h2, h3, h4, p, ul, ol, blockquote { margin-top: 0; }
+    h1, h2, h3, h4 { margin-bottom: 0; line-height: 1.08; letter-spacing: -.025em; }
+    h1 { max-width: 760px; font-size: clamp(2.8rem, 4vw, 3.9rem); }
+    h2 { font-size: clamp(2.1rem, 3.2vw, 3.15rem); }
+    h3 { font-size: 1.35rem; }
+    p { margin-bottom: 1rem; }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    ::selection { background: var(--accent); color: #fff; }
+
+    .container { width: min(calc(100% - 48px), var(--container)); margin-inline: auto; }
+    .section { padding: 82px 0; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    .skip-link {
+      position: fixed; z-index: 999; top: 8px; left: 8px; padding: 10px 14px;
+      background: var(--dark); color: #fff; transform: translateY(-140%);
+    }
+    .skip-link:focus { transform: none; }
+    .eyebrow {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 16px;
+      color: var(--muted); font-size: .8rem; font-weight: 800;
+      letter-spacing: .1em; text-transform: uppercase;
+    }
+    .eyebrow::before { width: 24px; height: 2px; background: var(--accent); content: ""; }
+    .eyebrow-light { color: rgba(255,255,255,.62); }
+    .section-head {
+      display: grid; grid-template-columns: minmax(0,1fr) minmax(300px,.64fr);
+      align-items: end; gap: 48px; margin-bottom: 38px;
+    }
+    .section-head p:last-child { margin: 0; color: var(--muted); font-size: 1.02rem; }
+    .section-head-light p:last-child { color: rgba(255,255,255,.65); }
+
+    /* Header */
+    .site-header {
+      position: sticky; z-index: 100; top: 0; height: var(--header);
+      border-bottom: 1px solid rgba(23,40,43,.1); background: rgba(247,246,242,.94);
+      backdrop-filter: blur(16px);
+    }
+    .nav-shell { display: flex; height: 100%; align-items: center; justify-content: space-between; gap: 30px; }
+    .brand { display: flex; align-items: center; gap: 11px; }
+    .brand-mark {
+      display: block; width: 38px; height: 38px; flex: 0 0 38px;
+    }
+    .brand-mark img {
+      width: 100%; height: 100%;
+    }
+    .brand-copy { display: flex; flex-direction: column; line-height: 1.16; }
+    .brand-copy strong { font-size: .9rem; }
+    .brand-copy span { margin-top: 3px; color: var(--muted); font-size: .78rem; }
+    .site-nav { display: flex; align-items: center; gap: 28px; font-size: .875rem; font-weight: 700; }
+    .site-nav > a:not(.nav-cta):hover { color: var(--accent); }
+    .nav-cta {
+      display: inline-flex; min-height: 40px; align-items: center; gap: 14px;
+      padding: 0 17px; border-radius: 999px; background: var(--dark); color: #fff;
+    }
+    .nav-cta:hover { background: var(--accent); }
+    .language-switcher {
+      display: flex; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 999px;
+    }
+    .language-switcher a { display: grid; min-width: 32px; min-height: 26px; place-items: center; border-radius: 999px; font-size: .75rem; }
+    .language-switcher .is-active { background: var(--dark); color: #fff; }
+    .nav-toggle { display: none; }
+
+    /* Hero */
+    .hero { position: relative; overflow: hidden; padding: 56px 0 48px; }
+    .hero::after {
+      position: absolute; inset: auto 0 0; height: 36%; content: ""; pointer-events: none;
+      background-image: linear-gradient(rgba(23,40,43,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(23,40,43,.04) 1px,transparent 1px);
+      background-size: 28px 28px; mask-image: linear-gradient(transparent,#000);
+    }
+    .hero-grid {
+      position: relative; z-index: 1; display: grid; min-height: 520px;
+      grid-template-columns: minmax(0,1.22fr) minmax(340px,.62fr); align-items: center; gap: 56px;
+    }
+    .hero-lede { max-width: 700px; margin: 22px 0 26px; color: var(--muted); font-size: 1.15rem; line-height: 1.6; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; }
+    .button {
+      display: inline-flex; min-height: 48px; align-items: center; justify-content: space-between;
+      gap: 24px; padding: 0 21px; border: 1px solid var(--dark); border-radius: 999px;
+      font-size: .9rem; font-weight: 800;
+    }
+    .button-primary { background: var(--dark); color: #fff; }
+    .button-primary:hover { border-color: var(--accent); background: var(--accent); }
+    .text-link { font-size: .94rem; font-weight: 800; }
+    .text-link:hover { color: var(--accent); }
+    .availability { margin-top: 22px; color: var(--muted); font-size: .88rem; }
+    .availability span { display: inline-flex; align-items: center; gap: 9px; }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: #45a26e; box-shadow: 0 0 0 5px rgba(69,162,110,.12); }
+    .portrait-field {
+      position: relative; width: min(100%,390px); height: 460px; justify-self: end; overflow: hidden;
+      border-radius: 195px 195px 16px 16px; background: #e7e3da;
+    }
+    .portrait-field::before {
+      position: absolute; top: 70px; left: 46px; width: 260px; height: 260px;
+      border: 1px solid rgba(23,40,43,.13); border-radius: 50%; content: "";
+    }
+    .portrait-field img { position: absolute; right: -24px; bottom: 0; width: 480px; height: auto; max-width: none; filter: saturate(.82); }
+
+    /* Proof */
+    .proof { background: var(--dark); color: #fff; }
+    .proof-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+    .proof-item { display: flex; min-height: 108px; align-items: center; gap: 15px; padding: 22px 26px; }
+    .proof-item + .proof-item { border-left: 1px solid var(--line-dark); }
+    .proof-item strong { color: var(--mint); font-size: 2.25rem; line-height: 1; letter-spacing: -.04em; }
+    .proof-item span { color: rgba(255,255,255,.67); font-size: .875rem; line-height: 1.4; }
+
+    /* Work */
+    .work { background: #18353a; color: #fff; }
+    .flagship { overflow: hidden; border: 1px solid var(--line-dark); border-radius: 24px; background: var(--dark); }
+    .flagship-top { display: grid; grid-template-columns: 1.16fr .84fr; gap: 46px; padding: 44px; }
+    .label { margin-bottom: 10px; color: #df826b; font-size: .78rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
+    .flagship h3 { max-width: 690px; font-size: clamp(1.7rem,2.5vw,2.45rem); }
+    .flagship-summary { margin: 18px 0 0; color: rgba(255,255,255,.67); }
+    .case-facts { display: grid; grid-template-columns: repeat(3,1fr); align-self: end; }
+    .case-facts div { padding: 0 16px; }
+    .case-facts div + div { border-left: 1px solid var(--line-dark); }
+    .case-facts strong, .case-facts span { display: block; }
+    .case-facts strong { margin-bottom: 8px; color: var(--mint); font-size: 2rem; }
+    .case-facts span { color: rgba(255,255,255,.62); font-size: .85rem; line-height: 1.4; }
+    .system-flow {
+      display: grid; grid-template-columns: repeat(5,1fr); gap: 1px;
+      border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); background: var(--line-dark);
+    }
+    .flow-step { position: relative; min-height: 126px; padding: 22px; background: #153136; }
+    .flow-step:not(:last-child)::after { position: absolute; z-index: 2; top: 50%; right: -9px; color: var(--mint); content: "→"; transform: translateY(-50%); }
+    .flow-step small { display: block; margin-bottom: 23px; color: #df826b; font-size: .75rem; font-weight: 800; }
+    .flow-step strong { display: block; font-size: .92rem; }
+    .flow-step span { display: block; margin-top: 6px; color: rgba(255,255,255,.58); font-size: .82rem; }
+    .flagship-details { display: grid; grid-template-columns: 1fr 1fr; }
+    .flagship-details > div { padding: 34px 44px; }
+    .flagship-details > div + div { border-left: 1px solid var(--line-dark); }
+    .flagship-details h4 { margin-bottom: 17px; font-size: 1.08rem; }
+    .plain-list { margin: 0; padding: 0; list-style: none; }
+    .plain-list li { position: relative; padding: 10px 0 10px 22px; border-top: 1px solid var(--line-dark); color: rgba(255,255,255,.72); font-size: .92rem; }
+    .plain-list li::before { position: absolute; left: 1px; color: var(--mint); content: "•"; }
+    .tech-row { display: flex; flex-wrap: wrap; gap: 7px; padding: 20px 44px 25px; border-top: 1px solid var(--line-dark); }
+    .tech-row span { padding: 6px 9px; border: 1px solid var(--line-dark); border-radius: 999px; color: rgba(255,255,255,.68); font-size: .8rem; }
+
+    .selected-head { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin: 68px 0 28px; }
+    .selected-head h2 { font-size: 2.35rem; }
+    .selected-head p { margin: 0; color: rgba(255,255,255,.62); }
+    .system-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 15px; }
+    .system-card { display: flex; min-height: 410px; flex-direction: column; padding: 28px; border-radius: var(--radius); color: var(--ink); }
+    .system-card:nth-child(1) { background: #dce8df; }
+    .system-card:nth-child(2) { background: #dce1e2; }
+    .system-card:nth-child(3) { background: #eadfd3; }
+    .system-metric { display: flex; min-height: 58px; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 22px; padding-bottom: 17px; border-bottom: 1px solid rgba(23,40,43,.16); }
+    .system-metric > span { color: var(--muted); font-size: .75rem; font-weight: 850; letter-spacing: .07em; text-transform: uppercase; }
+    .system-metric strong { font-size: 1.55rem; text-align: right; }
+    .system-metric small { display: block; margin-top: 4px; color: var(--muted); font-size: .78rem; text-transform: uppercase; }
+    .system-card h3 { min-height: 48px; margin-bottom: 14px; }
+    .system-card > p { color: #455557; font-size: .95rem; }
+    .system-card ul { margin: auto 0 0; padding: 18px 0 0 17px; border-top: 1px solid rgba(23,40,43,.16); }
+    .system-card li { color: #3f5052; font-size: .9rem; }
+    .system-card li + li { margin-top: 7px; }
+
+    /* Process */
+    .process { background: var(--surface); }
+    .process-grid { display: grid; grid-template-columns: repeat(4,1fr); border-top: 1px solid var(--line); }
+    .process-step { min-height: 190px; padding: 24px 26px 18px 0; }
+    .process-step + .process-step { padding-left: 26px; border-left: 1px solid var(--line); }
+    .process-step small { display: block; margin-bottom: 28px; color: var(--accent); font-size: .7rem; font-weight: 850; }
+    .process-step h3 { margin-bottom: 10px; font-size: 1.2rem; }
+    .process-step p { margin: 0; color: var(--muted); font-size: .94rem; }
+    .ai-note {
+      display: grid; grid-template-columns: .72fr 1.28fr; gap: 44px; margin-top: 28px; padding: 30px;
+      border-radius: var(--radius); background: var(--surface-soft);
+    }
+    .ai-note h3 { font-size: 1.45rem; }
+    .ownership { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .ownership h4 { margin-bottom: 9px; color: var(--accent); font-size: .86rem; text-transform: uppercase; letter-spacing: .06em; }
+    .ownership p { margin: 0; color: var(--muted); font-size: .94rem; }
+
+    /* Experience */
+    .experience { background: var(--page); }
+    .career { display: grid; grid-template-columns: repeat(4,1fr); margin: 0; padding: 0; list-style: none; }
+    .career li { position: relative; padding: 24px 28px 0 0; border-top: 1px solid var(--line); }
+    .career li + li { padding-left: 28px; }
+    .career li::before { position: absolute; top: -5px; left: 0; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); content: ""; }
+    .career li + li::before { left: 28px; }
+    .career time { display: block; margin-bottom: 28px; color: var(--accent); font-size: .8rem; font-weight: 850; }
+    .career h3 { min-height: 48px; margin-bottom: 10px; font-size: 1.15rem; }
+    .career p { margin: 0; color: var(--muted); font-size: .92rem; }
+
+    /* About */
+    .about { background: var(--dark); color: #fff; }
+    .about-grid { display: grid; grid-template-columns: .82fr 1.18fr; gap: 64px; }
+    .about-copy > p:not(.eyebrow) { margin: 20px 0 0; color: rgba(255,255,255,.67); }
+    .about-questions { margin: 26px 0; padding: 20px 0 20px 24px; border-left: 3px solid var(--accent); color: var(--mint); font-size: 1rem; }
+    .about-note { display: flex; flex-wrap: wrap; gap: 7px; }
+    .about-note span { padding: 6px 9px; border: 1px solid var(--line-dark); border-radius: 999px; color: rgba(255,255,255,.65); font-size: .8rem; }
+    .toolbox { overflow: hidden; border: 1px solid var(--line-dark); border-radius: var(--radius); }
+    .toolbox-head { padding: 24px 28px; background: rgba(255,255,255,.04); }
+    .toolbox-head h3 { font-size: 1.3rem; }
+    .tool-group { display: grid; grid-template-columns: 150px 1fr; gap: 24px; padding: 22px 28px; border-top: 1px solid var(--line-dark); }
+    .tool-group h4 { color: var(--mint); font-size: .9rem; }
+    .tool-list { display: flex; flex-wrap: wrap; gap: 7px; margin: 0; padding: 0; list-style: none; }
+    .tool-list li { padding: 5px 8px; border: 1px solid var(--line-dark); border-radius: 6px; color: rgba(255,255,255,.74); font-size: .84rem; }
+
+    /* Contact */
+    .contact { padding: 72px 0; }
+    .contact-card {
+      display: grid; grid-template-columns: 1.1fr .9fr; align-items: end; gap: 60px;
+      padding: 52px; border-radius: 24px; background: var(--accent); color: #fff;
+    }
+    .contact-card h2 { max-width: 650px; }
+    .contact-card p { max-width: 650px; margin: 17px 0 0; color: rgba(255,255,255,.78); }
+    .contact-links { display: grid; }
+    .contact-links a { display: flex; justify-content: space-between; padding: 13px 0; border-top: 1px solid rgba(255,255,255,.35); font-size: .94rem; font-weight: 800; }
+    .contact-links a:hover { color: var(--dark); }
+    .site-footer { padding: 22px 0; background: var(--dark); color: rgba(255,255,255,.58); }
+    .site-footer .container { display: flex; justify-content: space-between; gap: 20px; }
+    .site-footer p, .site-footer a { margin: 0; font-size: .8rem; }
+
+    @media (max-width: 1040px) {
+      .site-nav { gap: 18px; }
+      .hero-grid { grid-template-columns: minmax(0,1fr) 320px; gap: 34px; }
+      .portrait-field { height: 410px; }
+      .portrait-field img { width: 430px; }
+      .flagship-top { grid-template-columns: 1fr; }
+      .case-facts { max-width: 620px; }
+      .system-flow { grid-template-columns: repeat(3,1fr); }
+      .system-grid { grid-template-columns: 1fr; }
+      .system-card { min-height: 0; }
+      .about-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 820px) {
+      :root { --header: 64px; }
+      .container { width: min(calc(100% - 32px),var(--container)); }
+      .section { padding: 64px 0; }
+      .site-header { backdrop-filter: none; }
+      .nav-toggle {
+        position: relative; z-index: 102; display: grid; width: 44px; height: 44px; padding: 0;
+        place-content: center; gap: 5px; border: 1px solid var(--line); border-radius: 50%; background: #fff;
+      }
+      .nav-toggle span:not(.sr-only) { width: 17px; height: 2px; background: var(--ink); }
+      .site-nav {
+        position: fixed; z-index: 101; inset: 0; visibility: hidden; flex-direction: column;
+        align-items: stretch; justify-content: center; gap: 0; padding: 80px 28px;
+        background: var(--dark); color: #fff; opacity: 0; pointer-events: none;
+      }
+      .site-nav.is-open { visibility: visible; opacity: 1; pointer-events: auto; }
+      .site-nav > a:not(.nav-cta) { padding: 12px 0; border-bottom: 1px solid var(--line-dark); font-size: 1.5rem; }
+      .language-switcher { align-self: flex-start; margin-top: 18px; border-color: var(--line-dark); }
+      .nav-cta { align-self: flex-start; margin-top: 20px; background: var(--accent); }
+      .hero-grid, .section-head, .ai-note, .contact-card { grid-template-columns: 1fr; }
+      .hero-grid { min-height: 0; }
+      .portrait-field { width: min(100%,430px); justify-self: center; }
+      .proof-grid { grid-template-columns: repeat(2,1fr); }
+      .proof-item:nth-child(3) { border-left: 0; border-top: 1px solid var(--line-dark); }
+      .proof-item:nth-child(4) { border-top: 1px solid var(--line-dark); }
+      .flagship-details { grid-template-columns: 1fr; }
+      .flagship-details > div + div { border-top: 1px solid var(--line-dark); border-left: 0; }
+      .process-grid, .career { grid-template-columns: repeat(2,1fr); gap: 22px; }
+      .process-step, .process-step + .process-step, .career li, .career li + li { padding-left: 0; border-left: 0; }
+      .process-step:nth-child(3), .process-step:nth-child(4) { border-top: 1px solid var(--line); }
+      .career li + li::before { left: 0; }
+      .contact-card { gap: 34px; }
+    }
+
+    @media (max-width: 560px) {
+      h1 { font-size: clamp(2.25rem,10vw,2.8rem); }
+      h2 { font-size: 2rem; }
+      .brand-copy span { display: none; }
+      .hero { padding-top: 40px; }
+      .hero-grid { gap: 28px; }
+      .hero-actions { align-items: flex-start; flex-direction: column; }
+      .portrait-field { height: 320px; }
+      .portrait-field img { right: -34px; width: 380px; }
+      .proof-grid, .process-grid, .career, .ownership, .system-flow { grid-template-columns: 1fr; }
+      .proof-item, .proof-item + .proof-item { min-height: 88px; border-top: 1px solid var(--line-dark); border-left: 0; }
+      .proof-item:first-child { border-top: 0; }
+      .flagship-top, .flagship-details > div, .tech-row { padding: 25px; }
+      .case-facts { grid-template-columns: 1fr; gap: 14px; }
+      .case-facts div, .case-facts div + div { padding: 0; border-left: 0; }
+      .flow-step:not(:last-child)::after { top: auto; right: 22px; bottom: -10px; transform: rotate(90deg); }
+      .selected-head { align-items: flex-start; flex-direction: column; }
+      .system-card { padding: 24px; }
+      .process-step, .process-step + .process-step { min-height: 0; padding: 22px 0; border-top: 1px solid var(--line); }
+      .process-step small { margin-bottom: 14px; }
+      .career { gap: 0; }
+      .career li, .career li + li { padding: 22px 0; }
+      .career h3 { min-height: 0; }
+      .tool-group { grid-template-columns: 1fr; }
+      .contact-card { padding: 32px 24px; }
+      .site-footer .container { flex-direction: column; }
+    }
+
+    @media (min-width: 1000px) and (max-height: 820px) {
+      .hero { padding-top: 34px; padding-bottom: 34px; }
+      .hero-grid { min-height: 500px; }
+      .portrait-field { height: 430px; }
+      .portrait-field img { width: 450px; }
+      .section { padding-top: 64px; padding-bottom: 64px; }
+      .contact { padding-top: 56px; padding-bottom: 56px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header class="site-header" data-header>
+  <header class="site-header">
     <div class="container nav-shell">
       <a class="brand" href="#top" aria-label="Andriy Zubets — back to top">
-        <span class="brand-mark" aria-hidden="true">AZ</span>
-        <span class="brand-copy">
-          <strong>Andriy Zubets</strong>
-          <span>Senior AI Solutions Engineer</span>
-        </span>
+        <span class="brand-mark" aria-hidden="true"><img src="favicon.svg?v=4.1" alt="" width="38" height="38"></span>
+        <span class="brand-copy"><strong>Andriy Zubets</strong><span>Senior AI Solutions Engineer</span></span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span class="sr-only">Toggle navigation</span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span><span></span><span></span>
       </button>
 
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
-        <a href="#process">How I work</a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
         <a href="#work">Work</a>
+        <a href="#process">How I work</a>
         <a href="#experience">Experience</a>
         <a href="#about">About</a>
         <span class="language-switcher" aria-label="Language selector">
-          <a class="is-active" href="index.html" hreflang="en" aria-current="page">EN</a>
-          <a href="fr/index.html" hreflang="fr">FR</a>
+          <a class="is-active" href="index.html?v=4.0" hreflang="en" aria-current="page">EN</a>
+          <a href="fr/index.html?v=4.0" hreflang="fr">FR</a>
         </span>
         <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
       </nav>
@@ -81,402 +388,237 @@
   </header>
 
   <main id="main-content">
-    <section class="hero section" id="top" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span></span> Senior AI Solutions Engineer</p>
-          <h1 id="hero-title">I turn complex business problems into software that works.</h1>
-          <p class="hero-lede">I work with founders and decision-makers to understand the problem, design the system, and deliver it with software and AI.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">View work <span aria-hidden="true">↓</span></a>
-            <a class="hero-text-link" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid" data-appear-group>
+        <div>
+          <p class="eyebrow">Senior AI Solutions Engineer</p>
+          <h1 id="hero-title">I solve difficult business problems with software and AI.</h1>
+          <p class="hero-lede appear">I work directly with founders and decision-makers. We define what needs to change, choose a practical approach, and turn it into a working product.</p>
+          <div class="hero-actions appear">
+            <a class="button button-primary" href="#work">See my work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="availability" aria-label="Location and availability">
-            <span><i class="status-dot" aria-hidden="true"></i> Cantal, France · Remote France / Europe</span>
-          </div>
+          <p class="availability appear"><span><i class="status-dot" aria-hidden="true"></i>Cantal, France · Remote in France / Europe</span></p>
         </div>
-
-        <div class="hero-visual" aria-label="Portrait of Andriy Zubets">
-          <div class="portrait-field" aria-hidden="true">
-            <span class="orbit orbit-one"></span>
-            <img src="assets/img/top_photo.png" alt="" width="993" height="824">
-          </div>
+        <div class="portrait-field appear" aria-label="Portrait of Andriy Zubets">
+          <img src="assets/img/top_photo.png" alt="Andriy Zubets" width="993" height="824">
         </div>
       </div>
     </section>
 
-    <section class="proof" aria-label="Selected evidence">
-      <div class="container proof-grid">
-        <div class="proof-item"><strong>9+</strong><span>Years delivering software</span></div>
-        <div class="proof-item"><strong>40+</strong><span>Systems/projects</span></div>
-        <div class="proof-item"><strong>10M+</strong><span>Production records</span></div>
-        <div class="proof-item"><strong>4</strong><span>Countries in current production</span></div>
+    <section class="proof" aria-label="Key facts">
+      <div class="container proof-grid" data-appear-group>
+        <div class="proof-item appear"><strong>9+</strong><span>years delivering software</span></div>
+        <div class="proof-item appear"><strong>40+</strong><span>systems and complex projects</span></div>
+        <div class="proof-item appear"><strong>10M+</strong><span>records in a production product</span></div>
+        <div class="proof-item appear"><strong>4</strong><span>countries in current production</span></div>
+      </div>
+    </section>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head section-head-light">
+          <div><p class="eyebrow eyebrow-light">Selected work</p><h2 id="work-title">Systems built for real work</h2></div>
+          <p class="appear">The projects below show the kind of problems I handle: unclear requirements, complex data, many integrations, and a product that must work in daily use.</p>
+        </div>
+
+        <article class="flagship appear">
+          <div class="flagship-top">
+            <div>
+              <p class="label">Main case · anonymized</p>
+              <h3>AI-powered procurement platform</h3>
+              <p class="flagship-summary">The platform collects procurement opportunities, converts difficult documents, finds the important information, and helps users prepare answers. It also tracks AI usage and cost.</p>
+            </div>
+            <div class="case-facts" aria-label="Platform facts">
+              <div><strong>≈1M</strong><span>opportunities per year at planned scale</span></div>
+              <div><strong>4</strong><span>countries in production</span></div>
+              <div><strong>6</strong><span>apps and services</span></div>
+            </div>
+          </div>
+
+          <div class="system-flow" aria-label="System flow">
+            <div class="flow-step"><small>01</small><strong>Collect</strong><span>Procurement sources</span></div>
+            <div class="flow-step"><small>02</small><strong>Prepare</strong><span>Intake and processing</span></div>
+            <div class="flow-step"><small>03</small><strong>Convert</strong><span>PDF, DOCX and XLSX</span></div>
+            <div class="flow-step"><small>04</small><strong>Analyze</strong><span>AI checks and answers</span></div>
+            <div class="flow-step"><small>05</small><strong>Use</strong><span>Customer workflows</span></div>
+          </div>
+
+          <div class="flagship-details">
+            <div>
+              <h4>My responsibility</h4>
+              <ul class="plain-list">
+                <li>Turn stakeholder ideas into clear features and user flows</li>
+                <li>Make the main architecture, database, API, and delivery decisions</li>
+                <li>Handle production problems, deployment, and ongoing improvement</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Important choices</h4>
+              <ul class="plain-list">
+                <li>Split services only when one application could no longer handle the work well</li>
+                <li>Add AI checks and cost controls before usage became expensive</li>
+                <li>Compare document tools and route each file through the best option</li>
+                <li>Test complete user journeys in a browser before release</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tech-row" data-appear-group aria-label="Technology used">
+            <span class="appear">Laravel 11</span><span class="appear">PHP 8.2</span><span class="appear">PostgreSQL</span><span class="appear">Redis</span><span class="appear">Python / FastAPI services</span><span class="appear">Playwright</span><span class="appear">Docker</span><span class="appear">Azure App Service</span><span class="appear">Vertex AI / Gemini</span><span class="appear">Stripe</span>
+          </div>
+        </article>
+
+        <div class="selected-head"><div><p class="eyebrow eyebrow-light">More examples</p><h2>Three other products</h2></div><p class="appear">Different problems, each delivered for real use.</p></div>
+
+        <div class="system-grid" data-appear-group>
+          <article class="system-card appear">
+            <div class="system-metric"><span>AI publishing workflow</span><strong>2,000+<small>articles</small></strong></div>
+            <h3>Editorial automation</h3>
+            <p>A publishing process that keeps people in control while AI handles the repetitive work.</p>
+            <ul>
+              <li>Generate articles and images, then wait for human approval</li>
+              <li>Translate approved content into two languages</li>
+              <li>Create supporting content, publish, schedule, and submit for indexing</li>
+            </ul>
+          </article>
+
+          <article class="system-card appear">
+            <div class="system-metric"><span>Paid data product</span><strong>10M+<small>records</small></strong></div>
+            <h3>Automotive intelligence</h3>
+            <p>Several large datasets became one fast search and monitoring product for paying users.</p>
+            <ul>
+              <li>Search, saved records, filters, change tracking, and alerts</li>
+              <li>Subscriptions, payments, and multi-factor authentication</li>
+              <li>VIN decoding and tools for administrators</li>
+            </ul>
+          </article>
+
+          <article class="system-card appear">
+            <div class="system-metric"><span>Raw data to product</span><strong>15K<small>source records</small></strong></div>
+            <h3>Venue search</h3>
+            <p>A messy venue list became a structured search product with maps, filters, and useful pages.</p>
+            <ul>
+              <li>Clean and check records, duplicates, locations, and images</li>
+              <li>Build map search and filters for different user needs</li>
+              <li>Generate 12,000+ venue pages and 9,000+ search pages</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section process" id="process" aria-labelledby="process-title">
       <div class="container">
-        <div class="section-intro split-intro">
-          <div>
-            <p class="eyebrow"><span></span> How I work</p>
-            <h2 id="process-title">Understand first. <br>Then build.</h2>
-          </div>
-          <p>Good delivery starts before code. I learn the business problem, question the plan, then build what fits.</p>
+        <div class="section-head">
+          <div><p class="eyebrow">How I work</p><h2 id="process-title">Start with the problem. Finish with a working result.</h2></div>
+          <p class="appear">I do not begin with a favourite technology. I first learn how the business works and what success should look like.</p>
         </div>
 
-        <ol class="process-track">
-          <li>
-            <span class="process-number">01</span>
-            <h3>Understand</h3>
-            <p>Learn the real business problem, users, and workflow.</p>
-          </li>
-          <li>
-            <span class="process-number">02</span>
-            <h3>Question</h3>
-            <p>Check assumptions, risks, edge cases, and unnecessary complexity.</p>
-          </li>
-          <li>
-            <span class="process-number">03</span>
-            <h3>Design</h3>
-            <p>Define the data, system structure, integrations, and user flow.</p>
-          </li>
-          <li>
-            <span class="process-number">04</span>
-            <h3>Build</h3>
-            <p>Turn the agreed design into a working product.</p>
-          </li>
-          <li>
-            <span class="process-number">05</span>
-            <h3>Test</h3>
-            <p>Check real user flows, failures, and edge cases.</p>
-          </li>
-          <li>
-            <span class="process-number">06</span>
-            <h3>Deliver</h3>
-            <p>Deploy, debug, improve, and own the final result.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section work-section" id="work" aria-labelledby="work-title">
-      <div class="container">
-        <div class="section-intro work-heading">
-          <p class="eyebrow eyebrow-light"><span></span> Flagship system · anonymized</p>
-          <h2 id="work-title">AI-powered procurement platform</h2>
-          <p>A production platform that turns procurement data and difficult documents into useful business information.</p>
+        <div class="process-grid" data-appear-group>
+          <article class="process-step appear"><small>01</small><h3>Understand</h3><p>Talk to the people involved and map the real workflow, not only the first request.</p></article>
+          <article class="process-step appear"><small>02</small><h3>Decide</h3><p>Check risks and edge cases, compare options, and remove complexity that brings no value.</p></article>
+          <article class="process-step appear"><small>03</small><h3>Build</h3><p>Turn the agreed plan into software, integrations, data flows, and a usable interface.</p></article>
+          <article class="process-step appear"><small>04</small><h3>Verify</h3><p>Test real user journeys, fix failures, deploy, and keep improving the result.</p></article>
         </div>
 
-        <article class="flagship">
-          <div class="flagship-summary">
-            <div class="case-statement">
-              <p class="mini-label">The problem</p>
-              <h3>Turn scattered procurement data and difficult documents into useful business information.</h3>
-              <p>It collects opportunities, converts documents, extracts key information, controls AI costs, and supports daily work.</p>
-            </div>
-            <div class="case-facts" aria-label="Procurement platform scale">
-              <div><strong>≈1M</strong><span>opportunities / year context</span></div>
-              <div><strong>4</strong><span>countries in production</span></div>
-              <div><strong>6</strong><span>apps & services in the current ecosystem</span></div>
-            </div>
+        <div class="ai-note appear">
+          <h3>AI makes the work faster. It does not make the decisions for me.</h3>
+          <div class="ownership">
+            <div><h4>I am responsible for</h4><p>The problem, architecture, key decisions, product behaviour, and final result.</p></div>
+            <div><h4>AI agents help with</h4><p>Implementation, tests, debugging, research, and a second review when needed.</p></div>
           </div>
-
-          <div class="architecture-panel" aria-labelledby="architecture-title">
-            <div class="panel-heading">
-              <div>
-                <p class="mini-label">NDA-safe system view</p>
-                <h3 id="architecture-title">The system grew as the product grew.</h3>
-              </div>
-              <p>We split services only when document conversion, AI processing, and testing needed different handling.</p>
-            </div>
-
-            <p class="architecture-route" aria-hidden="true">Sources <i>→</i> intake <i>→</i> conversion <i>→</i> AI processing <i>→</i> product workflows</p>
-            <div class="architecture-flow" role="img" aria-label="Public procurement sources flow through intake, document conversion, AI processing, product workflows, and browser-level validation">
-              <div class="arch-node arch-source">
-                <span class="arch-icon" aria-hidden="true">01</span>
-                <small>External</small>
-                <strong>Procurement sources</strong>
-                <em>Multiple markets</em>
-              </div>
-              <span class="arch-arrow" aria-hidden="true">→</span>
-              <div class="arch-node arch-intake">
-                <span class="arch-icon" aria-hidden="true">02</span>
-                <small>Service</small>
-                <strong>Intake &amp; processing</strong>
-                <em>FastAPI · staged flows</em>
-              </div>
-              <span class="arch-arrow" aria-hidden="true">→</span>
-              <div class="arch-node arch-conversion">
-                <span class="arch-icon" aria-hidden="true">03</span>
-                <small>Service</small>
-                <strong>Document conversion</strong>
-                <em>PDF · DOCX · XLSX</em>
-              </div>
-              <span class="arch-arrow" aria-hidden="true">→</span>
-              <div class="arch-node arch-ai">
-                <span class="arch-icon" aria-hidden="true">04</span>
-                <small>Intelligence</small>
-                <strong>AI processing</strong>
-                <em>Analyze · validate · answer</em>
-              </div>
-              <span class="arch-arrow" aria-hidden="true">→</span>
-              <div class="arch-node arch-product">
-                <span class="arch-icon" aria-hidden="true">05</span>
-                <small>Product</small>
-                <strong>User workflows</strong>
-                <em>Laravel · PostgreSQL</em>
-              </div>
-            </div>
-            <div class="validation-rail">
-              <span>Testing</span>
-              <strong>Browser-level user flow tests</strong>
-              <span>Real journeys · email OTP · smoke checks</span>
-            </div>
-          </div>
-
-          <div class="case-detail-grid">
-            <section>
-              <p class="mini-label">What I owned</p>
-              <h3>What I owned</h3>
-              <ul class="check-list">
-                <li>Feature discovery and user flows with stakeholders and leadership</li>
-                <li>Architecture, database, API, and implementation decisions</li>
-                <li>Production debugging, deployment, and iteration</li>
-              </ul>
-            </section>
-            <section>
-              <p class="mini-label">Key decisions</p>
-              <h3>Complexity only where it solved a real problem.</h3>
-              <ul class="decision-list">
-                <li><strong>Service separation</strong><span>Separated AI and document work when one service became too broad.</span></li>
-                <li><strong>AI cost control</strong><span>Added checks and evaluation so AI use stayed practical.</span></li>
-                <li><strong>Document routing</strong><span>Used benchmarks to choose the right conversion path.</span></li>
-                <li><strong>Browser testing</strong><span>Tested complete user journeys before release.</span></li>
-              </ul>
-            </section>
-          </div>
-
-          <div class="stack-line" aria-label="Flagship platform technology stack">
-            <span>Laravel 11</span><span>PHP 8.2</span><span>PostgreSQL</span><span>Redis</span><span>Python / FastAPI services</span><span>Playwright</span><span>Docker</span><span>Azure App Service</span><span>Vertex AI / Gemini</span><span>Stripe</span>
-          </div>
-        </article>
-
-        <div class="selected-heading">
-          <div>
-            <p class="eyebrow eyebrow-light"><span></span> Selected systems</p>
-            <h2>Selected systems</h2>
-          </div>
-          <p>Three more systems built for real use.</p>
-        </div>
-
-        <div class="system-grid">
-          <article class="system-card editorial-card">
-            <div class="system-topline"><span>AI workflow</span><strong>2,000+ <small>articles</small></strong></div>
-            <h3>AI editorial pipeline</h3>
-            <p>A controlled publishing workflow with review, localization, supporting content, distribution, and indexing.</p>
-            <div class="mini-flow" aria-label="Editorial workflow">
-              <span>Select</span><i>→</i><span>Generate</span><i>→</i><span>Review</span><i>→</i><span>Localize</span><i>→</i><span>Publish</span>
-            </div>
-            <ul>
-              <li>Article and image generation with review steps</li>
-              <li>Two-language localization after human approval</li>
-              <li>Taxonomy, social copy, FAQ, scheduling, and indexing</li>
-            </ul>
-          </article>
-
-          <article class="system-card automotive-card featured-system">
-            <div class="system-topline"><span>Production data product</span><strong>10M+ <small>records</small></strong></div>
-            <h3>Automotive intelligence platform</h3>
-            <p>Large datasets became a paid product for fast search, monitoring, and alerts.</p>
-            <p class="system-signal"><strong>Paid production product</strong><span>Search · monitoring · alerts · subscriptions</span></p>
-            <ul>
-              <li>Change tracking, saved records, filters, and alerts</li>
-              <li>Subscriptions, payments, and multi-factor authentication</li>
-              <li>VIN decoding and administration for real paying users</li>
-            </ul>
-          </article>
-
-          <article class="system-card venue-card">
-            <div class="system-topline"><span>Raw data → product</span><strong>15K <small>source records</small></strong></div>
-            <h3>Venue search platform</h3>
-            <p>A messy source dataset became structured venue search with geodata, filters, maps, and discovery pages.</p>
-            <div class="venue-metrics">
-              <span><strong>12,000+</strong> venue pages</span>
-              <span><strong>9,000+</strong> search pages</span>
-            </div>
-            <ul>
-              <li>Validation, deduplication, and geographic checks</li>
-              <li>Image optimization, map search, and multi-dimensional filtering</li>
-              <li>Automated page and metadata generation at product scale</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section ai-native" aria-labelledby="ai-native-title">
-      <div class="container ai-grid">
-        <div class="ai-copy">
-          <p class="eyebrow"><span></span> AI-native engineering</p>
-          <h2 id="ai-native-title">AI helps me build faster. I still own the result.</h2>
-          <p>I use AI agents for implementation, tests, debugging, and review. I keep responsibility for the problem, architecture, and product behavior.</p>
-        </div>
-
-        <div class="ownership-board">
-          <div class="ownership-column human-column">
-            <div class="ownership-title"><span aria-hidden="true">◆</span><h3>I own</h3></div>
-            <ul>
-              <li>Understanding the problem</li>
-              <li>Architecture</li>
-              <li>Key technical decisions</li>
-              <li>Final validation</li>
-            </ul>
-          </div>
-          <div class="ownership-column agent-column">
-            <div class="ownership-title"><span aria-hidden="true">✦</span><h3>AI agents help with</h3></div>
-            <ul>
-              <li>Implementation</li>
-              <li>Tests</li>
-              <li>Debugging</li>
-              <li>Second-pass reviews</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="ai-pipeline" aria-label="AI-native implementation workflow">
-          <span>Plan</span><i>→</i><span>Split tasks</span><i>→</i><span>Build</span><i>→</i><span>Test</span><i>→</i><span>Review</span>
         </div>
       </div>
     </section>
 
     <section class="section experience" id="experience" aria-labelledby="experience-title">
       <div class="container">
-        <div class="section-intro split-intro">
-          <div>
-            <p class="eyebrow"><span></span> Experience</p>
-            <h2 id="experience-title">From business operations to AI-powered software.</h2>
-          </div>
-          <p>Business experience shapes how I build software: I care about the people, costs, risks, and real outcomes behind the system.</p>
+        <div class="section-head">
+          <div><p class="eyebrow">Experience</p><h2 id="experience-title">Business experience first. Software for the last 9+ years.</h2></div>
+          <p class="appear">I moved from managing operations into building software. That is why I naturally think about users, cost, risk, and the result—not only the code.</p>
         </div>
 
-        <ol class="career-line">
-          <li>
-            <time>2005–2017</time>
-            <span class="career-dot"></span>
-            <h3>Business &amp; operations</h3>
-            <p>Managed real businesses, teams, costs, risk, and profitability, including organizations of up to 300 people.</p>
-          </li>
-          <li>
-            <time>2017–2018</time>
-            <span class="career-dot"></span>
-            <h3>Frontend</h3>
-            <p>Started in software by turning designs into responsive websites.</p>
-          </li>
-          <li>
-            <time>2018–2024</time>
-            <span class="career-dot"></span>
-            <h3>Full-stack systems</h3>
-            <p>Moved into databases, APIs, integrations, search, payments, automation, and complete business applications.</p>
-          </li>
-          <li>
-            <time>2024–2025</time>
-            <span class="career-dot"></span>
-            <h3>AI in products</h3>
-            <p>Started integrating LLMs into real product workflows and using coding agents for defined implementation work.</p>
-          </li>
-          <li>
-            <time>2026+</time>
-            <span class="career-dot"></span>
-            <h3>AI-native solutions</h3>
-            <p>Today I focus on understanding the problem, designing the system, directing AI-assisted implementation, and owning the final result.</p>
-          </li>
+        <ol class="career" data-appear-group>
+          <li class="appear"><time>2005–2017</time><h3>Business and operations</h3><p>Managed teams, costs, risk, and profitability in organizations of up to 300 people.</p></li>
+          <li class="appear"><time>2017–2018</time><h3>Frontend development</h3><p>Started by turning designs into responsive websites.</p></li>
+          <li class="appear"><time>2018–2024</time><h3>Full-stack systems</h3><p>Built databases, APIs, integrations, search, payments, automation, and complete business tools.</p></li>
+          <li class="appear"><time>2024–now</time><h3>AI solutions</h3><p>Use LLMs inside products and AI agents in delivery while keeping ownership of the technical result.</p></li>
         </ol>
       </div>
     </section>
 
     <section class="section about" id="about" aria-labelledby="about-title">
-      <div class="container about-grid">
+      <div class="container about-grid" data-appear-group>
         <div class="about-copy">
-          <p class="eyebrow eyebrow-light"><span></span> About</p>
+          <p class="eyebrow eyebrow-light">About</p>
           <h2 id="about-title">I understand the business side too.</h2>
-          <p>That business background still changes how I build software. I look beyond whether something can be implemented and ask whether it is useful, worth the complexity, and practical for the people who will use it.</p>
-          <blockquote>Will people use it? What happens when it fails? Is the added complexity worth it? What does the business actually need?</blockquote>
-          <div class="about-note">
-            <span>Based in Cantal, France</span>
-            <span>Authorized to work in France</span>
-            <span>English: professional working proficiency</span>
-          </div>
+          <p class="appear">Before software, I spent years managing people and operations. Today that helps me challenge a feature before a team spends time building it.</p>
+          <blockquote class="about-questions appear">Will people use it? What can fail? Is the extra complexity worth it? What does the business really need?</blockquote>
+          <div class="about-note" data-appear-group><span class="appear">Cantal, France</span><span class="appear">Authorized to work in France</span><span class="appear">English: professional working proficiency</span></div>
         </div>
 
-        <div class="toolbox" aria-labelledby="toolbox-title">
-          <div class="toolbox-heading">
-            <p class="mini-label">Technical toolbox</p>
-            <h3 id="toolbox-title">Core tools and AI systems</h3>
-          </div>
-          <section>
-            <h4>Core</h4>
-            <ul class="tool-list">
-              <li>PHP</li>
-              <li>Laravel</li>
-              <li>JavaScript</li>
-              <li>PostgreSQL</li>
-              <li>MySQL</li>
-              <li>REST APIs</li>
-              <li>Application architecture</li>
-            </ul>
-          </section>
-          <section>
-            <h4>Production exposure</h4>
-            <ul class="tool-list">
-              <li>Redis</li>
-              <li>Docker</li>
-              <li>Python / FastAPI services</li>
-              <li>Playwright</li>
-              <li>Azure App Service</li>
-              <li>Google Cloud</li>
-              <li>Stripe</li>
-            </ul>
-          </section>
-          <section>
-            <h4>AI systems</h4>
-            <ul class="tool-list">
-              <li>Gemini</li>
-              <li>OpenAI</li>
-              <li>Anthropic</li>
-              <li>AI agents</li>
-              <li>Structured outputs</li>
-              <li>Vector search</li>
-              <li>Prompt evaluation</li>
-              <li>AI cost controls</li>
-            </ul>
-          </section>
+        <div class="toolbox appear" aria-labelledby="tools-title">
+          <div class="toolbox-head"><p class="label">Technical toolbox</p><h3 id="tools-title">Tools I use to deliver products</h3></div>
+          <div class="tool-group"><h4>Core</h4><ul class="tool-list" data-appear-group><li class="appear">PHP</li><li class="appear">Laravel</li><li class="appear">JavaScript</li><li class="appear">PostgreSQL</li><li class="appear">MySQL</li><li class="appear">REST APIs</li><li class="appear">Application architecture</li></ul></div>
+          <div class="tool-group"><h4>Production work</h4><ul class="tool-list" data-appear-group><li class="appear">Redis</li><li class="appear">Docker</li><li class="appear">Python / FastAPI services</li><li class="appear">Playwright</li><li class="appear">Azure App Service</li><li class="appear">Google Cloud</li><li class="appear">Stripe</li></ul></div>
+          <div class="tool-group"><h4>AI systems</h4><ul class="tool-list" data-appear-group><li class="appear">Gemini</li><li class="appear">OpenAI</li><li class="appear">Anthropic</li><li class="appear">AI agents</li><li class="appear">Structured outputs</li><li class="appear">Vector search</li><li class="appear">Prompt evaluation</li><li class="appear">AI cost controls</li></ul></div>
         </div>
       </div>
     </section>
 
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-card">
-        <div>
-          <p class="eyebrow"><span></span> Contact</p>
-          <h2 id="contact-title">Have a difficult problem to solve?</h2>
-          <p>I'm open to senior AI solutions and customer-facing engineering roles across France and Europe. Remote preferred.</p>
-        </div>
-        <div class="contact-actions">
-          <a class="contact-link" href="https://t.me/dev_zav" target="_blank" rel="noopener noreferrer">Telegram <span aria-hidden="true">↗</span></a>
-          <a class="contact-link" href="https://wa.me/33745735126" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
-          <a href="https://www.linkedin.com/in/andriyzubets/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-          <p>Cantal, France · Remote France / Europe · Occasional travel</p>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-card" data-appear-group>
+        <div><p class="eyebrow eyebrow-light">Contact</p><h2 id="contact-title">Do you have a difficult problem to solve?</h2><p class="appear">I am open to senior AI solutions and customer-facing engineering roles across France and Europe. Remote preferred.</p></div>
+        <div class="contact-links">
+          <a class="appear" href="https://t.me/dev_zav" target="_blank" rel="noopener noreferrer">Telegram <span aria-hidden="true">↗</span></a>
+          <a class="appear" href="https://wa.me/33745735126" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="appear" href="https://www.linkedin.com/in/andriyzubets/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span data-year>2026</span> Andriy Zubets</p>
-      <p>Senior AI Solutions Engineer</p>
-      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="container"><p>© <span data-year>2026</span> Andriy Zubets · Senior AI Solutions Engineer</p><a href="#top">Back to top ↑</a></div></footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+    const closeNav = () => {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('nav-open');
+    };
+    toggle.addEventListener('click', () => {
+      const open = !nav.classList.contains('is-open');
+      nav.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('nav-open', open);
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeNav));
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', event => {
+        const targetId = link.getAttribute('href').slice(1);
+        const target = targetId ? document.getElementById(targetId) : null;
+
+        if (!target) return;
+
+        event.preventDefault();
+        target.scrollIntoView({
+          behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+          block: 'start'
+        });
+
+        if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+
+        if (window.location.hash) {
+          try { window.history.replaceState(null, '', window.location.href.split('#')[0]); } catch (error) {}
+        }
+      });
+    });
+    document.addEventListener('keydown', event => { if (event.key === 'Escape') closeNav(); });
+    document.querySelector('[data-year]').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

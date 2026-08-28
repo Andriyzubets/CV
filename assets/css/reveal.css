@@ -1,0 +1,57 @@
+/* Word-by-word reveal, adapted from the Repto .framer_title animation. */
+.word-reveal__word {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(10px);
+  transform: translate3d(0, 14px, 0);
+  transition:
+    opacity .7s cubic-bezier(.16, 1, .3, 1),
+    filter .8s cubic-bezier(.16, 1, .3, 1),
+    transform .8s cubic-bezier(.16, 1, .3, 1);
+  transition-delay: calc(var(--reveal-base-delay, 0ms) + var(--word-index, 0) * 70ms);
+  will-change: opacity, filter, transform;
+}
+
+.word-reveal.is-visible .word-reveal__word {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word-reveal__word {
+    opacity: 1;
+    filter: none;
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
+}
+
+/* Quiet block reveal for supporting content. */
+html.js .appear {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0);
+  transition:
+    opacity .58s cubic-bezier(.16, 1, .3, 1),
+    transform .58s cubic-bezier(.16, 1, .3, 1);
+  transition-delay: var(--appear-delay, 0ms);
+}
+
+html.js .appear.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 700px) {
+  html.js .appear { transform: translate3d(0, 14px, 0); }
+  html.js .appear.is-visible { transform: translate3d(0, 0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js .appear {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
