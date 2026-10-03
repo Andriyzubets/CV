@@ -22,7 +22,7 @@ No build step. Edit the HTML, bump the `?v=` cache-busting query in both files, 
 - Keep EN and FR in sync: same sections, same numbers.
 - The flagship case is anonymised on purpose: describe it as a multi-service AI SaaS for document-heavy work; never name the product, the client or its domain.
 - No job-seeking wording (the page is a portfolio, not an application) and no overclaims beyond what the LinkedIn profile states.
-- Palette: paper `#f6f5f0`, ink `#0f1a22`, accent `#2f6bff`, highlight `#cfe3ff`. One accent only: numbers, links, contact card.
+- Palette: paper `#f6f5f0`, ink `#0f1a22`, accent `#245ce6`, highlight `#cfe3ff`. One accent only: numbers, links, contact card.
 
 ## Local preview
 
