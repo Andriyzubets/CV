@@ -4,36 +4,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>document.documentElement.classList.add('js');</script>
-  <title>Andriy Zubets — Senior AI Solutions Engineer</title>
-  <meta name="description" content="Senior AI Solutions Engineer who turns difficult business problems into practical software and AI products.">
-  <meta name="theme-color" content="#f7f6f2">
+  <title>Andriy Zubets — Senior Full-Stack & AI Engineer</title>
+  <meta name="description" content="Senior Full-Stack & AI Engineer. I build production software where LLMs do real work: Laravel, Python/FastAPI, PostgreSQL, Gemini, Claude, OpenAI. Technical owner of a multi-service AI SaaS.">
+  <meta name="theme-color" content="#f6f5f0">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Andriy Zubets — Senior AI Solutions Engineer">
-  <meta property="og:description" content="I solve difficult business problems with software and AI.">
+  <meta property="og:title" content="Andriy Zubets — Senior Full-Stack & AI Engineer">
+  <meta property="og:description" content="I build AI products that work in production and pay for themselves.">
   <meta property="og:url" content="https://andriyzubets.github.io/CV/">
   <meta property="og:image" content="https://andriyzubets.github.io/CV/assets/img/top_photo.png">
   <link rel="canonical" href="https://andriyzubets.github.io/CV/">
   <link rel="alternate" hreflang="en" href="https://andriyzubets.github.io/CV/">
   <link rel="alternate" hreflang="fr" href="https://andriyzubets.github.io/CV/fr/">
   <link rel="alternate" hreflang="x-default" href="https://andriyzubets.github.io/CV/">
-  <link rel="icon" type="image/x-icon" href="favicon.ico?v=4.1">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=4.1">
-  <link rel="stylesheet" href="assets/css/reveal.css?v=4.5">
-  <script src="assets/js/reveal.js?v=4.5" defer></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=5.1">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=5.1">
+  <link rel="stylesheet" href="assets/css/reveal.css?v=5.0">
+  <script src="assets/js/reveal.js?v=5.0" defer></script>
   <style>
     :root {
-      --page: #f7f6f2;
+      --page: #f6f5f0;
       --surface: #ffffff;
-      --surface-soft: #eeeee9;
-      --ink: #17282b;
-      --muted: #5c696b;
-      --dark: #12282c;
-      --dark-soft: #1b383d;
-      --line: #d8ddd9;
-      --line-dark: rgba(255,255,255,.16);
-      --accent: #cf5b3f;
-      --accent-soft: #f2ddd5;
-      --mint: #b9d8cf;
+      --surface-soft: #ecebe5;
+      --ink: #101418;
+      --muted: #596470;
+      --dark: #0f1a22;
+      --dark-soft: #16232d;
+      --line: #d9dbd6;
+      --line-dark: rgba(255,255,255,.14);
+      --accent: #2f6bff;
+      --accent-soft: #e7eef9;
+      --mint: #cfe3ff;
       --radius: 18px;
       --container: 1240px;
       --header: 70px;
@@ -91,7 +91,7 @@
     /* Header */
     .site-header {
       position: sticky; z-index: 100; top: 0; height: var(--header);
-      border-bottom: 1px solid rgba(23,40,43,.1); background: rgba(247,246,242,.94);
+      border-bottom: 1px solid rgba(16,20,24,.1); background: rgba(246,245,240,.94);
       backdrop-filter: blur(16px);
     }
     .nav-shell { display: flex; height: 100%; align-items: center; justify-content: space-between; gap: 30px; }
@@ -143,10 +143,10 @@
     .text-link:hover { color: var(--accent); }
     .availability { margin-top: 22px; color: var(--muted); font-size: .88rem; }
     .availability span { display: inline-flex; align-items: center; gap: 9px; }
-    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: #45a26e; box-shadow: 0 0 0 5px rgba(69,162,110,.12); }
+    .status-dot { display: none; }
     .portrait-field {
       position: relative; width: min(100%,390px); height: 460px; justify-self: end; overflow: hidden;
-      border-radius: 195px 195px 16px 16px; background: #e7e3da;
+      border-radius: 195px 195px 16px 16px; background: #e3e8f0;
     }
     .portrait-field::before {
       position: absolute; top: 70px; left: 46px; width: 260px; height: 260px;
@@ -163,10 +163,10 @@
     .proof-item span { color: rgba(255,255,255,.67); font-size: .875rem; line-height: 1.4; }
 
     /* Work */
-    .work { background: #18353a; color: #fff; }
+    .work { background: #13202a; color: #fff; }
     .flagship { overflow: hidden; border: 1px solid var(--line-dark); border-radius: 24px; background: var(--dark); }
     .flagship-top { display: grid; grid-template-columns: 1.16fr .84fr; gap: 46px; padding: 44px; }
-    .label { margin-bottom: 10px; color: #df826b; font-size: .78rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
+    .label { margin-bottom: 10px; color: #8fb4ff; font-size: .78rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
     .flagship h3 { max-width: 690px; font-size: clamp(1.7rem,2.5vw,2.45rem); }
     .flagship-summary { margin: 18px 0 0; color: rgba(255,255,255,.67); }
     .case-facts { display: grid; grid-template-columns: repeat(3,1fr); align-self: end; }
@@ -179,9 +179,9 @@
       display: grid; grid-template-columns: repeat(5,1fr); gap: 1px;
       border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); background: var(--line-dark);
     }
-    .flow-step { position: relative; min-height: 126px; padding: 22px; background: #153136; }
+    .flow-step { position: relative; min-height: 126px; padding: 22px; background: #121e27; }
     .flow-step:not(:last-child)::after { position: absolute; z-index: 2; top: 50%; right: -9px; color: var(--mint); content: "→"; transform: translateY(-50%); }
-    .flow-step small { display: block; margin-bottom: 23px; color: #df826b; font-size: .75rem; font-weight: 800; }
+    .flow-step small { display: block; margin-bottom: 23px; color: #8fb4ff; font-size: .75rem; font-weight: 800; }
     .flow-step strong { display: block; font-size: .92rem; }
     .flow-step span { display: block; margin-top: 6px; color: rgba(255,255,255,.58); font-size: .82rem; }
     .flagship-details { display: grid; grid-template-columns: 1fr 1fr; }
@@ -199,9 +199,9 @@
     .selected-head p { margin: 0; color: rgba(255,255,255,.62); }
     .system-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 15px; }
     .system-card { display: flex; min-height: 410px; flex-direction: column; padding: 28px; border-radius: var(--radius); color: var(--ink); }
-    .system-card:nth-child(1) { background: #dce8df; }
-    .system-card:nth-child(2) { background: #dce1e2; }
-    .system-card:nth-child(3) { background: #eadfd3; }
+    .system-card:nth-child(1) { background: #e7eef9; }
+    .system-card:nth-child(2) { background: #e4e8ee; }
+    .system-card:nth-child(3) { background: #ece9e2; }
     .system-metric { display: flex; min-height: 58px; align-items: flex-start; justify-content: space-between; gap: 16px; margin-bottom: 22px; padding-bottom: 17px; border-bottom: 1px solid rgba(23,40,43,.16); }
     .system-metric > span { color: var(--muted); font-size: .75rem; font-weight: 850; letter-spacing: .07em; text-transform: uppercase; }
     .system-metric strong { font-size: 1.55rem; text-align: right; }
@@ -266,7 +266,7 @@
     .contact-card .eyebrow::before { background: rgba(255,255,255,.78); }
     .contact-links { display: grid; }
     .contact-links a { display: flex; justify-content: space-between; padding: 13px 0; border-top: 1px solid rgba(255,255,255,.35); font-size: .94rem; font-weight: 800; }
-    .contact-links a:hover { color: var(--dark); }
+    .contact-links a:hover { color: var(--mint); }
     .site-footer { padding: 22px 0; background: var(--dark); color: rgba(255,255,255,.58); }
     .site-footer .container { display: flex; justify-content: space-between; gap: 20px; }
     .site-footer p, .site-footer a { margin: 0; font-size: .8rem; }
@@ -366,8 +366,8 @@
   <header class="site-header">
     <div class="container nav-shell">
       <a class="brand" href="#top" aria-label="Andriy Zubets — back to top">
-        <span class="brand-mark" aria-hidden="true"><img src="favicon.svg?v=4.1" alt="" width="38" height="38"></span>
-        <span class="brand-copy"><strong>Andriy Zubets</strong><span>Senior AI Solutions Engineer</span></span>
+        <span class="brand-mark" aria-hidden="true"><img src="favicon.svg?v=5.1" alt="" width="38" height="38"></span>
+        <span class="brand-copy"><strong>Andriy Zubets</strong><span>Senior Full-Stack &amp; AI Engineer</span></span>
       </a>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
@@ -380,10 +380,10 @@
         <a href="#experience">Experience</a>
         <a href="#about">About</a>
         <span class="language-switcher" aria-label="Language selector">
-          <a class="is-active" href="index.html?v=4.0" hreflang="en" aria-current="page">EN</a>
-          <a href="fr/index.html?v=4.0" hreflang="fr">FR</a>
+          <a class="is-active" href="index.html?v=5.0" hreflang="en" aria-current="page">EN</a>
+          <a href="fr/index.html?v=5.0" hreflang="fr">FR</a>
         </span>
-        <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        <a class="nav-cta" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
@@ -392,14 +392,14 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="container hero-grid" data-appear-group>
         <div>
-          <p class="eyebrow">Senior AI Solutions Engineer</p>
-          <h1 id="hero-title">I solve difficult business problems with software and AI.</h1>
-          <p class="hero-lede appear">I work directly with founders and decision-makers. We define what needs to change, choose a practical approach, and turn it into a working product.</p>
+          <p class="eyebrow">Senior Full-Stack &amp; AI Engineer</p>
+          <h1 id="hero-title">I build AI products that work in production and pay for themselves.</h1>
+          <p class="hero-lede appear">Technical owner of a multi-service AI SaaS: Laravel product, Python/FastAPI AI services, document pipelines on Gemini, AI economics designed in from day one. I decide the architecture, AI agents write most of the code, and I own the result.</p>
           <div class="hero-actions appear">
-            <a class="button button-primary" href="#work">See my work <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#work">See the flagship case <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="https://www.linkedin.com/in/andriyzubets/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
-          <p class="availability appear"><span><i class="status-dot" aria-hidden="true"></i>Cantal, France · Remote in France / Europe</span></p>
+          <p class="availability appear"><span>Cantal, France · Remote across Europe</span></p>
         </div>
         <div class="portrait-field appear" aria-label="Portrait of Andriy Zubets">
           <img src="assets/img/top_photo.png" alt="Andriy Zubets" width="993" height="824">
@@ -409,10 +409,10 @@
 
     <section class="proof" aria-label="Key facts">
       <div class="container proof-grid" data-appear-group>
-        <div class="proof-item appear"><strong>9+</strong><span>years delivering software</span></div>
-        <div class="proof-item appear"><strong>40+</strong><span>systems and complex projects</span></div>
-        <div class="proof-item appear"><strong>10M+</strong><span>records in a production product</span></div>
-        <div class="proof-item appear"><strong>4</strong><span>countries in current production</span></div>
+        <div class="proof-item appear"><strong>9+</strong><span>years building software</span></div>
+        <div class="proof-item appear"><strong>40+</strong><span>systems shipped</span></div>
+        <div class="proof-item appear"><strong>10M+</strong><span>records in a paid data product</span></div>
+        <div class="proof-item appear"><strong>3</strong><span>countries in production</span></div>
       </div>
     </section>
 
@@ -420,29 +420,29 @@
       <div class="container">
         <div class="section-head section-head-light">
           <div><p class="eyebrow eyebrow-light">Selected work</p><h2 id="work-title">Systems built for real work</h2></div>
-          <p class="appear">The projects below show the kind of problems I handle: unclear requirements, complex data, many integrations, and a product that must work in daily use.</p>
+          <p class="appear">The projects below show the problems I take on: unclear requirements, messy data, many integrations, and a product that has to work every day.</p>
         </div>
 
         <article class="flagship appear">
           <div class="flagship-top">
             <div>
-              <p class="label">Main case · anonymized</p>
-              <h3>AI-powered procurement platform</h3>
-              <p class="flagship-summary">The platform collects procurement opportunities, converts difficult documents, finds the important information, and helps users prepare answers. It also tracks AI usage and cost.</p>
+              <p class="label">Flagship · 2024–now</p>
+              <h3>Multi-service AI SaaS for document-heavy decisions</h3>
+              <p class="flagship-summary">The platform ingests large volumes of multilingual documents from public sources, converts PDF, DOCX and XLSX, finds what matters with LLMs, and drafts structured answers for users. Every AI action is priced before it runs.</p>
             </div>
             <div class="case-facts" aria-label="Platform facts">
-              <div><strong>≈1M</strong><span>opportunities per year at planned scale</span></div>
-              <div><strong>4</strong><span>countries in production</span></div>
-              <div><strong>6</strong><span>apps and services</span></div>
+              <div><strong>≈1M</strong><span>records ingested per year</span></div>
+              <div><strong>3</strong><span>countries in production</span></div>
+              <div><strong>4</strong><span>services and repositories</span></div>
             </div>
           </div>
 
           <div class="system-flow" aria-label="System flow">
-            <div class="flow-step"><small>01</small><strong>Collect</strong><span>Procurement sources</span></div>
+            <div class="flow-step"><small>01</small><strong>Collect</strong><span>Public sources, 3 countries</span></div>
             <div class="flow-step"><small>02</small><strong>Prepare</strong><span>Intake and processing</span></div>
             <div class="flow-step"><small>03</small><strong>Convert</strong><span>PDF, DOCX and XLSX</span></div>
-            <div class="flow-step"><small>04</small><strong>Analyze</strong><span>AI checks and answers</span></div>
-            <div class="flow-step"><small>05</small><strong>Use</strong><span>Customer workflows</span></div>
+            <div class="flow-step"><small>04</small><strong>Analyze</strong><span>LLM pipelines on Gemini</span></div>
+            <div class="flow-step"><small>05</small><strong>Use</strong><span>Answers and workflows</span></div>
           </div>
 
           <div class="flagship-details">
@@ -451,22 +451,22 @@
               <ul class="plain-list">
                 <li>Turn stakeholder ideas into clear features and user flows</li>
                 <li>Make the main architecture, database, API, and delivery decisions</li>
-                <li>Handle production problems, deployment, and ongoing improvement</li>
+                <li>Own deployment, observability, and ongoing improvement</li>
               </ul>
             </div>
             <div>
-              <h4>Important choices</h4>
+              <h4>Decisions that paid off</h4>
               <ul class="plain-list">
-                <li>Split services only when one application could no longer handle the work well</li>
-                <li>Add AI checks and cost controls before usage became expensive</li>
-                <li>Compare document tools and route each file through the best option</li>
-                <li>Test complete user journeys in a browser before release</li>
+                <li>Split into services only when one application stopped being enough</li>
+                <li>Price every AI action before it runs, so the product stays profitable at scale</li>
+                <li>Benchmark document tools and route each file through the best one</li>
+                <li>Run full browser-level user journeys before every release</li>
               </ul>
             </div>
           </div>
 
           <div class="tech-row" data-appear-group aria-label="Technology used">
-            <span class="appear">Laravel 11</span><span class="appear">PHP 8.2</span><span class="appear">PostgreSQL</span><span class="appear">Redis</span><span class="appear">Python / FastAPI services</span><span class="appear">Playwright</span><span class="appear">Docker</span><span class="appear">Azure App Service</span><span class="appear">Vertex AI / Gemini</span><span class="appear">Stripe</span>
+            <span class="appear">Laravel 11</span><span class="appear">PHP 8.2</span><span class="appear">PostgreSQL</span><span class="appear">Redis</span><span class="appear">Python / FastAPI services</span><span class="appear">Playwright</span><span class="appear">Docker</span><span class="appear">Azure App Service</span><span class="appear">Vertex AI / Gemini</span><span class="appear">Claude</span><span class="appear">OpenAI</span><span class="appear">Stripe</span>
           </div>
         </article>
 
@@ -474,7 +474,7 @@
 
         <div class="system-grid" data-appear-group>
           <article class="system-card appear">
-            <div class="system-metric"><span>AI publishing workflow</span><strong>2,000+<small>articles</small></strong></div>
+            <div class="system-metric"><span>Human-in-the-loop AI pipeline</span><strong>2,000+<small>articles</small></strong></div>
             <h3>Editorial automation</h3>
             <p>A publishing process that keeps people in control while AI handles the repetitive work.</p>
             <ul>
@@ -487,7 +487,7 @@
           <article class="system-card appear">
             <div class="system-metric"><span>Paid data product</span><strong>10M+<small>records</small></strong></div>
             <h3>Automotive intelligence</h3>
-            <p>Several large datasets became one fast search and monitoring product for paying users.</p>
+            <p>Several large datasets became one fast search and monitoring product. Served paying subscribers until 2022.</p>
             <ul>
               <li>Search, saved records, filters, change tracking, and alerts</li>
               <li>Subscriptions, payments, and multi-factor authentication</li>
@@ -512,22 +512,22 @@
     <section class="section process" id="process" aria-labelledby="process-title">
       <div class="container">
         <div class="section-head">
-          <div><p class="eyebrow">How I work</p><h2 id="process-title">Start with the problem. Finish with a working result.</h2></div>
-          <p class="appear">I do not begin with a favourite technology. I first learn how the business works and what success should look like.</p>
+          <div><p class="eyebrow">How I work</p><h2 id="process-title">Agentic engineering, with an owner's judgment.</h2></div>
+          <p class="appear">I do not start with a favourite technology. I start with how the business works and what success looks like, then decide what gets built.</p>
         </div>
 
         <div class="process-grid" data-appear-group>
           <article class="process-step appear"><small>01</small><h3>Understand</h3><p>Talk to the people involved and map the real workflow, not only the first request.</p></article>
           <article class="process-step appear"><small>02</small><h3>Decide</h3><p>Check risks and edge cases, compare options, and remove complexity that brings no value.</p></article>
           <article class="process-step appear"><small>03</small><h3>Build</h3><p>Turn the agreed plan into software, integrations, data flows, and a usable interface.</p></article>
-          <article class="process-step appear"><small>04</small><h3>Verify</h3><p>Test real user journeys, fix failures, deploy, and keep improving the result.</p></article>
+          <article class="process-step appear"><small>04</small><h3>Verify</h3><p>Test real user journeys, find what breaks before users do, deploy, and keep improving.</p></article>
         </div>
 
         <div class="ai-note appear">
-          <h3>AI makes the work faster. It does not make the decisions for me.</h3>
+          <h3>AI writes most of the code. I own every decision.</h3>
           <div class="ownership">
-            <div><h4>I am responsible for</h4><p>The problem, architecture, key decisions, product behaviour, and final result.</p></div>
-            <div><h4>AI agents help with</h4><p>Implementation, tests, debugging, research, and a second review when needed.</p></div>
+            <div><h4>I own</h4><p>Problem framing, constraints and edge cases, architecture and data model, product behaviour, and the production result.</p></div>
+            <div><h4>Agents do</h4><p>Implementation, tests, debugging, research, and cross-model review. Claude Code, Codex, and specialised agents, up to ~20 in parallel.</p></div>
           </div>
         </div>
       </div>
@@ -544,7 +544,7 @@
           <li class="appear"><time>2005–2017</time><h3>Business and operations</h3><p>Managed teams, costs, risk, and profitability in organizations of up to 300 people.</p></li>
           <li class="appear"><time>2017–2018</time><h3>Frontend development</h3><p>Started by turning designs into responsive websites.</p></li>
           <li class="appear"><time>2018–2024</time><h3>Full-stack systems</h3><p>Built databases, APIs, integrations, search, payments, automation, and complete business tools.</p></li>
-          <li class="appear"><time>2024–now</time><h3>AI solutions</h3><p>Use LLMs inside products and AI agents in delivery while keeping ownership of the technical result.</p></li>
+          <li class="appear"><time>2024–now</time><h3>AI products, agentic engineering</h3><p>Technical owner of a multi-service AI SaaS: LLM pipelines, AI economics, and the testing strategy for the team.</p></li>
         </ol>
       </div>
     </section>
@@ -555,32 +555,33 @@
           <p class="eyebrow eyebrow-light">About</p>
           <h2 id="about-title">I understand the business side too.</h2>
           <p class="appear">Before software, I spent years managing people and operations. Today that helps me challenge a feature before a team spends time building it.</p>
-          <blockquote class="about-questions appear">Will people use it? What can fail? Is the extra complexity worth it? What does the business really need?</blockquote>
-          <div class="about-note" data-appear-group><span class="appear">Cantal, France</span><span class="appear">Authorized to work in France</span><span class="appear">English: professional working proficiency</span></div>
+          <blockquote class="about-questions appear">Will people use it? What breaks first? Is the extra complexity worth it? What does the business really need?</blockquote>
+          <div class="about-note" data-appear-group><span class="appear">Cantal, France</span><span class="appear">English: professional</span><span class="appear">Ukrainian, Russian: native</span></div>
         </div>
 
         <div class="toolbox appear" aria-labelledby="tools-title">
           <div class="toolbox-head"><p class="label">Technical toolbox</p><h3 id="tools-title">Tools I use to deliver products</h3></div>
-          <div class="tool-group"><h4>Core</h4><ul class="tool-list" data-appear-group><li class="appear">PHP</li><li class="appear">Laravel</li><li class="appear">JavaScript</li><li class="appear">PostgreSQL</li><li class="appear">MySQL</li><li class="appear">REST APIs</li><li class="appear">Application architecture</li></ul></div>
-          <div class="tool-group"><h4>Production work</h4><ul class="tool-list" data-appear-group><li class="appear">Redis</li><li class="appear">Docker</li><li class="appear">Python / FastAPI services</li><li class="appear">Playwright</li><li class="appear">Azure App Service</li><li class="appear">Google Cloud</li><li class="appear">Stripe</li></ul></div>
-          <div class="tool-group"><h4>AI systems</h4><ul class="tool-list" data-appear-group><li class="appear">Gemini</li><li class="appear">OpenAI</li><li class="appear">Anthropic</li><li class="appear">AI agents</li><li class="appear">Structured outputs</li><li class="appear">Vector search</li><li class="appear">Prompt evaluation</li><li class="appear">AI cost controls</li></ul></div>
+          <div class="tool-group"><h4>Core</h4><ul class="tool-list" data-appear-group><li class="appear">PHP</li><li class="appear">Laravel</li><li class="appear">Python / FastAPI</li><li class="appear">JavaScript</li><li class="appear">PostgreSQL</li><li class="appear">MySQL</li><li class="appear">REST APIs</li><li class="appear">Application architecture</li></ul></div>
+          <div class="tool-group"><h4>Production work</h4><ul class="tool-list" data-appear-group><li class="appear">Redis</li><li class="appear">Docker</li><li class="appear">Playwright</li><li class="appear">Azure App Service</li><li class="appear">Google Cloud</li><li class="appear">Stripe</li></ul></div>
+          <div class="tool-group"><h4>AI systems</h4><ul class="tool-list" data-appear-group><li class="appear">Gemini</li><li class="appear">OpenAI</li><li class="appear">Anthropic</li><li class="appear">LLM pipelines</li><li class="appear">AI agents</li><li class="appear">Claude Code &amp; Codex (agentic workflow)</li><li class="appear">Structured outputs</li><li class="appear">Vector search</li><li class="appear">Prompt evaluation</li><li class="appear">AI economics</li></ul></div>
         </div>
       </div>
     </section>
 
     <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="container contact-card" data-appear-group>
-        <div><p class="eyebrow eyebrow-light">Contact</p><h2 id="contact-title">Do you have a difficult problem to solve?</h2><p class="appear">I am open to senior AI solutions and customer-facing engineering roles across France and Europe. Remote preferred.</p></div>
+        <div><p class="eyebrow eyebrow-light">Contact</p><h2 id="contact-title">Building something where AI has to actually work?</h2><p class="appear">Happy to talk about AI products, architecture and agentic engineering. Cantal, France · remote across Europe.</p></div>
         <div class="contact-links">
+          <a class="appear" href="https://www.linkedin.com/in/andriyzubets/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="appear" href="mailto:zubets.andriy@gmail.com">Email <span aria-hidden="true">↗</span></a>
           <a class="appear" href="https://t.me/dev_zav" target="_blank" rel="noopener noreferrer">Telegram <span aria-hidden="true">↗</span></a>
           <a class="appear" href="https://wa.me/33745735126" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
-          <a class="appear" href="https://www.linkedin.com/in/andriyzubets/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container"><p>© <span data-year>2026</span> Andriy Zubets · Senior AI Solutions Engineer</p><a href="#top">Back to top ↑</a></div></footer>
+  <footer class="site-footer"><div class="container"><p>© <span data-year>2026</span> Andriy Zubets · Senior Full-Stack &amp; AI Engineer</p><a href="#top">Back to top ↑</a></div></footer>
 
   <script>
     const toggle = document.querySelector('.nav-toggle');
